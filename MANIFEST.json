@@ -134,8 +134,8 @@
     },
     {
       "path": "notebooks/stage7.ipynb",
-      "bytes": 24225,
-      "sha256": "6735cc817b144eb405dabfb8eb84a7d7c384876ef6684870e4a5cc2ba35ba0a2"
+      "bytes": 92301,
+      "sha256": "37dc05e75229edcaece4d587d3ff106a49eb5ac12ac443d3ee5a63b77f44b6a1"
     },
     {
       "path": "reports/PUBLIC-CODE-VERIFICATION.json",
@@ -311,6 +311,11 @@
       "path": "reports/stage7/SELECTION-AVANT-TEST.json",
       "bytes": 161,
       "sha256": "49519671c8516fc31f7b5c86076e2ddaa22d1e3e66e47a501e7379ce866ca410"
+    },
+    {
+      "path": "reports/stage7/VERIFICATION-INFERENCE-PUBLIQUE.json",
+      "bytes": 857,
+      "sha256": "70bfae325af30c788c02457b043c0555198859b4ed644fecc331765ef3e6fb83"
     },
     {
       "path": "reports/stage7/VERIFICATION-REPRISE.json",

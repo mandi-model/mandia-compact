@@ -1,0 +1,23 @@
+{
+  "public_inference_cli_success": true,
+  "checks": [
+    {
+      "variant": "stage6",
+      "output": "Anouho",
+      "checkpoint_sha_verified_by_cli": true,
+      "public_code_sha256": "51fbb50d6f85b14afda3fe75788bcaf812cd80ffa0fbea2f180a956a6328010f",
+      "device": "CPU FP32",
+      "scope": "artifact loading and generation smoke check; trained/source-known examples, not independent quality test"
+    },
+    {
+      "variant": "stage7",
+      "output": "Aka wun kɔliɛ.",
+      "checkpoint_sha_verified_by_cli": true,
+      "public_code_sha256": "51fbb50d6f85b14afda3fe75788bcaf812cd80ffa0fbea2f180a956a6328010f",
+      "device": "CPU FP32",
+      "scope": "artifact loading and generation smoke check; trained/source-known examples, not independent quality test"
+    }
+  ],
+  "all_weights_read_from_drive": true,
+  "no_heavy_file_local": true
+}
