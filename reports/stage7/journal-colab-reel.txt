@@ -1,0 +1,40 @@
+DATA_ETAPE4 {"rows": {"train": {"everyday": 457, "software": 809, "gospel": 710, "lexical": 2840, "reply": 14, "monolingual": 3118}, "validation": {"everyday": 44, "software": 112, "gospel": 97, "lexical": 359}, "test": {"everyday": 68, "software": 109, "gospel": 169, "lexical": 308}}, "excluded": {"everyday/length": 3, "gospel/length": 25, "monolingual/length": 1}, "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda", "monolingual_source": "Google WAXAL official training split, text columns only", "no_holdout_tokenizer_training": true, "source_max": 160, "target_max": 192, "identity_denoising_is_not_translation": true}
+ETAPE6_VALIDATION full 4 {"selection_score": 2.0, "eligible": true}
+ETAPE6_VALIDATION full 8 {"selection_score": 2.0, "eligible": true}
+ETAPE6_VALIDATION resume 4 {"selection_score": 2.0, "eligible": true}
+ETAPE6_REPRISE resume 4
+ETAPE6_VALIDATION resume 8 {"selection_score": 2.0, "eligible": true}
+ETAPE6_REPRISE canonical_control 0
+ETAPE6_STEP canonical_control 50 / 400 1.6284 hinge 0.0
+ETAPE6_VALIDATION canonical_control 50 {"qa_validation": {"loss": 1.4426371427190383, "rows": 40, "target_tokens": 298}, "old_validation": 3.9954405811201235, "stage6_validation": 5.370846773430906, "old_reply_exact": 1.0, "eligible": true, "selection_score": 2.738839756541629}
+ETAPE6_STEP canonical_control 100 / 400 1.6839 hinge 0.0
+ETAPE6_VALIDATION canonical_control 100 {"qa_validation": {"loss": 0.9371502639463284, "rows": 40, "target_tokens": 298}, "old_validation": 3.99271307133784, "stage6_validation": 5.442872851981113, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.449407343031588}
+ETAPE6_STEP canonical_control 150 / 400 1.3549 hinge 0.0
+ETAPE6_VALIDATION canonical_control 150 {"qa_validation": {"loss": 0.7765151798325097, "rows": 40, "target_tokens": 298}, "old_validation": 3.99811996069724, "stage6_validation": 5.470925226055652, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.359718145250084}
+ETAPE6_STEP canonical_control 200 / 400 1.3694 hinge 0.0
+ETAPE6_VALIDATION canonical_control 200 {"qa_validation": {"loss": 0.680065731074186, "rows": 40, "target_tokens": 298}, "old_validation": 3.995803763022854, "stage6_validation": 5.492538862899423, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.305707963828967}
+ETAPE6_STEP canonical_control 250 / 400 1.1608 hinge 0.0
+ETAPE6_VALIDATION canonical_control 250 {"qa_validation": {"loss": 0.636383939909455, "rows": 40, "target_tokens": 298}, "old_validation": 3.9940638459264948, "stage6_validation": 5.49808443634749, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.28026002040047}
+ETAPE6_STEP canonical_control 300 / 400 1.2832 hinge 0.0
+ETAPE6_VALIDATION canonical_control 300 {"qa_validation": {"loss": 0.6245264911011561, "rows": 40, "target_tokens": 298}, "old_validation": 3.9944179323004425, "stage6_validation": 5.517409695406373, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.277081420202057}
+ETAPE6_STEP canonical_control 350 / 400 1.0617 hinge 0.0
+ETAPE6_VALIDATION canonical_control 350 {"qa_validation": {"loss": 0.6155927645280057, "rows": 40, "target_tokens": 298}, "old_validation": 3.9923131113264683, "stage6_validation": 5.522391645300024, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.272296610042102}
+ETAPE6_STEP canonical_control 400 / 400 1.3299 hinge 0.0
+ETAPE6_VALIDATION canonical_control 400 {"qa_validation": {"loss": 0.6146871835593409, "rows": 40, "target_tokens": 298}, "old_validation": 3.991537744292261, "stage6_validation": 5.530259734955593, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.2731718059851755}
+ETAPE6_STEP teacher_french 50 / 400 1.7229 hinge 0.0
+ETAPE6_VALIDATION teacher_french 50 {"qa_validation": {"loss": 1.3383887374161074, "rows": 40, "target_tokens": 298}, "old_validation": 3.995710223265668, "stage6_validation": 5.374372326404217, "old_reply_exact": 1.0, "eligible": true, "selection_score": 2.6770497523836414}
+ETAPE6_STEP teacher_french 100 / 400 1.7635 hinge 0.0
+ETAPE6_VALIDATION teacher_french 100 {"qa_validation": {"loss": 0.7099523608316511, "rows": 40, "target_tokens": 298}, "old_validation": 3.9965301549783545, "stage6_validation": 5.443206953849874, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.3139188382646365}
+ETAPE6_STEP teacher_french 150 / 400 1.406 hinge 0.0
+ETAPE6_VALIDATION teacher_french 150 {"qa_validation": {"loss": 0.4744724811323537, "rows": 40, "target_tokens": 298}, "old_validation": 3.9998399076185636, "stage6_validation": 5.46414439425709, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.1774803490545427}
+ETAPE6_STEP teacher_french 200 / 400 1.4154 hinge 0.0
+ETAPE6_VALIDATION teacher_french 200 {"qa_validation": {"loss": 0.3606185977090925, "rows": 40, "target_tokens": 298}, "old_validation": 4.001305101729564, "stage6_validation": 5.489036829825743, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.114439544936517}
+ETAPE6_STEP teacher_french 250 / 400 1.1946 hinge 0.0
+ETAPE6_VALIDATION teacher_french 250 {"qa_validation": {"loss": 0.3066777094898608, "rows": 40, "target_tokens": 298}, "old_validation": 3.9990976237513456, "stage6_validation": 5.496725780538574, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.0831713065519004}
+ETAPE6_STEP teacher_french 300 / 400 1.3131 hinge 0.0
+ETAPE6_VALIDATION teacher_french 300 {"qa_validation": {"loss": 0.2782607686599629, "rows": 40, "target_tokens": 298}, "old_validation": 4.000039972976218, "stage6_validation": 5.512135178295534, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.069391491450328}
+ETAPE6_STEP teacher_french 350 / 400 1.0864 hinge 0.0
+ETAPE6_VALIDATION teacher_french 350 {"qa_validation": {"loss": 0.26859458180881984, "rows": 40, "target_tokens": 298}, "old_validation": 3.997106519448618, "stage6_validation": 5.519495811543739, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.0644772152837634}
+ETAPE6_STEP teacher_french 400 / 400 1.3467 hinge 0.0
+ETAPE6_VALIDATION teacher_french 400 {"qa_validation": {"loss": 0.25918773036675163, "rows": 40, "target_tokens": 298}, "old_validation": 3.995907955660866, "stage6_validation": 5.525851314086481, "old_reply_exact": 1.0, "eligible": false, "selection_score": 2.0598644921695204}
+MANDIA_ETAPE7_TERMINE {"winner": "teacher_french", "before": {"rows": 40, "chrF_pp": 14.114373785006467, "exact_match": 0.0, "no_eos": 0, "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"}, "after": {"canonical_control": {"rows": 40, "chrF_pp": 29.34687450925883, "exact_match": 0.1, "no_eos": 0, "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"}, "teacher_french": {"rows": 40, "chrF_pp": 32.592097612679716, "exact_match": 0.15, "no_eos": 0, "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"}}}

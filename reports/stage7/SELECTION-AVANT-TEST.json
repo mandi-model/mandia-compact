@@ -1,0 +1,8 @@
+{
+  "winner": "teacher_french",
+  "scores": {
+    "canonical_control": 2.738839756541629,
+    "teacher_french": 2.6770497523836414
+  },
+  "test_not_used": true
+}

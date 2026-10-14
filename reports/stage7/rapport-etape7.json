@@ -1,0 +1,690 @@
+{
+  "experiment": {
+    "stage": 7,
+    "parent_model_sha256": "a2afe5128d6ba5f807e0dc28baffdf606708bde96610469837d9d18cea8cb2ad",
+    "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+    "data_sha256": {
+      "mandia-compact-s2s-etape4/parallel-prepare.jsonl": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+      "mandia-compact-s2s-etape4/replies-prepare.jsonl": "29334943cd507b8ffa9385b530b9625aec82c0741aeade3575a30c7df7e2caf1",
+      "mandia-compact-s2s-etape4/data/waxal-baoule-text.jsonl": "4f7730d32d3324d2cc819f33d7633b2d59e01f81c8e2f38651d0377050ec69d4",
+      "mandia-compact-s2s-etape5/quotidien-prepare.jsonl": "370d3bb631a4ad4765fbe3b15e0f6019c0470ce03c687f87ac71f6fda6b3048c",
+      "mandia-compact-s2s-etape6/dialogues-prepare.jsonl": "9375c6a0918a5bf8056cecd42df0c8aff90c3439220bc45bfe10e8cc700a2184",
+      "mandia-compact-s2s-etape7/teacher-grounded-qa.jsonl": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b"
+    },
+    "code_sha256": {
+      "mandia_stage7.py": "6044fb5633f0d0438000f005849f78db20c3b6c5edc2b693530818b53322ea41",
+      "mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+      "mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+      "mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+      "mandia_stage5.py": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+      "mandia_stage6.py": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1"
+    },
+    "steps_per_arm": 400,
+    "lr": 2e-05,
+    "seed": 42,
+    "warmup": 40,
+    "architecture": "unchanged own 13,782,528 parameters",
+    "initialization": "selected stage6 CE step100, fresh AdamW per arm",
+    "contrastive_weight": 0,
+    "teacher_role": "French contextual questions/paraphrases only; original Baoule exact source examples; no teacher logits/weights/rationales",
+    "counts": {
+      "train": 120,
+      "validation": 40,
+      "test": 40
+    },
+    "target_families": 40,
+    "split_scope": "held-out French views of SAME KNOWN target families, all stage5 TRAIN; not unseen-target evaluation",
+    "mix": ".5 contextual QA16, .2 old SMOL reply8, .15 old domain8, .1 stage5 translation8, .05 old reply4",
+    "selection": ".6 QA validation CE + .2 stage4 balanced CE + .2 stage6 validation CE; retain14oldreplies; oldCE<=initial+.05; stage6CE<=initial+.10; winner frozen before test",
+    "matched_budget": "same sampled identities and supervised tokens; actual source tokens differ and are measured, not a matched compute architecture benchmark",
+    "native_validation": false,
+    "gpu": "NVIDIA L4",
+    "torch": "2.11.0+cu130"
+  },
+  "before": {
+    "qa": {
+      "loss": 3.2961230182007655,
+      "rows": 40,
+      "target_tokens": 298
+    },
+    "old_stage4": {
+      "selection_score": 3.6628560837154565,
+      "domains": {
+        "everyday": {
+          "loss": 3.634372809525261,
+          "supervised_tokens": 737,
+          "rows": 68
+        },
+        "software": {
+          "loss": 3.6059142192692355,
+          "supervised_tokens": 978,
+          "rows": 109
+        },
+        "gospel": {
+          "loss": 3.5766625608795626,
+          "supervised_tokens": 8630,
+          "rows": 169
+        },
+        "lexical": {
+          "loss": 3.834474745187766,
+          "supervised_tokens": 1439,
+          "rows": 308
+        }
+      }
+    },
+    "old_stage5": {
+      "loss": 4.19510556705034,
+      "tasks": {
+        "translate": {
+          "loss": 4.170612814438403,
+          "rows": 52,
+          "tokens": 398
+        },
+        "guided": {
+          "loss": 4.219598319662277,
+          "rows": 52,
+          "tokens": 398
+        }
+      }
+    },
+    "old_stage6": {
+      "loss": 4.985397642379453,
+      "tasks": {
+        "translate": {
+          "loss": 4.931922377695456,
+          "tokens": 542,
+          "rows": 25
+        },
+        "reply": {
+          "loss": 5.038872907063449,
+          "tokens": 461,
+          "rows": 15
+        }
+      }
+    },
+    "trained14": {
+      "rows": 14,
+      "chrF_pp": 100.0,
+      "exact_match": 1.0,
+      "no_eos": 0,
+      "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+    },
+    "generation": {
+      "rows": 40,
+      "chrF_pp": 14.114373785006467,
+      "exact_match": 0.0,
+      "no_eos": 0,
+      "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+    },
+    "two_context_pairs": [
+      {
+        "ids": [
+          "teacher-0112-4",
+          "teacher-0249-4"
+        ],
+        "identical_question": true,
+        "outputs_differ": true,
+        "both_exact": false
+      },
+      {
+        "ids": [
+          "teacher-0117-4",
+          "teacher-0188-4"
+        ],
+        "identical_question": true,
+        "outputs_differ": true,
+        "both_exact": false
+      }
+    ]
+  },
+  "arms": {
+    "canonical_control": {
+      "training": {
+        "best_step": 50,
+        "best_score": 2.738839756541629,
+        "steps": 400,
+        "real_tokens": 732256,
+        "supervised_tokens": 231414,
+        "negative_forward_tokens": 0,
+        "valid_negative_pairs": 0,
+        "wall_seconds": 111.18847581199998,
+        "history": [
+          {
+            "step": 0,
+            "validation": {
+              "qa_validation": {
+                "loss": 3.1846547990837353,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9770488270641096,
+              "stage6_validation": 5.298653859488915,
+              "old_reply_exact": 1.0,
+              "eligible": true,
+              "selection_score": 3.7659334167608463
+            }
+          },
+          {
+            "step": 0,
+            "validation": {
+              "qa_validation": {
+                "loss": 3.1846547990837353,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9770488270641096,
+              "stage6_validation": 5.298653859488915,
+              "old_reply_exact": 1.0,
+              "eligible": true,
+              "selection_score": 3.7659334167608463
+            }
+          },
+          {
+            "step": 50,
+            "objective": 1.6284181363880634,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 1.4426371427190383,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9954405811201235,
+              "stage6_validation": 5.370846773430906,
+              "old_reply_exact": 1.0,
+              "eligible": true,
+              "selection_score": 2.738839756541629
+            }
+          },
+          {
+            "step": 100,
+            "objective": 1.6839431375265121,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.9371502639463284,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.99271307133784,
+              "stage6_validation": 5.442872851981113,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.449407343031588
+            }
+          },
+          {
+            "step": 150,
+            "objective": 1.3548708371818066,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.7765151798325097,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.99811996069724,
+              "stage6_validation": 5.470925226055652,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.359718145250084
+            }
+          },
+          {
+            "step": 200,
+            "objective": 1.3693623170256615,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.680065731074186,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.995803763022854,
+              "stage6_validation": 5.492538862899423,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.305707963828967
+            }
+          },
+          {
+            "step": 250,
+            "objective": 1.1607679277658463,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.636383939909455,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9940638459264948,
+              "stage6_validation": 5.49808443634749,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.28026002040047
+            }
+          },
+          {
+            "step": 300,
+            "objective": 1.2831923104822636,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.6245264911011561,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9944179323004425,
+              "stage6_validation": 5.517409695406373,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.277081420202057
+            }
+          },
+          {
+            "step": 350,
+            "objective": 1.0617146119475365,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.6155927645280057,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9923131113264683,
+              "stage6_validation": 5.522391645300024,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.272296610042102
+            }
+          },
+          {
+            "step": 400,
+            "objective": 1.329911980777979,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.6146871835593409,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.991537744292261,
+              "stage6_validation": 5.530259734955593,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.2731718059851755
+            }
+          }
+        ]
+      },
+      "test": {
+        "qa": {
+          "loss": 1.460418368345939,
+          "rows": 40,
+          "target_tokens": 298
+        },
+        "old_stage4": {
+          "selection_score": 3.6849334810836654,
+          "domains": {
+            "everyday": {
+              "loss": 3.641094378571012,
+              "supervised_tokens": 737,
+              "rows": 68
+            },
+            "software": {
+              "loss": 3.6753323794873944,
+              "supervised_tokens": 978,
+              "rows": 109
+            },
+            "gospel": {
+              "loss": 3.5718301748759775,
+              "supervised_tokens": 8630,
+              "rows": 169
+            },
+            "lexical": {
+              "loss": 3.8514769914002778,
+              "supervised_tokens": 1439,
+              "rows": 308
+            }
+          }
+        },
+        "old_stage5": {
+          "loss": 4.23547645070445,
+          "tasks": {
+            "translate": {
+              "loss": 4.195285049515154,
+              "rows": 52,
+              "tokens": 398
+            },
+            "guided": {
+              "loss": 4.275667851893746,
+              "rows": 52,
+              "tokens": 398
+            }
+          }
+        },
+        "old_stage6": {
+          "loss": 5.064793685059465,
+          "tasks": {
+            "translate": {
+              "loss": 5.020206015048432,
+              "tokens": 542,
+              "rows": 25
+            },
+            "reply": {
+              "loss": 5.109381355070499,
+              "tokens": 461,
+              "rows": 15
+            }
+          }
+        },
+        "trained14": {
+          "rows": 14,
+          "chrF_pp": 100.0,
+          "exact_match": 1.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "generation": {
+          "rows": 40,
+          "chrF_pp": 29.34687450925883,
+          "exact_match": 0.1,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "two_context_pairs": [
+          {
+            "ids": [
+              "teacher-0112-4",
+              "teacher-0249-4"
+            ],
+            "identical_question": true,
+            "outputs_differ": false,
+            "both_exact": false
+          },
+          {
+            "ids": [
+              "teacher-0117-4",
+              "teacher-0188-4"
+            ],
+            "identical_question": true,
+            "outputs_differ": false,
+            "both_exact": false
+          }
+        ]
+      }
+    },
+    "teacher_french": {
+      "training": {
+        "best_step": 50,
+        "best_score": 2.6770497523836414,
+        "steps": 400,
+        "real_tokens": 747192,
+        "supervised_tokens": 231414,
+        "negative_forward_tokens": 0,
+        "valid_negative_pairs": 0,
+        "wall_seconds": 110.1728706419999,
+        "history": [
+          {
+            "step": 0,
+            "validation": {
+              "qa_validation": {
+                "loss": 3.1846547990837353,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9770488270641096,
+              "stage6_validation": 5.298653859488915,
+              "old_reply_exact": 1.0,
+              "eligible": true,
+              "selection_score": 3.7659334167608463
+            }
+          },
+          {
+            "step": 50,
+            "objective": 1.722913734614849,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 1.3383887374161074,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.995710223265668,
+              "stage6_validation": 5.374372326404217,
+              "old_reply_exact": 1.0,
+              "eligible": true,
+              "selection_score": 2.6770497523836414
+            }
+          },
+          {
+            "step": 100,
+            "objective": 1.763453546911478,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.7099523608316511,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9965301549783545,
+              "stage6_validation": 5.443206953849874,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.3139188382646365
+            }
+          },
+          {
+            "step": 150,
+            "objective": 1.4060007594525814,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.4744724811323537,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9998399076185636,
+              "stage6_validation": 5.46414439425709,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.1774803490545427
+            }
+          },
+          {
+            "step": 200,
+            "objective": 1.4154473319649696,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.3606185977090925,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 4.001305101729564,
+              "stage6_validation": 5.489036829825743,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.114439544936517
+            }
+          },
+          {
+            "step": 250,
+            "objective": 1.1945803351700306,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.3066777094898608,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.9990976237513456,
+              "stage6_validation": 5.496725780538574,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.0831713065519004
+            }
+          },
+          {
+            "step": 300,
+            "objective": 1.3131434060633183,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.2782607686599629,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 4.000039972976218,
+              "stage6_validation": 5.512135178295534,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.069391491450328
+            }
+          },
+          {
+            "step": 350,
+            "objective": 1.0863711386919022,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.26859458180881984,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.997106519448618,
+              "stage6_validation": 5.519495811543739,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.0644772152837634
+            }
+          },
+          {
+            "step": 400,
+            "objective": 1.3466703593730927,
+            "hinge": 0.0,
+            "validation": {
+              "qa_validation": {
+                "loss": 0.25918773036675163,
+                "rows": 40,
+                "target_tokens": 298
+              },
+              "old_validation": 3.995907955660866,
+              "stage6_validation": 5.525851314086481,
+              "old_reply_exact": 1.0,
+              "eligible": false,
+              "selection_score": 2.0598644921695204
+            }
+          }
+        ]
+      },
+      "test": {
+        "qa": {
+          "loss": 1.3415626679490877,
+          "rows": 40,
+          "target_tokens": 298
+        },
+        "old_stage4": {
+          "selection_score": 3.688051983488829,
+          "domains": {
+            "everyday": {
+              "loss": 3.648795682992508,
+              "supervised_tokens": 737,
+              "rows": 68
+            },
+            "software": {
+              "loss": 3.68563012745239,
+              "supervised_tokens": 978,
+              "rows": 109
+            },
+            "gospel": {
+              "loss": 3.573507969791063,
+              "supervised_tokens": 8630,
+              "rows": 169
+            },
+            "lexical": {
+              "loss": 3.8442741537193528,
+              "supervised_tokens": 1439,
+              "rows": 308
+            }
+          }
+        },
+        "old_stage5": {
+          "loss": 4.24213267570764,
+          "tasks": {
+            "translate": {
+              "loss": 4.200212890778355,
+              "rows": 52,
+              "tokens": 398
+            },
+            "guided": {
+              "loss": 4.284052460636925,
+              "rows": 52,
+              "tokens": 398
+            }
+          }
+        },
+        "old_stage6": {
+          "loss": 5.05705004606879,
+          "tasks": {
+            "translate": {
+              "loss": 5.003913231881342,
+              "tokens": 542,
+              "rows": 25
+            },
+            "reply": {
+              "loss": 5.110186860256237,
+              "tokens": 461,
+              "rows": 15
+            }
+          }
+        },
+        "trained14": {
+          "rows": 14,
+          "chrF_pp": 100.0,
+          "exact_match": 1.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "generation": {
+          "rows": 40,
+          "chrF_pp": 32.592097612679716,
+          "exact_match": 0.15,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "two_context_pairs": [
+          {
+            "ids": [
+              "teacher-0112-4",
+              "teacher-0249-4"
+            ],
+            "identical_question": true,
+            "outputs_differ": false,
+            "both_exact": false
+          },
+          {
+            "ids": [
+              "teacher-0117-4",
+              "teacher-0188-4"
+            ],
+            "identical_question": true,
+            "outputs_differ": true,
+            "both_exact": false
+          }
+        ]
+      }
+    }
+  },
+  "selected_by_validation": "teacher_french",
+  "same_supervised_tokens_verified": true,
+  "parameters": 13782528,
+  "limits": [
+    "40 source target families already seen in parent translation training",
+    "only French wording and contextual question format held out; no unseen-target claim",
+    "French authored by assistant, no authentic recorded new conversations, no native validation",
+    "one seed; no teacher logits or weights; this is teacher-assisted augmentation",
+    "input tokens differ between arms; not a matched compute or architecture speed benchmark",
+    "old tests previously observed; regression checks only"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "actual_trainer_cpu_resume_bitwise_equal": true,
+  "weights_optimizer_rng_counters": true,
+  "padding_ignored_per_row_nll": true,
+  "cuda_bitwise_not_claimed": true
+}

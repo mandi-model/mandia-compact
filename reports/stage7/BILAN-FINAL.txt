@@ -1,0 +1,25 @@
+MandiaCompact — étape 7 terminée le 14 octobre 2026
+
+Deux continuations de 400 mises à jour sur L4, architecture propre inchangée (13 782 528 paramètres). Parent : CE étape 6. Contrôle : question/contexte canonique ; essai : reformulations françaises rédigées par assistant, cibles baoulé recopiées exactement de 40 exemples du TRAIN Wiktionary/Kaikki étape 5.
+
+Les références sont connues dans tous les splits. Ce test réserve seulement des formulations françaises de questions avec contexte : aucune preuve de généralisation à de nouvelles réponses ou de conversation libre. Aucun nouveau dialogue naturel enregistré ajouté ; aucune validation native.
+
+Sélection gelée avant test : teacher_french, pas 50 ; score validation 2,67705 contre 2,73884 pour le témoin, également pas 50. Les pas 100–400 ont été écartés par la garde sur les anciens dialogues. Les derniers checkpoints de reprise à 400 et les meilleurs poids à 50 sont conservés séparément.
+
+| Test de reformulation, 40 vues / mêmes 40 familles connues | Parent | Canonique | Français enrichi |
+|---|---:|---:|---:|
+| chrF++ | 14,114 | 29,347 | 32,592 |
+| Références exactement retrouvées | 0/40 | 4/40 | 6/40 |
+| CE ↓ | 3,296 | 1,460 | 1,342 |
+
+Les anciennes pertes test se dégradent légèrement : étape4 3,66286 → 3,68805, étape5 4,19511 → 4,24213, étape6 4,98540 → 5,05705. Les 14 anciennes réponses simples apprises restent exactes. Il s'agit d'un compromis, pas d'une amélioration générale établie.
+
+Deux diagnostics avec question identique et contexte différent : le bras enrichi donne la même réponse pour « pain » et « sucre », et ne retrouve pas correctement les deux références pour « singe » et « aigle ». 0/2 paires entièrement exactes. Un changement de sortie seul ne constitue pas une compréhension.
+
+Relecture technique des 40 sorties : noms de personnes et objets encore confondus, réponses génériques, faits omis. Exemple : contexte Mariame possède un mouton → « Konan le bua » ; contexte Aka mange du pain → « Aka di sukla. », identique à la sortie du contexte sucre. Ces erreurs sont établies par confrontation aux références sources ; la relecture n'est pas une validation native de grammaire ou de naturel.
+
+Budget : mêmes identifiants tirés et 231 414 tokens supervisés par bras ; 732 256 tokens réels pour le contrôle, 747 192 pour le français enrichi (+2,04 %). Temps incluant validations et sauvegardes : 111,19 s / 110,17 s. Une seule graine ; pas de revendication de gain de vitesse ou de significativité.
+
+Méthode : augmentation française assistée par grand modèle, pas distillation de poids/logits. L'assistant n'a pas produit de nouvelles cibles baoulé ni de raisonnement privé. Les articles de distillation motivent l'essai ; leurs gains ne sont pas ceux de Mandia.
+
+Les 6 fichiers lourds totalisent 551 778 812 octets, tous sauvegardés et hachés sur Drive. Aucun fichier de poids enregistré sur la machine locale. Le code, les données préparées, audits et résultats rejoignent le dépôt GitHub public ; les poids d'inférence de cette étape portent une étiquette de recherche QA. Aucun Space créé et aucun backend public d'inférence connecté.

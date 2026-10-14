@@ -19,3 +19,7 @@ Recherche, prototypage et contributions linguistiques. Pas de garantie de justes
 
 ## Fichiers
 Le fichier `model.pt` d'inférence contient `config`, `state_dict`, `tokenizer_sha256`. Chargement avec `torch.load(..., weights_only=True)`, empreintes obligatoires. Les checkpoints AdamW/RNG restent dans le Drive de travail. La licence Apache-2.0 concerne le code propre ; les attributions et conditions des corpus restent distinctes. Aucune prétention à la première traduction baoulé ou à un résultat état de l'art.
+
+## Variante de recherche étape 7 : question avec contexte
+
+Architecture inchangée ; deux bras de 400 mises à jour, meilleurs poids éligibles au pas 50, bras enrichi retenu sur validation. 40 familles baoulé déjà vues dans le train de l'étape 5, avec questions et reformulations françaises rédigées par l'assistant. Test réservé au niveau des formulations seulement : 6/40 exactes et chrF++ 32,592 contre 4/40 et 29,347 au témoin. La relecture constate encore des erreurs de personne et d'objet ; anciens tests en légère régression. Ce checkpoint est distribué séparément et ne remplace pas l'étape 6 comme preuve de conversation générale. Aucune validation native ni nouveauté architecturale revendiquée.

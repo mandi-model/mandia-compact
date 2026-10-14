@@ -1,0 +1,20 @@
+{
+  "architecture": "MandiaCompact S2S hybrid",
+  "parameters": 13782528,
+  "stage": 7,
+  "selected_arm": "teacher_french",
+  "selected_step": 50,
+  "scope": "experimental contextual QA, 40 known target families; not free conversation",
+  "weights": {
+    "filename": "mandia-compact-stage7-qa.pt",
+    "bytes": 55171544,
+    "sha256": "e6fe5b71079842d2644dba26ccfcc03c59fdfd0a9e4cdb509afad1ff613b885e",
+    "url": "https://github.com/mandi-model/mandia-compact/releases/download/stage7-qa-research-v1/mandia-compact-stage7-qa.pt"
+  },
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "full_optimizer_checkpoints": "backed up in private working Drive",
+  "native_validated": false,
+  "test_exact": 6,
+  "test_rows": 40,
+  "test_target_families_previously_seen": true
+}

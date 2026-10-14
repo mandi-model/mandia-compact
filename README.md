@@ -42,6 +42,18 @@ Le code Mandia est Apache-2.0. **Cette licence ne remplace pas celles des corpus
 
 Les données regroupées dans `data/` ne constituent pas un nouveau corpus collecté par Mandia : nous documentons filtrage, séparation, jointures et adaptations. Certaines origines mtBCI ont une licence déclarée sans version précisée. Ne pas interpréter une fiche de code comme une autorisation uniforme de réutilisation de toutes les sources.
 
-## Apprentissage assisté par un grand modèle
+## Apprentissage assisté : étape 7 exécutée
 
-La prochaine piste est une expérience contrôlée de reformulations françaises et de cibles baoulé attestées. Ce n'est pas encore un résultat entraîné. [RESEARCH_NEXT.md](RESEARCH_NEXT.md) précise protocole, sources et limites : aucun accès aux poids ou logits privés de l'assistant ; aucune traduction baoulé inventée présentée comme vérifiée.
+Deux continuations de 400 mises à jour : français canonique ou reformulations par l'assistant, mêmes cibles baoulé attestées et mêmes 231 414 tokens supervisés. Les longueurs source diffèrent : 732 256 / 747 192 tokens réels. Le bras enrichi gagne la validation sous garde de régression ; meilleurs poids au pas 50 dans les deux bras.
+
+Sur 40 formulations françaises réservées de **40 cibles déjà connues**, les réponses exactement retrouvées passent de 0/40 avant continuation à 4/40 pour le témoin et 6/40 avec enrichissement. chrF++ : 14,114 → 29,347 / 32,592. Une seule graine et un exercice de réponses avec contexte, sans nouvelles cibles indépendantes : ce résultat ne prouve pas la conversation libre. Le modèle confond encore les personnes, le pain et le sucre ; les deux paires de diagnostic de contexte n'ont aucune paire entièrement exacte. Les anciens tests régressent légèrement.
+
+L'assistant a rédigé les questions et variantes françaises ; il n'a ni inventé les cibles baoulé ni transmis ses poids/logits ou un raisonnement privé. Voir [le bilan](reports/stage7/BILAN-FINAL.txt), [la relecture technique](reports/stage7/RELECTURE-SORTIES.json), [les données et recherches](reports/stage7/RECHERCHE-DONNEES.json) et [la méthode](RESEARCH_NEXT.md).
+
+[Poids QA de recherche étape 7](https://github.com/mandi-model/mandia-compact/releases/tag/stage7-qa-research-v1), séparés du modèle étape 6 :
+
+```bash
+python inference.py --weights /chemin/mandia-compact-stage7-qa.pt --manifest weights/stage7-qa-manifest.json --context 'Ce que voit Aka est un aigle.' --text 'Peux-tu préciser l’animal qu’Aka aperçoit ?' --mode reply
+```
+
+Les checkpoints complets restent dans Drive. Aucun Space de démonstration n'est encore créé.

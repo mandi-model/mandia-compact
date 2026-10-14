@@ -1,0 +1,39 @@
+{
+  "reviewed_all_rows": 40,
+  "native_validation": false,
+  "exact_to_reference": 6,
+  "repeated_outputs": {
+    "N'si sɔ.": 4,
+    "Koffi wun ako.": 5,
+    "Aya le aya.": 3,
+    "Yao le adɛ.": 2,
+    "Aka di sukla.": 3,
+    "Aka to ngbabua.": 2,
+    "Yao le ako kun.": 2
+  },
+  "source_grounded_errors": [
+    {
+      "id": "teacher-0066-4",
+      "prompt": "Contexte : C’est Mariame qui possède un mouton.\nMessage : Peux-tu dire quel animal possède Mariame ?",
+      "source_reference": "Mariame le bua",
+      "generated": "Konan le bua",
+      "finding": "Mariame replaced by Konan"
+    },
+    {
+      "id": "teacher-0248-4",
+      "prompt": "Contexte : L’achat de papa porte sur des chaussures.\nMessage : Peux-tu préciser ce que papa est en train d’acheter ?",
+      "source_reference": "Baba to ngbabua.",
+      "generated": "Aka to ngbabua.",
+      "finding": "Papa replaced by Aka"
+    },
+    {
+      "id": "teacher-0112-4",
+      "prompt": "Contexte : Aka consomme le pain.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+      "source_reference": "Aka di kpaun",
+      "generated": "Aka di sukla.",
+      "finding": "Reference for bread replaced by the exact attested answer for sugar"
+    }
+  ],
+  "not_all_nonexact_outputs_claimed_semantically_wrong": true,
+  "assessment": "technical source comparison, not native fluency certification"
+}

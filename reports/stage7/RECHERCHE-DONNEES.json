@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-14",
+  "new_verified_admitted_authentic_dialogue_pairs": 0,
+  "teacher_batch_is_not_new_authentic_dialogue_data": true,
+  "sources": [
+    {
+      "url": "https://lgidf.cnrs.fr/baoule",
+      "publisher": "CNRS / LGMEF",
+      "description": "Page scientifique indiquant grammaire, lexique, histoire et interactions de base.",
+      "license": "Aucune licence de réutilisation établie dans les métadonnées consultées.",
+      "status": "catalogued, not added to training; direct fetch returned 403",
+      "related_hal": "https://hal.science/hal-05002378v1",
+      "hal_author": "Denis Creissels",
+      "hal_title": "Le baoulé",
+      "hal_licence_field_returned": false
+    },
+    {
+      "url": "https://moca.phil2.uni-freiburg.de/moca3_v3/index.php?vi=12",
+      "publisher": "CIEL-F, university consortium",
+      "description": "French oral interactions, approximately 200 recordings across 15 areas, 2006–2012; corpus archive requires registration. Côte d'Ivoire code-switching is a lead, not a verified French-Baoule aligned subset.",
+      "license_declared": "CC-BY-NC-SA-4.0",
+      "status": "catalogued, no login/account created, no data admitted; direct fetch returned 502",
+      "primary_publication_lead": "https://www.editricesapienza.it/sites/default/files/5803_Floquet_Francais_africains_OA.pdf"
+    },
+    {
+      "url": "https://mozilladatacollective.com/datasets/cmu625dl700nxnq07jev059gj",
+      "publisher": "Mozilla Common Voice 27",
+      "description": "Baoule scripted/read speech, not spontaneous paired French-Baoule conversation.",
+      "clips": 7167,
+      "hours": 14.35,
+      "license_declared": "CC0-1.0; publisher additionally prohibits re-hosting and identifying speakers",
+      "status": "catalogued, no audio downloaded or republished"
+    },
+    {
+      "url": "https://huggingface.co/GaindeNdiaye/nllb-baoule-v1",
+      "publisher": "2ADT Consulting / GaindeNdiaye",
+      "description": "External 600M NLLB fine-tune, lists Bible and dictionary/manual/site sources and acknowledges weak daily-domain quality and no native evaluation.",
+      "license_declared_weights": "CC-BY-NC-4.0",
+      "status": "method/data lead only, no weights or derived data integrated; published scores are not comparable to Mandia's different tests"
+    },
+    {
+      "url": "https://www.bible.com/versions/3080-bb98-nyanmi%C6%90n-nd%C6%90n-1998",
+      "description": "Previously catalogued Baoule Bible 1998 with audio. Do not mix with the 1974 edition. Full training/redistribution reuse not established.",
+      "status": "not newly admitted"
+    }
+  ],
+  "conclusion": "No large newly verified and reusable corpus of authentic parallel daily dialogues was obtained in this search. The controlled pilot uses existing attested target examples and explicitly synthetic French questions/paraphrases."
+}

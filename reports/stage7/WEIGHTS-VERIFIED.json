@@ -1,0 +1,38 @@
+{
+  "verified_on_mounted_drive": true,
+  "selected_by_validation": "teacher_french",
+  "files": [
+    {
+      "path": "canonical_control/checkpoint-best.pt",
+      "bytes": 55172374,
+      "sha256": "64886c2f6952ef749db37060654506802e753c844c7cf1472c7185d95969ef1d"
+    },
+    {
+      "path": "canonical_control/checkpoint-last.pt",
+      "bytes": 165545648,
+      "sha256": "85ceeaba8289eece1c3924c2bb0621a94ba94144d943cc98a430dac958f7976f"
+    },
+    {
+      "path": "canonical_control/model.pt",
+      "bytes": 55171544,
+      "sha256": "75925735b5117b7f42a8a3cf43f4314720f598050b3c0227ff89f3c89f0eae4d"
+    },
+    {
+      "path": "teacher_french/checkpoint-best.pt",
+      "bytes": 55172374,
+      "sha256": "c63e735e363639c38333bb83c1a4ff2fee39b9370994b4f59725c615d7994fd8"
+    },
+    {
+      "path": "teacher_french/checkpoint-last.pt",
+      "bytes": 165545328,
+      "sha256": "329076212183d7af92fb1f999e89239cedb3a9f6c9a527225cabab47b4ab723d"
+    },
+    {
+      "path": "teacher_french/model.pt",
+      "bytes": 55171544,
+      "sha256": "e6fe5b71079842d2644dba26ccfcc03c59fdfd0a9e4cdb509afad1ff613b885e"
+    }
+  ],
+  "total_bytes": 551778812,
+  "no_local_weight_file": true
+}

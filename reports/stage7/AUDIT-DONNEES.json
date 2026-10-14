@@ -1,0 +1,22 @@
+{
+  "families": 40,
+  "counts": {
+    "train": 120,
+    "validation": 40,
+    "test": 40
+  },
+  "data_sha256": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b",
+  "baoule_all_exact_source_train_targets": true,
+  "new_baoule_targets": 0,
+  "authentic_recorded_dialogues": false,
+  "french_views_by_assistant": true,
+  "native_reviewed": false,
+  "shared_targets_across_view_splits": true,
+  "purpose": "controlled known-target French paraphrase robustness; not independent new-target evaluation",
+  "old_holdout_targets_never_trained": true,
+  "references": [
+    "https://aclanthology.org/D16-1139/",
+    "https://arxiv.org/abs/2305.02301"
+  ],
+  "method": "teacher-assisted grounded French augmentation, not weight/logit distillation"
+}

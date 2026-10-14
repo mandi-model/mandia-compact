@@ -1,0 +1,1 @@
+Wiktionary/Kaikki source examples, CC-BY-SA-4.0, see per-row source URL and source history. Baoule copied verbatim from stage5 TRAIN; source IDs and lemma retained. Mandia assistant: French contextual questions and paraphrases (changes), not native validation, not recorded conversations. Same known target families in every phrasing split.

@@ -9,8 +9,8 @@
     },
     {
       "path": "DATA_SOURCES.md",
-      "bytes": 2445,
-      "sha256": "1ee33358758c60c56980ec338db3851c5c849ec3e5508b96fd132bdda4bf75ce"
+      "bytes": 3002,
+      "sha256": "ec1be912ab7b84c3e7fdb6d0be9f6bcd0cb91525d409ad3a5db752b5a4077016"
     },
     {
       "path": "LICENSE",
@@ -19,18 +19,18 @@
     },
     {
       "path": "MODEL_CARD.md",
-      "bytes": 2773,
-      "sha256": "dab28e61191d10dacef6600032f9201e69c9d836e78a96120858f93696015c36"
+      "bytes": 3504,
+      "sha256": "2ff2c7e2cdb66610ce12588ff0d353253d164dd71d3196a3c802de19aec72a65"
     },
     {
       "path": "README.md",
-      "bytes": 5247,
-      "sha256": "1a36f11573a22d8e6f6eea762d70a01d5d14dc64d8dfba80d983557ef1e90e8c"
+      "bytes": 6669,
+      "sha256": "0da0eae927d28fdd9fb0887d6f67e91087332e5e7dcb5e0f7963dab9b27bcdd6"
     },
     {
       "path": "RESEARCH_NEXT.md",
-      "bytes": 2314,
-      "sha256": "7ca12c1f6fd23d1d4a879764be3b7225c3cc8f84e7b3a6472a0f62d8d67c0ffb"
+      "bytes": 2750,
+      "sha256": "de5cfc4f7a01e43a0623f01dfbb09bdab5b52bc03282ccf1d7f1f66d03061810"
     },
     {
       "path": "data/stage4/parallel-prepare.jsonl",
@@ -61,6 +61,16 @@
       "path": "data/stage6/source/smoldoc--en_bci.jsonl",
       "bytes": 324455,
       "sha256": "fa56efac8e1df34fec3b81793677d4f33a3f92cfc187e92794dfe2cf9d1e6fdd"
+    },
+    {
+      "path": "data/stage7/prepare_teacher_views.py",
+      "bytes": 16028,
+      "sha256": "29f590333471e54e3016a8a1fd460e4e16a277b6a9cf9a8cee3a60d08a1bc6ea"
+    },
+    {
+      "path": "data/stage7/teacher-grounded-qa.jsonl",
+      "bytes": 182074,
+      "sha256": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b"
     },
     {
       "path": "experiments/stage4/mandia_stage4.py",
@@ -98,9 +108,14 @@
       "sha256": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1"
     },
     {
+      "path": "experiments/stage7/mandia_stage7.py",
+      "bytes": 9020,
+      "sha256": "6044fb5633f0d0438000f005849f78db20c3b6c5edc2b693530818b53322ea41"
+    },
+    {
       "path": "inference.py",
-      "bytes": 1507,
-      "sha256": "e7b497dada84e8dd85a01f6aceafe1edc7fe314cda046ecabd2baf78a6e03fc1"
+      "bytes": 1683,
+      "sha256": "51fbb50d6f85b14afda3fe75788bcaf812cd80ffa0fbea2f180a956a6328010f"
     },
     {
       "path": "notebooks/stage4.ipynb",
@@ -116,6 +131,11 @@
       "path": "notebooks/stage6.ipynb",
       "bytes": 214251,
       "sha256": "bf3a7d88ff47b29c1d27c917274ce86dd1d40b77e5e383654a7638f3d6454554"
+    },
+    {
+      "path": "notebooks/stage7.ipynb",
+      "bytes": 24225,
+      "sha256": "6735cc817b144eb405dabfb8eb84a7d7c384876ef6684870e4a5cc2ba35ba0a2"
     },
     {
       "path": "reports/PUBLIC-CODE-VERIFICATION.json",
@@ -253,6 +273,76 @@
       "sha256": "a9d16006db886f58e9d0f8eaabd2476f03b6359ce90c0631e16b4183d321907f"
     },
     {
+      "path": "reports/stage7/AUDIT-DONNEES.json",
+      "bytes": 756,
+      "sha256": "e20d55fd41faf3bcdfcf717de2b08813cce182b709623f02c50ed8ad2e4fe99f"
+    },
+    {
+      "path": "reports/stage7/BILAN-FINAL.txt",
+      "bytes": 3257,
+      "sha256": "2cadb28bd3d6b9269a0b87e5f9122a261804e1578be90e0f019c9458d98cf8b1"
+    },
+    {
+      "path": "reports/stage7/CREDITS.txt",
+      "bytes": 341,
+      "sha256": "270242f29e6f595a52dac0c7bbab715c8e7be232a9cf04ba93aa49a8f036c4f5"
+    },
+    {
+      "path": "reports/stage7/PROTOCOLE.txt",
+      "bytes": 2106,
+      "sha256": "700f1f8dfc2275a1d0f40c13704a8e13e39477d19b5cc7ca83878975e6de6ccb"
+    },
+    {
+      "path": "reports/stage7/README.md",
+      "bytes": 933,
+      "sha256": "507f31edc71d8c0361589504a76b77c1413d2f43227c28a7da3dc53cad3eca54"
+    },
+    {
+      "path": "reports/stage7/RECHERCHE-DONNEES.json",
+      "bytes": 2861,
+      "sha256": "89b258b0ead4dcc42104cb0cabeb4b9a0be79c6477002ec3b4707f3128d5ab46"
+    },
+    {
+      "path": "reports/stage7/RELECTURE-SORTIES.json",
+      "bytes": 1386,
+      "sha256": "2e76ce6833034facf141f5d99ade21aa58068b9ecc3a484c0288fac842d1de19"
+    },
+    {
+      "path": "reports/stage7/SELECTION-AVANT-TEST.json",
+      "bytes": 161,
+      "sha256": "49519671c8516fc31f7b5c86076e2ddaa22d1e3e66e47a501e7379ce866ca410"
+    },
+    {
+      "path": "reports/stage7/VERIFICATION-REPRISE.json",
+      "bytes": 170,
+      "sha256": "d20032006568fd3ed3b781a8ade2f76cf616d9f781a1accdea6e5f71b362c222"
+    },
+    {
+      "path": "reports/stage7/WEIGHTS-VERIFIED.json",
+      "bytes": 1186,
+      "sha256": "1f85675a9c60e3e44eb33d02000b9d1347310c401fba09d78d2ae1d56aa484d5"
+    },
+    {
+      "path": "reports/stage7/generations-apres.json",
+      "bytes": 13275,
+      "sha256": "e7087e95ae5e108c8e58b4d432bc5d1aef30857f88168e5a4769d64dd772673a"
+    },
+    {
+      "path": "reports/stage7/generations-avant.json",
+      "bytes": 14415,
+      "sha256": "a9d8524e5684f6a143b1919d431f135b876b610232a123b0ddce079849db8e9e"
+    },
+    {
+      "path": "reports/stage7/journal-colab-reel.txt",
+      "bytes": 6937,
+      "sha256": "3d1c46e09eda9330bb65a2429e246a5fa4599e74c7f7d02f795e199f768445e5"
+    },
+    {
+      "path": "reports/stage7/rapport-etape7.json",
+      "bytes": 21714,
+      "sha256": "a423da94c80a4e03a9d755de598d424e00af12f3c35d82e0ee0d2b435dd91dcb"
+    },
+    {
       "path": "requirements.txt",
       "bytes": 77,
       "sha256": "56ef79ca6d37d6fd4e6a4d668ea20f41b20daa9b966d3bec1f6a275e5f1463b2"
@@ -276,6 +366,11 @@
       "path": "weights/manifest.json",
       "bytes": 755,
       "sha256": "077d421521905257292de29e686eb24a97b2f2bd7a5d9a1c441a524153267e7f"
+    },
+    {
+      "path": "weights/stage7-qa-manifest.json",
+      "bytes": 812,
+      "sha256": "68b7acc392816314b639c4779266627b1557366c6de45148210b95ff4adcf7d8"
     }
   ]
 }
