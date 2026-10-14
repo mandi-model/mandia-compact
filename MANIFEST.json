@@ -59,6 +59,11 @@
       "sha256": "f5250fee53b2bd297a4fa7f818514987cbb320e03fbccd28dc7696f9360adfe6"
     },
     {
+      "path": "data/stage11/negatifs-entrainement-parent.json",
+      "bytes": 118988,
+      "sha256": "93749418c4a756fb8ae17d11fcef7f04973509c87136a9fd1e0c9baabab72fbb"
+    },
+    {
       "path": "data/stage11/nouveaux-tests.jsonl",
       "bytes": 44517,
       "sha256": "731bae931a6141b1392fd1862e4ddafe0d6bf73d6c4d37ee6f7702ea6ce767cd"
