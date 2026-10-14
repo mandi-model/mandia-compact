@@ -4,7 +4,7 @@ Projet de recherche Mandia : comprendre une entrée française et produire du ba
 
 - **Fiche modèle** : https://dataset.mandia.org/gnakalehacker/mandia-compact
 - **13 782 528 paramètres**, encodeur-décodeur hybride convolution causale / GQA, tokenizer ByteBPE de 4096 tokens.
-- Code et rapports dans ce dépôt ; poids d'inférence distribués séparément dans les Releases lorsqu'ils sont disponibles.
+- Code et rapports dans ce dépôt ; poids d'inférence disponibles dans [la Release de recherche étape 6](https://github.com/mandi-model/mandia-compact/releases/tag/stage6-research-v1).
 - Les checkpoints complets de travail (poids, AdamW, états RNG et compteurs) restent sauvegardés dans Google Drive. Aucun dossier Drive personnel n'est rendu public par ce dépôt.
 
 ## État des expériences

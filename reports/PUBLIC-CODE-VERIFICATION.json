@@ -1,0 +1,11 @@
+{
+  "python_sources_compile": true,
+  "notebook_code_cells_compile": true,
+  "public_notebook_outputs_removed": true,
+  "model_parameters": 13782528,
+  "hybrid_and_gqa_causality_padding_cache_source_gradients": true,
+  "weights_release_bytes": 55171544,
+  "weights_release_sha256": "a2afe5128d6ba5f807e0dc28baffdf606708bde96610469837d9d18cea8cb2ad",
+  "github_server_digest_matches": true,
+  "weights_streamed_without_creating_local_weight_file": true
+}

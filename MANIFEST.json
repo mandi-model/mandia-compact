@@ -24,8 +24,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5187,
-      "sha256": "9378579a143def877c463a02f494988659da70f3ca2cd524a02810a8b955a41b"
+      "bytes": 5247,
+      "sha256": "1a36f11573a22d8e6f6eea762d70a01d5d14dc64d8dfba80d983557ef1e90e8c"
     },
     {
       "path": "RESEARCH_NEXT.md",
@@ -116,6 +116,11 @@
       "path": "notebooks/stage6.ipynb",
       "bytes": 214251,
       "sha256": "bf3a7d88ff47b29c1d27c917274ce86dd1d40b77e5e383654a7638f3d6454554"
+    },
+    {
+      "path": "reports/PUBLIC-CODE-VERIFICATION.json",
+      "bytes": 454,
+      "sha256": "597cf1e090ba395b7bd6e0beaa9573bd5c87773b226ddd84783db8fe2d37f458"
     },
     {
       "path": "reports/stage4/CREDITS.txt",
@@ -269,8 +274,8 @@
     },
     {
       "path": "weights/manifest.json",
-      "bytes": 534,
-      "sha256": "7e9d03229cd8d0cf32689b62bfc48dc9e07c1c251f79014ed1ccc04204b2b38c"
+      "bytes": 755,
+      "sha256": "077d421521905257292de29e686eb24a97b2f2bd7a5d9a1c441a524153267e7f"
     }
   ]
 }
