@@ -1,0 +1,7 @@
+{
+  "tiny_cpu_fixture_beyond_old_256_cap": true,
+  "full_vs_cached_last_position": 280,
+  "max_error": 5.960464477539063e-08,
+  "no_new_learned_parameters": true,
+  "scope": "cache correctness, not evidence of linguistic long-context ability"
+}

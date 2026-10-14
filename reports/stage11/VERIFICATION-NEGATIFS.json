@@ -1,0 +1,8 @@
+{
+  "rows": 13,
+  "masked_tokens_checked": 508,
+  "every_mask_repeats_parent_generated_8gram": true,
+  "no_masked_8gram_in_matching_gold": true,
+  "all_train_only": true,
+  "bank_sha256": "93749418c4a756fb8ae17d11fcef7f04973509c87136a9fd1e0c9baabab72fbb"
+}

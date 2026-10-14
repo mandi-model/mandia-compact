@@ -1,0 +1,34 @@
+{
+  "model": "Mandia Nzassa21M",
+  "release_tag": "nzassa-21m-v0.1",
+  "inference_exports": [
+    {
+      "name": "mandia-nzassa-21m-reference.pt",
+      "bytes": 83483096,
+      "sha256": "5d3004982bdc53ea361d7bb23f99ef8800fa1f1163ee01a0388abffa5b357db0",
+      "github_digest": "sha256:5d3004982bdc53ea361d7bb23f99ef8800fa1f1163ee01a0388abffa5b357db0"
+    },
+    {
+      "name": "mandia-nzassa-21m-ce-control.pt",
+      "bytes": 83483096,
+      "sha256": "a5377f1b824c092717da1d8fae33c34fc0b5195183905fe3f02d7f6e629cc50c",
+      "github_digest": "sha256:a5377f1b824c092717da1d8fae33c34fc0b5195183905fe3f02d7f6e629cc50c"
+    },
+    {
+      "name": "mandia-nzassa-21m-source-contrastive.pt",
+      "bytes": 83483096,
+      "sha256": "84c218ced3a71a86d5dad2142c6bcd36eff5235b3fb1285956b10918545100b5",
+      "github_digest": "sha256:84c218ced3a71a86d5dad2142c6bcd36eff5235b3fb1285956b10918545100b5"
+    },
+    {
+      "name": "mandia-nzassa-21m-source-contrastive-ul.pt",
+      "bytes": 83483096,
+      "sha256": "40da015650884826e0c7a1d15d6c4e5c601a5cffa6209b48e2492775fd55f2a7",
+      "github_digest": "sha256:40da015650884826e0c7a1d15d6c4e5c601a5cffa6209b48e2492775fd55f2a7"
+    }
+  ],
+  "local_weight_files_created": false,
+  "Drive_permission_changes": false,
+  "optimizer_checkpoints_private": true,
+  "verification": "GitHub server digest and size match original measured Drive checkpoints; public CLI separately executed with real reference weights"
+}

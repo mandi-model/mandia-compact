@@ -1,0 +1,65 @@
+{
+  "stage": 11,
+  "date": "2026-10-14",
+  "parent_sha256": "5d3004982bdc53ea361d7bb23f99ef8800fa1f1163ee01a0388abffa5b357db0",
+  "parameters": 20860416,
+  "architecture_changed": false,
+  "seed": 42,
+  "steps_per_arm": 300,
+  "lr": 1e-05,
+  "optimizer": "fresh AdamW(.9,.98),wd.01,clip1,smoothing.05,warm40cosine20%",
+  "arms": {
+    "ce_control": [
+      0.0,
+      0.0
+    ],
+    "source_contrastive": [
+      0.3,
+      0.0
+    ],
+    "source_contrastive_ul": [
+      0.3,
+      0.1
+    ]
+  },
+  "negative_bank_rows": 13,
+  "masked_negative_tokens": 508,
+  "source_objective": "per-group .3 * max(0,.2+matched NLL-permuted-source NLL), valid different documents/prompts/answers; two paired groups",
+  "ul": "offline fixed parent TRAIN-only greedy rollouts cap192; penalize completions of repeated8-token grams absent from that gold reference; no special/EOS/pad penalties; .1 mean -log(1-p) on masked positions; no decoding repetition block",
+  "mix": ".40 parallel12+.25 replies8+.10 long2+.20 old domain8+.05 trained replies4; both paired groups use source negatives; all arms include auxiliary forwards/backwards, weight0 in controls",
+  "selection": ".40 new sentence CE+.25 old SMOL reply CE+.10 new longCE+.15 old balancedCE+.10 authored birthdayQA CE +.5 permutation hinge +.5 excess repeated-word4 on4 fixed validation probes; preserve14, oldCE<=initial+.15, new sentenceCE<=initial+.15, SMOLreplyCE<=initial+.15; step0 allowed; select before any test",
+  "same_auxiliary_computation": true,
+  "data_sha256": {
+    "mandia-compact-s2s-etape10/nouveaux-paralleles.jsonl": "820ef82951d2a8702fc39738820a585124d93ed9f192f6e04429fe2a8e31a768",
+    "mandia-compact-s2s-etape4/parallel-prepare.jsonl": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+    "mandia-compact-s2s-etape4/replies-prepare.jsonl": "29334943cd507b8ffa9385b530b9625aec82c0741aeade3575a30c7df7e2caf1",
+    "mandia-compact-s2s-etape6/dialogues-prepare.jsonl": "9375c6a0918a5bf8056cecd42df0c8aff90c3439220bc45bfe10e8cc700a2184",
+    "mandia-compact-s2s-etape9/dialogues-ecrits-ajout.jsonl": "2e7a3f0634c96f0f8c91944db74133ca4ff0d0bc968baa4987f208a82782809a",
+    "mandia-compact-s2s-etape7/teacher-grounded-qa.jsonl": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b",
+    "mandia-compact-s2s-etape11/nouveaux-tests.jsonl": "731bae931a6141b1392fd1862e4ddafe0d6bf73d6c4d37ee6f7702ea6ce767cd",
+    "mandia-compact-s2s-etape11/negatifs-entrainement-parent.json": "93749418c4a756fb8ae17d11fcef7f04973509c87136a9fd1e0c9baabab72fbb"
+  },
+  "code_sha256": {
+    "mandia-compact-s2s-etape11/mandia_stage11.py": "1666e8bd5ba30313fd5c4f9fad538f08e0c3b784f1b31a7479f6252e50fd7049",
+    "mandia-compact-s2s-etape7/mandia_stage7.py": "6044fb5633f0d0438000f005849f78db20c3b6c5edc2b693530818b53322ea41",
+    "mandia-compact-s2s-etape10/mandia_stage10.py": "e7d1726c78c707a46ac7482bdaad29eb8a63c1fac9bc42de3b503a3e111bffce",
+    "mandia-compact-s2s-etape6/code/mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+    "mandia-compact-s2s-etape6/code/mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+    "mandia-compact-s2s-etape6/code/mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+    "mandia-compact-s2s-etape6/code/mandia_stage5.py": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+    "mandia-compact-s2s-etape6/code/mandia_stage6.py": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1"
+  },
+  "gpu": "NVIDIA L4",
+  "torch": "2.11.0+cu130",
+  "limits": [
+    "one seed and small continuation, not proof of optimal architecture or efficiency",
+    "same positive data and sampled token budgets; dropout and static negatives held fixed",
+    "offline parent negatives do not cover new candidate loops",
+    "cross-document negatives can be semantically compatible",
+    "token repetition heuristic may penalize legitimate phrases despite gold protection",
+    "new source documents held out, French assistant-authored; published Baoule without native validation",
+    "six written next-turn tests, no newly recorded authentic conversations",
+    "previous tests now regression only",
+    "automatic source gap/chrF are not human semantic correctness"
+  ]
+}

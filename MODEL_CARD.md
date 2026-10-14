@@ -1,4 +1,17 @@
-# MandiaCompact S2S — fiche modèle
+# Mandia N’zassa 21M — fiche modèle v0.1
+
+## Référence publiée
+20 860 416 paramètres, étape10, meilleurs poids à100, plafond512 ; continuations de nos propres poids initialisés aléatoirement à l’étape4. La version13M historique est conservée séparément. Encodeur2GQA, décodeur6 (4convolutions causales +2GQA), cross-attention dans chaque bloc, dim384,6têtes/2KV, FFN1536, RMSNorm/RoPE/SwiGLU, ByteBPE4096, embeddings/sortie partagés. Composants publiés ; pas de nouveauté ni d’état de l’art démontré.
+
+L’étape11 compare CE, contraste source, contraste+unlikelihood hors ligne. Le contraste gagne la validation, mais les dialogues test régressent dans les3 bras. Les variantes sont distribuées **comme expériences**, pas comme améliorations acceptées. Voir README et reports/stage11. Les scores de vitesse13M plus bas ne s’appliquent pas au21M ; aucune nouvelle supériorité d’efficacité revendiquée.
+
+Entrées françaises et sorties baoulé textuelles, encore génériques/hors sujet ; pas de validation native. Ne pas présenter les40 familles connues comme de la conversation générale. La Bible complète et l’audio ne sont pas inclus. Les9 longues vues de régression proviennent de2 documents.39 nouveaux tests,4familles documentaires, source et cible de provenance distincte (français assistant, baoulé publié).
+
+Poids d’inférence/config/tokenizer vérifiés par SHA-256 ; états complets d’entraînement privés dans Drive. Licences des données et attributions dans DATA_SOURCES.md. Aucun backend N’zassa n’est relié au playground de la fiche ; un autre service ou une simulation ne représente pas notre checkpoint.
+
+## Historique13M, conservé pour comparaison
+
+# Mandia N’zassa S2S — fiche modèle
 
 ## Objectif et statut
 Français → baoulé (`bci`), traduction et réponse courte. Poids propres Mandia, initialisation aléatoire à l'étape 4, continuations 5 et 6. Candidat actuel : étape 6, CE, sélection sur validation au pas 100. Il ne répond pas encore correctement de façon générale.
@@ -15,7 +28,7 @@ mtBCI, Google SMOL/GATITOS, transcriptions WAXAL et exemples Wiktionary/Kaikki. 
 Sur le nouveau test étape 6 : chrF++ traduction 13,186 sur 25 vues, réponse 12,704 sur 15 vues, exactitude 0/25 et 0/15. 14/14 références simples apprises conservées. Les 40 vues ne sont pas 40 références indépendantes. Les sorties restent souvent hors sujet.
 
 ## Usage et limites
-Recherche, prototypage et contributions linguistiques. Pas de garantie de justesse, de naturalité ni de fidélité sémantique. Ne pas utiliser seul pour un conseil engageant des décisions importantes. Pas d'ASR, TTS ou compréhension audio. Le playground éventuel de la plateforme ne prouve pas que ce checkpoint y est servi : aucun backend MandiaCompact public n'est connecté pour l'instant.
+Recherche, prototypage et contributions linguistiques. Pas de garantie de justesse, de naturalité ni de fidélité sémantique. Ne pas utiliser seul pour un conseil engageant des décisions importantes. Pas d'ASR, TTS ou compréhension audio. Le playground éventuel de la plateforme ne prouve pas que ce checkpoint y est servi : aucun backend Mandia N’zassa public n'est connecté pour l'instant.
 
 ## Fichiers
 Le fichier `model.pt` d'inférence contient `config`, `state_dict`, `tokenizer_sha256`. Chargement avec `torch.load(..., weights_only=True)`, empreintes obligatoires. Les checkpoints AdamW/RNG restent dans le Drive de travail. La licence Apache-2.0 concerne le code propre ; les attributions et conditions des corpus restent distinctes. Aucune prétention à la première traduction baoulé ou à un résultat état de l'art.

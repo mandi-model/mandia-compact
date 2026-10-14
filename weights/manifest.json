@@ -1,17 +1,20 @@
 {
-  "architecture": "MandiaCompact S2S hybrid",
-  "parameters": 13782528,
-  "stage": 6,
-  "selected_arm": "ce_control",
+  "name": "Mandia N’zassa 21M",
+  "architecture": "own hybrid encoder-decoder",
+  "parameters": 20860416,
+  "stage": 10,
+  "selected_arm": "translation_dialogue",
   "selected_step": 100,
+  "status": "research reference",
+  "source_max": 512,
+  "max_new_tokens": 512,
   "weights": {
-    "filename": "mandia-compact-stage6-ce.pt",
-    "bytes": 55171544,
-    "sha256": "a2afe5128d6ba5f807e0dc28baffdf606708bde96610469837d9d18cea8cb2ad",
-    "url": "https://github.com/mandi-model/mandia-compact/releases/download/stage6-research-v1/mandia-compact-stage6-ce.pt",
-    "github_digest": "sha256:a2afe5128d6ba5f807e0dc28baffdf606708bde96610469837d9d18cea8cb2ad"
+    "filename": "mandia-nzassa-21m-reference.pt",
+    "bytes": 83483096,
+    "sha256": "5d3004982bdc53ea361d7bb23f99ef8800fa1f1163ee01a0388abffa5b357db0",
+    "url": "https://github.com/mandi-model/mandia-nzassa/releases/download/nzassa-21m-v0.1/mandia-nzassa-21m-reference.pt"
   },
   "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
-  "full_optimizer_checkpoints": "saved in working Google Drive, not part of this inference asset",
-  "native_validated": false
+  "native_validated": false,
+  "full_optimizer_checkpoints": "private working Drive; inference export only in this release"
 }

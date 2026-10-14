@@ -1,0 +1,45 @@
+{
+  "stage": 8,
+  "parent_sha256": "e6fe5b71079842d2644dba26ccfcc03c59fdfd0a9e4cdb509afad1ff613b885e",
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "steps_per_arm": 400,
+  "lr": 1e-05,
+  "seed": 42,
+  "warmup": 40,
+  "optimizer": "fresh AdamW per arm, beta(.9,.98), wd.01, smooth.05, clip1",
+  "arms": {
+    "small_13m": 768,
+    "wide_20m": 1536
+  },
+  "scope": "pilot width ablation, same data and sampled tokens; compute NOT matched",
+  "new_data": "64 views, 40 target families, 38 existing Gospel source rows, inherited chapter split; no new real daily dialogues",
+  "literature": [
+    "https://aclanthology.org/2024.findings-acl.30/",
+    "https://arxiv.org/abs/1511.05641",
+    "https://aclanthology.org/2025.lowresnlp-1.6/"
+  ],
+  "mix": ".25 BibleQA8, .35 dailyQA16, .15 oldSMOLreply8, .15 balancedold8, .05 dailytranslation8, .05 oldreply4",
+  "selection": ".35 Bible validation CE + .35 dailyQA validation CE + .2 old balanced CE + .1 SMOL validation CE; retain14reply; oldCE<=initial+.05, SMOLCE<=initial+.1, dailyQACE<=initial+.15; freeze winner before test",
+  "native_validation": false,
+  "gpu": "NVIDIA L4",
+  "torch": "2.11.0+cu130",
+  "data_sha256": {
+    "mandia-compact-s2s-etape4/parallel-prepare.jsonl": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+    "mandia-compact-s2s-etape4/replies-prepare.jsonl": "29334943cd507b8ffa9385b530b9625aec82c0741aeade3575a30c7df7e2caf1",
+    "mandia-compact-s2s-etape4/data/waxal-baoule-text.jsonl": "4f7730d32d3324d2cc819f33d7633b2d59e01f81c8e2f38651d0377050ec69d4",
+    "mandia-compact-s2s-etape5/quotidien-prepare.jsonl": "370d3bb631a4ad4765fbe3b15e0f6019c0470ce03c687f87ac71f6fda6b3048c",
+    "mandia-compact-s2s-etape6/dialogues-prepare.jsonl": "9375c6a0918a5bf8056cecd42df0c8aff90c3439220bc45bfe10e8cc700a2184",
+    "mandia-compact-s2s-etape7/teacher-grounded-qa.jsonl": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b",
+    "mandia-compact-s2s-etape8/bible-qa-pilote.jsonl": "868ea39a2961c3b590260b3a7fab51581b82aed7db75726c4ab7369d1ede6a0e"
+  },
+  "code_sha256": {
+    "mandia-compact-s2s-etape8/mandia_stage8.py": "00481d8e6b99c00fd9f0b6b1073262d02e88454edeca038bfc2a57d42ea8dfc0",
+    "mandia-compact-s2s-etape8/mandia_expand.py": "655255a443b4a2ad7863f906603374e51bac7838c511f28b16c3acdab7ba90dd",
+    "mandia-compact-s2s-etape7/mandia_stage7.py": "6044fb5633f0d0438000f005849f78db20c3b6c5edc2b693530818b53322ea41",
+    "mandia-compact-s2s-etape6/code/mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+    "mandia-compact-s2s-etape6/code/mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+    "mandia-compact-s2s-etape6/code/mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+    "mandia-compact-s2s-etape6/code/mandia_stage5.py": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+    "mandia-compact-s2s-etape6/code/mandia_stage6.py": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1"
+  }
+}

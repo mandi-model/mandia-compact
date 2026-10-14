@@ -1,0 +1,20 @@
+{
+  "name": "Mandia N’zassa 21M",
+  "architecture": "own hybrid encoder-decoder",
+  "parameters": 20860416,
+  "stage": 11,
+  "selected_arm": "source_contrastive_ul",
+  "selected_step": 100,
+  "status": "experimental ablation; not promoted",
+  "source_max": 512,
+  "max_new_tokens": 512,
+  "weights": {
+    "filename": "mandia-nzassa-21m-source-contrastive-ul.pt",
+    "bytes": 83483096,
+    "sha256": "40da015650884826e0c7a1d15d6c4e5c601a5cffa6209b48e2492775fd55f2a7",
+    "url": "https://github.com/mandi-model/mandia-nzassa/releases/download/nzassa-21m-v0.1/mandia-nzassa-21m-source-contrastive-ul.pt"
+  },
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "native_validated": false,
+  "full_optimizer_checkpoints": "private working Drive; inference export only in this release"
+}

@@ -1,0 +1,63 @@
+{
+  "daily_exact_counts": {
+    "small": 15,
+    "wide": 16,
+    "total": 40
+  },
+  "daily_exact_bootstrap_95_percentile_difference": {
+    "lower": 0.0,
+    "upper": 0.075,
+    "resamples": 10000,
+    "seed": 42,
+    "unit": "source family; one held-out view per family",
+    "exploratory_not_pre_registered": true
+  },
+  "paired_exact_disagreements": {
+    "wide_only": 1,
+    "small_only": 0
+  },
+  "parameter_ratio": 1.5135406218655967,
+  "timing_ratio_including_validation_and_DriveIO": 1.0204289451480728,
+  "two_context_pairs": [
+    {
+      "ids": [
+        "teacher-0112-4",
+        "teacher-0249-4"
+      ],
+      "both_exact": false,
+      "outputs_differ": true
+    },
+    {
+      "ids": [
+        "teacher-0117-4",
+        "teacher-0188-4"
+      ],
+      "both_exact": true,
+      "outputs_differ": true
+    }
+  ],
+  "review_scope": "technical source-fidelity screening by assistant, not native linguistic judgment",
+  "persistent_errors": [
+    {
+      "id": "teacher-0066-4",
+      "prompt_fr": "Contexte : C’est Mariame qui possède un mouton.\nMessage : Peux-tu dire quel animal possède Mariame ?",
+      "reference_bci": "Mariame le bua",
+      "generated_bci": "Konan le bua",
+      "finding": "Mariame changed to Konan, wrong person"
+    },
+    {
+      "id": "teacher-0112-4",
+      "prompt_fr": "Contexte : Aka consomme le pain.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+      "reference_bci": "Aka di kpaun",
+      "generated_bci": "Aka di jungble.",
+      "finding": "bread answer mismatches known source target"
+    },
+    {
+      "id": "teacher-0248-4",
+      "prompt_fr": "Contexte : L’achat de papa porte sur des chaussures.\nMessage : Peux-tu préciser ce que papa est en train d’acheter ?",
+      "reference_bci": "Baba to ngbabua.",
+      "generated_bci": "Aka to ndre.",
+      "finding": "Papa changed to Aka; shoes source target not followed"
+    }
+  ]
+}

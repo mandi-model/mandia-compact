@@ -1,0 +1,229 @@
+{
+  "counts": {
+    "train": {
+      "new_sentence_translation": 84,
+      "new_document_sentence": 51,
+      "new_paragraph_translation": 13,
+      "whole_document_translation": 4,
+      "new_written_next_turn": 5
+    },
+    "validation": {
+      "new_sentence_translation": 12,
+      "new_document_sentence": 11,
+      "new_paragraph_translation": 3,
+      "whole_document_translation": 1,
+      "grounded_advice_qa": 3
+    },
+    "test": {
+      "new_sentence_translation": 12,
+      "new_document_sentence": 26,
+      "new_paragraph_translation": 7,
+      "whole_document_translation": 2,
+      "new_written_next_turn": 5
+    }
+  },
+  "rows": 239,
+  "new_sentence_families": 108,
+  "source_doc_partitions": {
+    "0": "train",
+    "49": "train",
+    "104": "train",
+    "70": "train",
+    "47": "validation",
+    "73": "test",
+    "97": "test",
+    "7": "train",
+    "28": "test",
+    "113": "test"
+  },
+  "source_family_overlap_between_splits": false,
+  "normalized_target_overlap_between_splits": false,
+  "new_holdout_target_seen_in_prior_train": false,
+  "max_source_tokens": 485,
+  "max_target_tokens": 393,
+  "paragraph_lengths": {
+    "train": [
+      {
+        "id": "s10-doc-0-paragraph-0",
+        "french_words": 41,
+        "source_tokens": 73,
+        "baoule_words": 45,
+        "target_tokens": 70
+      },
+      {
+        "id": "s10-doc-0-paragraph-4",
+        "french_words": 58,
+        "source_tokens": 110,
+        "baoule_words": 69,
+        "target_tokens": 104
+      },
+      {
+        "id": "s10-doc-0-paragraph-8",
+        "french_words": 63,
+        "source_tokens": 112,
+        "baoule_words": 58,
+        "target_tokens": 85
+      },
+      {
+        "id": "s10-doc-0-paragraph-12",
+        "french_words": 34,
+        "source_tokens": 70,
+        "baoule_words": 42,
+        "target_tokens": 63
+      },
+      {
+        "id": "s10-doc-49-paragraph-0",
+        "french_words": 57,
+        "source_tokens": 135,
+        "baoule_words": 53,
+        "target_tokens": 102
+      },
+      {
+        "id": "s10-doc-49-paragraph-4",
+        "french_words": 43,
+        "source_tokens": 107,
+        "baoule_words": 45,
+        "target_tokens": 90
+      },
+      {
+        "id": "s10-doc-49-paragraph-8",
+        "french_words": 60,
+        "source_tokens": 120,
+        "baoule_words": 48,
+        "target_tokens": 96
+      },
+      {
+        "id": "s10-doc-49-paragraph-12",
+        "french_words": 43,
+        "source_tokens": 92,
+        "baoule_words": 43,
+        "target_tokens": 80
+      },
+      {
+        "id": "s10-doc-104-paragraph-0",
+        "french_words": 64,
+        "source_tokens": 136,
+        "baoule_words": 63,
+        "target_tokens": 100
+      },
+      {
+        "id": "s10-doc-104-paragraph-4",
+        "french_words": 63,
+        "source_tokens": 136,
+        "baoule_words": 61,
+        "target_tokens": 97
+      },
+      {
+        "id": "s10-doc-70-paragraph-0",
+        "french_words": 84,
+        "source_tokens": 165,
+        "baoule_words": 87,
+        "target_tokens": 136
+      },
+      {
+        "id": "s10-doc-70-paragraph-4",
+        "french_words": 71,
+        "source_tokens": 143,
+        "baoule_words": 72,
+        "target_tokens": 110
+      },
+      {
+        "id": "s10-doc-70-paragraph-8",
+        "french_words": 62,
+        "source_tokens": 134,
+        "baoule_words": 83,
+        "target_tokens": 130
+      }
+    ],
+    "validation": [
+      {
+        "id": "s10-doc-47-paragraph-0",
+        "french_words": 73,
+        "source_tokens": 137,
+        "baoule_words": 60,
+        "target_tokens": 102
+      },
+      {
+        "id": "s10-doc-47-paragraph-4",
+        "french_words": 76,
+        "source_tokens": 155,
+        "baoule_words": 83,
+        "target_tokens": 155
+      },
+      {
+        "id": "s10-doc-47-paragraph-8",
+        "french_words": 53,
+        "source_tokens": 105,
+        "baoule_words": 64,
+        "target_tokens": 102
+      }
+    ],
+    "test": [
+      {
+        "id": "s10-doc-73-paragraph-0",
+        "french_words": 54,
+        "source_tokens": 98,
+        "baoule_words": 49,
+        "target_tokens": 71
+      },
+      {
+        "id": "s10-doc-73-paragraph-4",
+        "french_words": 38,
+        "source_tokens": 79,
+        "baoule_words": 46,
+        "target_tokens": 71
+      },
+      {
+        "id": "s10-doc-73-paragraph-8",
+        "french_words": 61,
+        "source_tokens": 133,
+        "baoule_words": 62,
+        "target_tokens": 89
+      },
+      {
+        "id": "s10-doc-73-paragraph-12",
+        "french_words": 46,
+        "source_tokens": 91,
+        "baoule_words": 53,
+        "target_tokens": 76
+      },
+      {
+        "id": "s10-doc-97-paragraph-0",
+        "french_words": 77,
+        "source_tokens": 171,
+        "baoule_words": 90,
+        "target_tokens": 134
+      },
+      {
+        "id": "s10-doc-97-paragraph-4",
+        "french_words": 73,
+        "source_tokens": 157,
+        "baoule_words": 84,
+        "target_tokens": 113
+      },
+      {
+        "id": "s10-doc-97-paragraph-8",
+        "french_words": 37,
+        "source_tokens": 91,
+        "baoule_words": 37,
+        "target_tokens": 58
+      }
+    ]
+  },
+  "excluded": [],
+  "data_sha256": "820ef82951d2a8702fc39738820a585124d93ed9f192f6e04429fe2a8e31a768",
+  "raw_sha256": {
+    "smolsent": "f5250fee53b2bd297a4fa7f818514987cbb320e03fbccd28dc7696f9360adfe6",
+    "smoldoc": "fa56efac8e1df34fec3b81793677d4f33a3f92cfc187e92794dfe2cf9d1e6fdd"
+  },
+  "native_validation": false,
+  "authentic_recorded_new_dialogues": 0,
+  "limits": [
+    "French translated by assistant from English, not native reviewed",
+    "SMOL is published translated text, with spelling variation and potential alignment errors",
+    "5 fresh dialogue test replies from only 2 written source documents, not spontaneous recorded conversations",
+    "paragraphs share content with sentences within each same partition; no independent-content inflation",
+    "birthday reply validation is authored advice QA, not an authentic conversational validation set",
+    "no claim of reliable translation of arbitrary long French text"
+  ]
+}

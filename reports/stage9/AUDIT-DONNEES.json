@@ -1,0 +1,343 @@
+{
+  "sha256": {
+    "bible-etendue.jsonl": "36bf8130fa9c785e3e1f4ff931903f747c0bc1c064782e3146ba4200618b426c",
+    "quotidien-contextuel.jsonl": "bace73aab9ab821ed4859ea45830b2d8d17634e359af309b2904a3c2c618ec76",
+    "dialogues-ecrits-ajout.jsonl": "2e7a3f0634c96f0f8c91944db74133ca4ff0d0bc968baa4987f208a82782809a"
+  },
+  "counts": {
+    "bible": {
+      "train": 631,
+      "test": 124,
+      "validation": 88
+    },
+    "daily": {
+      "train": 554,
+      "validation": 128,
+      "test": 104
+    },
+    "written_dialogues": {
+      "train": 8,
+      "validation": 3,
+      "test": 5
+    }
+  },
+  "bible_source_rows": 721,
+  "bible_domains": {
+    "bible_reformulation": 718,
+    "bible_semantic_qa": 125
+  },
+  "historical_chapter_and_wiki_partitions_preserved": true,
+  "new_dialogue_documents_never_used_in_stage6": true,
+  "bible_normalized_targets_disjoint_between_splits": true,
+  "length_exclusions": [
+    {
+      "id": "s9-mtbci-row-2272-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2348-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2367-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2386-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2427-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2435-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2450-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2455-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2466-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2749-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2760-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2480-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2482-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2491-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2505-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2506-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2507-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2516-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2527-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2529-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2532-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2537-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2550-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2551-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2556-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2570-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2591-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2592-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2604-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2608-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2611-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2615-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2633-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2636-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2637-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2641-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2647-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2654-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2660-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2663-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2686-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2691-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2699-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2703-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2707-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2715-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2723-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2776-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2779-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2781-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2782-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2786-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2788-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2804-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2813-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2816-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2833-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2835-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2839-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2842-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2898-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2909-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2915-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2918-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2919-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2937-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2939-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2950-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2956-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2980-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2993-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-2997-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-3007-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-3015-reformulation",
+      "reason": "length; no truncation"
+    },
+    {
+      "id": "s9-mtbci-row-3021-reformulation",
+      "reason": "length; no truncation"
+    }
+  ],
+  "authentic_recorded_new_dialogues": 0,
+  "native_validation": false,
+  "limits": [
+    "Bible translations are existing mtBCI rows only, edition/verse identifiers unspecified; no new full-Bible import",
+    "most expanded Bible views are contextual reformulation, not independently verified semantic reasoning",
+    "daily rephrasing views are not new unique facts",
+    "new SMOL replies are translated written dialogues; French authored from English",
+    "known40 daily QA is already observed and uses known target families; report as regression only"
+  ]
+}

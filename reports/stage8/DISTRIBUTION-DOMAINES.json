@@ -1,0 +1,9 @@
+{
+  "stage4_train_domains_before_length_filter": {
+    "everyday": 460,
+    "software": 809,
+    "gospel": 729,
+    "lexical": 2840
+  },
+  "interpretation": "Many pairs are lexical items, not natural dialogue; exact counts before encoder length filtering."
+}

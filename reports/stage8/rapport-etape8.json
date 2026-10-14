@@ -1,0 +1,587 @@
+{
+  "experiment": {
+    "stage": 8,
+    "parent_sha256": "e6fe5b71079842d2644dba26ccfcc03c59fdfd0a9e4cdb509afad1ff613b885e",
+    "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+    "steps_per_arm": 400,
+    "lr": 1e-05,
+    "seed": 42,
+    "warmup": 40,
+    "optimizer": "fresh AdamW per arm, beta(.9,.98), wd.01, smooth.05, clip1",
+    "arms": {
+      "small_13m": 768,
+      "wide_20m": 1536
+    },
+    "scope": "pilot width ablation, same data and sampled tokens; compute NOT matched",
+    "new_data": "64 views, 40 target families, 38 existing Gospel source rows, inherited chapter split; no new real daily dialogues",
+    "literature": [
+      "https://aclanthology.org/2024.findings-acl.30/",
+      "https://arxiv.org/abs/1511.05641",
+      "https://aclanthology.org/2025.lowresnlp-1.6/"
+    ],
+    "mix": ".25 BibleQA8, .35 dailyQA16, .15 oldSMOLreply8, .15 balancedold8, .05 dailytranslation8, .05 oldreply4",
+    "selection": ".35 Bible validation CE + .35 dailyQA validation CE + .2 old balanced CE + .1 SMOL validation CE; retain14reply; oldCE<=initial+.05, SMOLCE<=initial+.1, dailyQACE<=initial+.15; freeze winner before test",
+    "native_validation": false,
+    "gpu": "NVIDIA L4",
+    "torch": "2.11.0+cu130",
+    "data_sha256": {
+      "mandia-compact-s2s-etape4/parallel-prepare.jsonl": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+      "mandia-compact-s2s-etape4/replies-prepare.jsonl": "29334943cd507b8ffa9385b530b9625aec82c0741aeade3575a30c7df7e2caf1",
+      "mandia-compact-s2s-etape4/data/waxal-baoule-text.jsonl": "4f7730d32d3324d2cc819f33d7633b2d59e01f81c8e2f38651d0377050ec69d4",
+      "mandia-compact-s2s-etape5/quotidien-prepare.jsonl": "370d3bb631a4ad4765fbe3b15e0f6019c0470ce03c687f87ac71f6fda6b3048c",
+      "mandia-compact-s2s-etape6/dialogues-prepare.jsonl": "9375c6a0918a5bf8056cecd42df0c8aff90c3439220bc45bfe10e8cc700a2184",
+      "mandia-compact-s2s-etape7/teacher-grounded-qa.jsonl": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b",
+      "mandia-compact-s2s-etape8/bible-qa-pilote.jsonl": "868ea39a2961c3b590260b3a7fab51581b82aed7db75726c4ab7369d1ede6a0e"
+    },
+    "code_sha256": {
+      "mandia-compact-s2s-etape8/mandia_stage8.py": "00481d8e6b99c00fd9f0b6b1073262d02e88454edeca038bfc2a57d42ea8dfc0",
+      "mandia-compact-s2s-etape8/mandia_expand.py": "655255a443b4a2ad7863f906603374e51bac7838c511f28b16c3acdab7ba90dd",
+      "mandia-compact-s2s-etape7/mandia_stage7.py": "6044fb5633f0d0438000f005849f78db20c3b6c5edc2b693530818b53322ea41",
+      "mandia-compact-s2s-etape6/code/mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+      "mandia-compact-s2s-etape6/code/mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+      "mandia-compact-s2s-etape6/code/mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+      "mandia-compact-s2s-etape6/code/mandia_stage5.py": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+      "mandia-compact-s2s-etape6/code/mandia_stage6.py": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1"
+    }
+  },
+  "before": {
+    "bible": {
+      "ce": 4.504769504660427,
+      "generation": {
+        "rows": 8,
+        "chrF_pp": 16.314004645267318,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      }
+    },
+    "daily": {
+      "ce": 1.3415626679490877,
+      "generation": {
+        "rows": 40,
+        "chrF_pp": 32.592097612679716,
+        "exact_match": 0.15,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      }
+    },
+    "old_stage4": {
+      "selection_score": 3.688051983488829,
+      "domains": {
+        "everyday": {
+          "loss": 3.648795682992508,
+          "supervised_tokens": 737,
+          "rows": 68
+        },
+        "software": {
+          "loss": 3.68563012745239,
+          "supervised_tokens": 978,
+          "rows": 109
+        },
+        "gospel": {
+          "loss": 3.573507969791063,
+          "supervised_tokens": 8630,
+          "rows": 169
+        },
+        "lexical": {
+          "loss": 3.8442741537193528,
+          "supervised_tokens": 1439,
+          "rows": 308
+        }
+      }
+    },
+    "old_stage5": {
+      "loss": 4.24213267570764,
+      "tasks": {
+        "translate": {
+          "loss": 4.200212890778355,
+          "rows": 52,
+          "tokens": 398
+        },
+        "guided": {
+          "loss": 4.284052460636925,
+          "rows": 52,
+          "tokens": 398
+        }
+      }
+    },
+    "old_stage6": {
+      "loss": 5.05705004606879,
+      "tasks": {
+        "translate": {
+          "loss": 5.003913231881342,
+          "tokens": 542,
+          "rows": 25
+        },
+        "reply": {
+          "loss": 5.110186860256237,
+          "tokens": 461,
+          "rows": 15
+        }
+      }
+    },
+    "trained14": {
+      "rows": 14,
+      "chrF_pp": 100.0,
+      "exact_match": 1.0,
+      "no_eos": 0,
+      "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+    }
+  },
+  "arms": {
+    "small_13m": {
+      "training": {
+        "best_step": 100,
+        "best_score": 3.1981227511025017,
+        "steps": 400,
+        "real_tokens": 1048745,
+        "supervised_tokens": 334216,
+        "negative_forward_tokens": 0,
+        "valid_negative_pairs": 0,
+        "wall_seconds": 139.78542456800005,
+        "history": [
+          {
+            "step": 0,
+            "validation": {
+              "bible_ce": 4.545902705692745,
+              "daily_ce": 1.3383887374161074,
+              "old_ce": 3.995710223265668,
+              "smol_ce": 5.374372326404217,
+              "reply14_exact": 1.0,
+              "selection_score": 3.3960812823816533,
+              "eligible": true
+            }
+          },
+          {
+            "step": 50,
+            "objective": 1.8531069457530975,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.417923507156906,
+              "daily_ce": 1.1242389550945102,
+              "old_ce": 3.9781874490897025,
+              "smol_ce": 5.394407349608855,
+              "reply14_exact": 1.0,
+              "selection_score": 3.274835086566821,
+              "eligible": true
+            }
+          },
+          {
+            "step": 100,
+            "objective": 1.900899726897478,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.4366352641499125,
+              "daily_ce": 0.8621988488523752,
+              "old_ce": 3.9921610218286228,
+              "smol_ce": 5.450986071859765,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1981227511025017,
+              "eligible": true
+            }
+          },
+          {
+            "step": 150,
+            "objective": 1.643519215285778,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.464666193181818,
+              "daily_ce": 0.711311980381908,
+              "old_ce": 4.008156167613095,
+              "smol_ce": 5.49709885088196,
+              "reply14_exact": 1.0,
+              "selection_score": 3.162933479358119,
+              "eligible": false
+            }
+          },
+          {
+            "step": 200,
+            "objective": 1.6313392333686352,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.491600623497596,
+              "daily_ce": 0.6020013437975174,
+              "old_ce": 4.020034014933209,
+              "smol_ce": 5.527094754921941,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1394769670321256,
+              "eligible": false
+            }
+          },
+          {
+            "step": 250,
+            "objective": 1.505074318498373,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.528722803075831,
+              "daily_ce": 0.5391086347951185,
+              "old_ce": 4.030254574126422,
+              "smol_ce": 5.536406830853406,
+              "reply14_exact": 1.0,
+              "selection_score": 3.133432601165457,
+              "eligible": false
+            }
+          },
+          {
+            "step": 300,
+            "objective": 1.4771078862249851,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.5451433942034525,
+              "daily_ce": 0.49005053987439046,
+              "old_ce": 4.036014810158837,
+              "smol_ce": 5.54325643429624,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1238464823886365,
+              "eligible": false
+            }
+          },
+          {
+            "step": 350,
+            "objective": 1.3134932667016983,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.558236929086538,
+              "daily_ce": 0.4676844321641346,
+              "old_ce": 4.039382890512835,
+              "smol_ce": 5.555302639590483,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1224793184993507,
+              "eligible": false
+            }
+          },
+          {
+            "step": 400,
+            "objective": 1.4757229425013065,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.5636985085227275,
+              "daily_ce": 0.447395247901046,
+              "old_ce": 4.041696390977061,
+              "smol_ce": 5.562297959317531,
+              "reply14_exact": 1.0,
+              "selection_score": 3.118451888875486,
+              "eligible": false
+            }
+          }
+        ]
+      },
+      "parameters": 13782528,
+      "test": {
+        "bible": {
+          "ce": 4.5364129094794245,
+          "generation": {
+            "rows": 8,
+            "chrF_pp": 19.62646559893243,
+            "exact_match": 0.0,
+            "no_eos": 0,
+            "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+          }
+        },
+        "daily": {
+          "ce": 0.8636457840068228,
+          "generation": {
+            "rows": 40,
+            "chrF_pp": 48.389060250657614,
+            "exact_match": 0.375,
+            "no_eos": 0,
+            "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+          }
+        },
+        "old_stage4": {
+          "selection_score": 3.67726332232513,
+          "domains": {
+            "everyday": {
+              "loss": 3.627036530741843,
+              "supervised_tokens": 737,
+              "rows": 68
+            },
+            "software": {
+              "loss": 3.6509858737937755,
+              "supervised_tokens": 978,
+              "rows": 109
+            },
+            "gospel": {
+              "loss": 3.575015686671676,
+              "supervised_tokens": 8630,
+              "rows": 169
+            },
+            "lexical": {
+              "loss": 3.856015198093226,
+              "supervised_tokens": 1439,
+              "rows": 308
+            }
+          }
+        },
+        "old_stage5": {
+          "loss": 4.258335784452045,
+          "tasks": {
+            "translate": {
+              "loss": 4.202609881683809,
+              "rows": 52,
+              "tokens": 398
+            },
+            "guided": {
+              "loss": 4.314061687220281,
+              "rows": 52,
+              "tokens": 398
+            }
+          }
+        },
+        "old_stage6": {
+          "loss": 5.124884396636162,
+          "tasks": {
+            "translate": {
+              "loss": 5.073301195658441,
+              "tokens": 542,
+              "rows": 25
+            },
+            "reply": {
+              "loss": 5.1764675976138825,
+              "tokens": 461,
+              "rows": 15
+            }
+          }
+        },
+        "trained14": {
+          "rows": 14,
+          "chrF_pp": 100.0,
+          "exact_match": 1.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        }
+      }
+    },
+    "wide_20m": {
+      "training": {
+        "best_step": 100,
+        "best_score": 3.1815269579116894,
+        "steps": 400,
+        "real_tokens": 1048745,
+        "supervised_tokens": 334216,
+        "negative_forward_tokens": 0,
+        "valid_negative_pairs": 0,
+        "wall_seconds": 142.64109333899978,
+        "history": [
+          {
+            "step": 0,
+            "validation": {
+              "bible_ce": 4.545902705692745,
+              "daily_ce": 1.3380931879850042,
+              "old_ce": 3.9959358276053867,
+              "smol_ce": 5.373900938813535,
+              "reply14_exact": 1.0,
+              "selection_score": 3.3959758221896434,
+              "eligible": true
+            }
+          },
+          {
+            "step": 50,
+            "objective": 1.8300209641456604,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.4189756166684875,
+              "daily_ce": 1.0935625421920878,
+              "old_ce": 3.978629896181459,
+              "smol_ce": 5.3968566902664925,
+              "reply14_exact": 1.0,
+              "selection_score": 3.2648000038641425,
+              "eligible": true
+            }
+          },
+          {
+            "step": 100,
+            "objective": 1.8498270101845264,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.44807145979021,
+              "daily_ce": 0.7986480021636758,
+              "old_ce": 3.997510613162572,
+              "smol_ce": 5.4567302359531515,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1815269579116894,
+              "eligible": true
+            }
+          },
+          {
+            "step": 150,
+            "objective": 1.571575302630663,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.484873951731862,
+              "daily_ce": 0.6296976716726418,
+              "old_ce": 4.01498029585637,
+              "smol_ce": 5.511577873257092,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1442539146885595,
+              "eligible": false
+            }
+          },
+          {
+            "step": 200,
+            "objective": 1.556076105684042,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.518497920536495,
+              "daily_ce": 0.5138482215420511,
+              "old_ce": 4.029393783291116,
+              "smol_ce": 5.537958793125004,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1209957856982147,
+              "eligible": false
+            }
+          },
+          {
+            "step": 250,
+            "objective": 1.4221762455999851,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.559988595388986,
+              "daily_ce": 0.450821377286975,
+              "old_ce": 4.039632225341286,
+              "smol_ce": 5.548914805658336,
+              "reply14_exact": 1.0,
+              "selection_score": 3.116601416070677,
+              "eligible": false
+            }
+          },
+          {
+            "step": 300,
+            "objective": 1.4069922268390656,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.574880319875437,
+              "daily_ce": 0.4031555508607186,
+              "old_ce": 4.042835552094949,
+              "smol_ce": 5.553555360480921,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1062352012247363,
+              "eligible": false
+            }
+          },
+          {
+            "step": 350,
+            "objective": 1.2428836151957512,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.590900981342876,
+              "daily_ce": 0.38423895355839055,
+              "old_ce": 4.045525157477336,
+              "smol_ce": 5.568229978950463,
+              "reply14_exact": 1.0,
+              "selection_score": 3.1072270066059566,
+              "eligible": false
+            }
+          },
+          {
+            "step": 400,
+            "objective": 1.3971826620399952,
+            "hinge": 0.0,
+            "validation": {
+              "bible_ce": 4.5970441911604025,
+              "daily_ce": 0.36462079758612104,
+              "old_ce": 4.0494510435210325,
+              "smol_ce": 5.5716265018899644,
+              "reply14_exact": 1.0,
+              "selection_score": 3.103635604954486,
+              "eligible": false
+            }
+          }
+        ]
+      },
+      "parameters": 20860416,
+      "test": {
+        "bible": {
+          "ce": 4.547134852645421,
+          "generation": {
+            "rows": 8,
+            "chrF_pp": 19.186645574339398,
+            "exact_match": 0.0,
+            "no_eos": 0,
+            "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+          }
+        },
+        "daily": {
+          "ce": 0.7950100226690305,
+          "generation": {
+            "rows": 40,
+            "chrF_pp": 49.508254638778,
+            "exact_match": 0.4,
+            "no_eos": 0,
+            "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+          }
+        },
+        "old_stage4": {
+          "selection_score": 3.680858806017508,
+          "domains": {
+            "everyday": {
+              "loss": 3.6265550817854533,
+              "supervised_tokens": 737,
+              "rows": 68
+            },
+            "software": {
+              "loss": 3.654360749726403,
+              "supervised_tokens": 978,
+              "rows": 109
+            },
+            "gospel": {
+              "loss": 3.5860716358949523,
+              "supervised_tokens": 8630,
+              "rows": 169
+            },
+            "lexical": {
+              "loss": 3.856447756663224,
+              "supervised_tokens": 1439,
+              "rows": 308
+            }
+          }
+        },
+        "old_stage5": {
+          "loss": 4.25961184861073,
+          "tasks": {
+            "translate": {
+              "loss": 4.2039938691872445,
+              "rows": 52,
+              "tokens": 398
+            },
+            "guided": {
+              "loss": 4.315229828034214,
+              "rows": 52,
+              "tokens": 398
+            }
+          }
+        },
+        "old_stage6": {
+          "loss": 5.135665007201163,
+          "tasks": {
+            "translate": {
+              "loss": 5.085471740947878,
+              "tokens": 542,
+              "rows": 25
+            },
+            "reply": {
+              "loss": 5.185858273454447,
+              "tokens": 461,
+              "rows": 15
+            }
+          }
+        },
+        "trained14": {
+          "rows": 14,
+          "chrF_pp": 100.0,
+          "exact_match": 1.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        }
+      }
+    }
+  },
+  "selected_by_validation": "wide_20m",
+  "same_real_and_supervised_tokens_verified": true,
+  "limits": [
+    "tiny Bible QA pilot; no new natural daily conversations",
+    "one seed, not equal FLOPs",
+    "Bible chapter holdouts have been evaluated previously for translation; stories can overlap",
+    "native naturalness not assessed; no fluency or efficiency superiority claim"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "scope": "prepared TRAIN text only; before length filtering; exact Unicode strings, no semantic dedup; monolingual WAXAL excluded; no resampling counts",
+  "by_stage": {
+    "mandia-etape4/parallel-prepare.jsonl": {
+      "train_views": 4838,
+      "unique_exact_pairs": 4764,
+      "unique_exact_targets": 4077,
+      "unique_pair_source_plus_target_tokens": 136152,
+      "unique_target_tokens": 63786
+    },
+    "mandia-etape4/replies-prepare.jsonl": {
+      "train_views": 14,
+      "unique_exact_pairs": 14,
+      "unique_exact_targets": 3,
+      "unique_pair_source_plus_target_tokens": 156,
+      "unique_target_tokens": 14
+    },
+    "mandia-etape5/quotidien-prepare.jsonl": {
+      "train_views": 277,
+      "unique_exact_pairs": 277,
+      "unique_exact_targets": 277,
+      "unique_pair_source_plus_target_tokens": 5289,
+      "unique_target_tokens": 2142
+    },
+    "mandia-etape6/dialogues-prepare.jsonl": {
+      "train_views": 101,
+      "unique_exact_pairs": 101,
+      "unique_exact_targets": 86,
+      "unique_pair_source_plus_target_tokens": 5916,
+      "unique_target_tokens": 1926
+    },
+    "mandia-etape7/teacher-grounded-qa.jsonl": {
+      "train_views": 120,
+      "unique_exact_pairs": 118,
+      "unique_exact_targets": 40,
+      "unique_pair_source_plus_target_tokens": 4798,
+      "unique_target_tokens": 298
+    },
+    "mandia-etape8/bible-qa-pilote.jsonl": {
+      "train_views": 48,
+      "unique_exact_pairs": 48,
+      "unique_exact_targets": 24,
+      "unique_pair_source_plus_target_tokens": 4567,
+      "unique_target_tokens": 792
+    }
+  },
+  "union_unique_targets": 4442,
+  "union_unique_target_tokens": 67887,
+  "union_unique_pairs": 5320,
+  "union_unique_pair_source_plus_target_tokens": 156861
+}

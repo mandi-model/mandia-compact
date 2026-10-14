@@ -1,0 +1,93 @@
+{
+  "method": "metadata-only maximum-valid deterministic cyclic rotation; per-row NLL, padding ignored; same pairs for all four models",
+  "original_report": "Original one-position permutation yields only2 cross-document pairs per test group, retained as historical evidence; use this supplement for broader source diagnostic",
+  "selection_unchanged": true,
+  "models": {
+    "parent": {
+      "fresh_translation": {
+        "rows": 30,
+        "valid_pairs": 28,
+        "rotation": 14,
+        "matched_nll": 5.019308090209961,
+        "permuted_nll": 5.113807678222656,
+        "gap": 0.09450017660856247,
+        "pairs_favoring_correct_source": 17
+      },
+      "fresh_written_reply": {
+        "rows": 6,
+        "valid_pairs": 6,
+        "rotation": 3,
+        "matched_nll": 5.089295864105225,
+        "permuted_nll": 5.201228618621826,
+        "gap": 0.1119331568479538,
+        "pairs_favoring_correct_source": 4
+      }
+    },
+    "ce_control": {
+      "fresh_translation": {
+        "rows": 30,
+        "valid_pairs": 28,
+        "rotation": 14,
+        "matched_nll": 4.996077537536621,
+        "permuted_nll": 5.093760013580322,
+        "gap": 0.09768279641866684,
+        "pairs_favoring_correct_source": 16
+      },
+      "fresh_written_reply": {
+        "rows": 6,
+        "valid_pairs": 6,
+        "rotation": 3,
+        "matched_nll": 5.077661037445068,
+        "permuted_nll": 5.215662002563477,
+        "gap": 0.1380009651184082,
+        "pairs_favoring_correct_source": 4
+      }
+    },
+    "source_contrastive": {
+      "fresh_translation": {
+        "rows": 30,
+        "valid_pairs": 28,
+        "rotation": 14,
+        "matched_nll": 4.998970031738281,
+        "permuted_nll": 5.096671104431152,
+        "gap": 0.0977005660533905,
+        "pairs_favoring_correct_source": 16
+      },
+      "fresh_written_reply": {
+        "rows": 6,
+        "valid_pairs": 6,
+        "rotation": 3,
+        "matched_nll": 5.078145980834961,
+        "permuted_nll": 5.215158462524414,
+        "gap": 0.1370128095149994,
+        "pairs_favoring_correct_source": 4
+      }
+    },
+    "source_contrastive_ul": {
+      "fresh_translation": {
+        "rows": 30,
+        "valid_pairs": 28,
+        "rotation": 14,
+        "matched_nll": 5.036234378814697,
+        "permuted_nll": 5.120140075683594,
+        "gap": 0.08390586078166962,
+        "pairs_favoring_correct_source": 16
+      },
+      "fresh_written_reply": {
+        "rows": 6,
+        "valid_pairs": 6,
+        "rotation": 3,
+        "matched_nll": 5.152581691741943,
+        "permuted_nll": 5.278929233551025,
+        "gap": 0.12634746730327606,
+        "pairs_favoring_correct_source": 4
+      }
+    }
+  },
+  "limits": [
+    "only2 source document families per group",
+    "diagnostic only, not semantic/native correctness",
+    "28 of30 valid translation pairs because source families have unequal16/14 sizes",
+    "no new training or checkpoint selection"
+  ]
+}

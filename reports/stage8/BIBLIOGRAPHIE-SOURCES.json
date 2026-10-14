@@ -1,0 +1,50 @@
+[
+  {
+    "file": "lowresource2019.pdf",
+    "source": "https://aclanthology.org/P19-1021.pdf",
+    "bytes": 358743,
+    "sha256": "a4bad319e144251302b1b528cb74e723bc8a7172bf5a9df9e55cbb5793fb0781"
+  },
+  {
+    "file": "transformer2020.pdf",
+    "source": "https://aclanthology.org/2020.coling-main.304.pdf",
+    "bytes": 314644,
+    "sha256": "4d4ccb3cc1632a5aad3fa9e0fc8a493216c1fdb064f92f6a648db360a06e06d5"
+  },
+  {
+    "file": "efficient2025.pdf",
+    "source": "https://aclanthology.org/2025.lowresnlp-1.6.pdf",
+    "bytes": 4944375,
+    "sha256": "f6d5a6ce316b6abdf5f66c83def46bce27e5545320ba042767f2e3314cca58d2"
+  },
+  {
+    "file": "backtranslation2016.pdf",
+    "source": "https://aclanthology.org/P16-1009.pdf",
+    "bytes": 172932,
+    "sha256": "67d72893ec8583a543c28c408919ed5b5dbf4e6c5f39a3716a7e4180883dda8c"
+  },
+  {
+    "file": "distillation2016.pdf",
+    "source": "https://aclanthology.org/D16-1139.pdf",
+    "bytes": 492192,
+    "sha256": "026fe1dfd254388a4fcf8113a5c0c15ff58bdaa0b0507c55184877fdd33226a8"
+  },
+  {
+    "file": "xinstruction2024.pdf",
+    "source": "https://aclanthology.org/2024.findings-acl.30.pdf",
+    "bytes": 1881004,
+    "sha256": "e23f11fe650455b7cccba432fbd9996125203630b2f35d25ceacde9a93aa8f32"
+  },
+  {
+    "file": "net2net2016.pdf",
+    "source": "https://arxiv.org/pdf/1511.05641",
+    "bytes": 514031,
+    "sha256": "f7cf5feefff9dc1ce3dca735e0ce1f0adb6b70a637d094842792a96463d5f76d"
+  },
+  {
+    "file": "chinchilla2022.pdf",
+    "source": "https://arxiv.org/pdf/2203.15556",
+    "bytes": 6004349,
+    "sha256": "3fd3632a8ef48171bd25282990221d49535d75356192f068b3b2ebe08f2aedd4"
+  }
+]

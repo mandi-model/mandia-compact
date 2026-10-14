@@ -1,0 +1,94 @@
+MandiaCompact — étape 10 : traduire du français seul et tester de nouvelles familles
+14 octobre 2026. Les résultats sont exclusivement ceux du rapport réel du run.
+
+Objectif : améliorer la traduction de texte français et les réponses sur des
+entrées nouvelles, sans sélectionner sur les 40 questions déjà connues.
+
+Nouvelles données préparées : 239 vues, issues de 108 nouvelles familles de
+phrases SMOLSent et de documents SMOLDoc supplémentaires. TRAIN : 84 phrases
+isolées, 51 phrases documentaires, 13 blocs, 4 documents entiers, 5 nouveaux
+tours écrits. Validation : 12 phrases isolées, 11 phrases d'un document réservé,
+3 blocs, 1 document entier et 3 questions de conseil rédigées par l'assistant.
+Test : 12 phrases isolées, 26 phrases de deux documents réservés, 7 blocs,
+2 documents entiers et 5 nouveaux tours provenant de deux autres documents.
+
+Les blocs et documents entiers réutilisent le contenu de leurs phrases, au sein
+de la même partition. Ils n'ajoutent donc pas autant de contenu indépendant.
+Les familles de source et les cibles normalisées sont disjointes entre les
+trois partitions. Les cibles des nouveaux holdouts n'existent pas dans les
+précédentes données TRAIN vérifiées. Les anciens tests restent des régressions.
+
+Français : traduction manuelle par l'assistant de l'anglais publié, contrôle
+de fidélité côté français, pas de traduction française certifiée par un humain.
+Baoulé : repris des traductions publiées, sans génération libre par l'assistant.
+Les tours écrits retirent uniquement les préfixes de rôle explicites. Les lignes
+avec doute d'alignement manifeste et certains contenus douteux sont écartés.
+Le corpus peut encore contenir des erreurs de traduction ou d'orthographe.
+Ce ne sont pas des conversations spontanées enregistrées ; aucune nouvelle
+conversation enregistrée ouverte français–baoulé n'a été admise à cette étape.
+La validation de réponse nouvelle sur l'anniversaire est une question rédigée
+par l'assistant avec réponse attestée, pas un dialogue d'origine : la sélection
+inclut aussi les tours de validation écrits de l'étape6.
+
+Modèle : mêmes poids MandiaCompact d'étape9 en point de départ, 20 860 416
+paramètres appris ; pas de modèle externe préentraîné. La limite technique
+du décodeur passe de 256 à 512 ; RoPE et tous les paramètres restent identiques.
+Le modèle parent de comparaison reçoit la même limite512 sans entraînement,
+pour éviter qu'il soit incapable d'exécuter le test long par une simple erreur
+de limite. Un test des logits courts vérifie que ce réglage ne change pas
+ses prédictions courtes avant apprentissage. Un petit test de cache dépasse256.
+
+Textes : jusqu'à 485 tokens français et 393 tokens baoulé de référence ; les
+documents comprennent environ 143 à 220 mots français. Aucun texte n'est
+tronqué pour entrer dans la limite. Le module d'inférence traite les entrées
+plus longues en segments ; une vérification sur 1320 mots conserve chaque mot.
+Cela permet l'exécution, sans garantir la fidélité ni la continuité du sens
+entre segments. Une sortie qui atteint la limite sans EOS est signalée comme
+inachevée. Produire davantage de mots n'est pas une preuve de bonne traduction.
+
+Entraînement : un bras, 1200 mises à jour, seed42, AdamW neuf, LR2e-5,
+warmup40, décroissance cosinus à20%, lissage.05, clip1. Mélange de nouvelles
+traductions courtes/longues, tours écrits nouveaux et précédents, et rejeu des
+anciens domaines. Le test connu40 n'entre ni dans l'objectif de sélection,
+ni comme groupe QA spécifique du mélange. Ses phrases sources peuvent encore
+apparaître dans le rejeu historique de traduction : il ne devient pas inédit.
+Sélection uniquement sur les validations, avec garde contre l'oubli ; le meilleur
+poids peut rester le parent si aucune amélioration admissible n'est trouvée.
+Tous les checkpoints complets, optimiseur et états aléatoires sont dans Drive.
+
+Mesures : chrF++ et correspondance normalisée avec une référence écrite,
+perte CE, longueur de sortie et fin EOS. Une correspondance non exacte n'est
+pas automatiquement fausse : une reformulation correcte peut différer. Aucune
+note d'exactitude linguistique ou de fluidité native n'est donnée. Les erreurs
+de sens évidentes observables sont décrites séparément. Deux documents longs
+et cinq tours ne constituent pas un benchmark représentatif.
+
+Sources ouvertes :
+Google SMOL — CC-BY-4.0, révision
+fdaff3a1a019f89fa30a562a85d7c1d3e9150444.
+https://huggingface.co/datasets/google/smol
+https://huggingface.co/datasets/google/smol/blob/main/README.md
+SMOLSent anglais–baoulé SHA256 :
+f5250fee53b2bd297a4fa7f818514987cbb320e03fbccd28dc7696f9360adfe6
+SMOLDoc anglais–baoulé SHA256 :
+fa56efac8e1df34fec3b81793677d4f33a3f92cfc187e92794dfe2cf9d1e6fdd
+Les auteurs SMOL et leurs traducteurs sont crédités ; les sources originales
+et les transformations françaises sont conservées avec chaque ligne.
+Les sources et licences du rejeu restent celles des étapes4–9 : mtBCI,
+Wiktionnaire/Kaikki CC-BY-SA-4.0 et SMOL CC-BY-4.0, avec leurs crédits précédents.
+
+Recherche de données supplémentaires :
+- Tree-AI-lab/smoltalk-multilingue et kouman-identity-instruct : API Hugging
+  Face renvoyant401 lors de cette vérification ; non admis et pas contournés.
+- GATITOS FrancophonIA : lexique ouvert, essentiellement des mots et courtes
+  expressions ; contenu déjà exploité dans le socle, pas présenté comme des
+  dialogues nouveaux ni comme une nouvelle ressource indépendante.
+- UDHR : texte spécialisé, pas conversationnel ; pas ajouté.
+- Weblate : licences des projets à contrôler ; essentiellement logiciel,
+  déjà présent dans le socle ; pas présenté comme corpus de dialogue.
+- Les pistes CIEL-F/Peace Corps restent utiles pour la recherche, sans nouvel
+  accès ou droit de réutilisation confirmé pour un corpus parallèle complet.
+
+Pas de nouvelle affirmation de SOTA, de nouveauté architecturale ou de gain
+d'efficacité générale. Une augmentation de la longueur accroît le coût des
+activations et du cache, malgré le nombre de paramètres inchangé.

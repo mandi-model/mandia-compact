@@ -1,0 +1,20 @@
+MandiaCompact étape 8 — protocole figé avant évaluation finale
+
+But : tester une augmentation de largeur FFN sur nos propres poids, avec un premier pilote QA biblique. La question centrale reste la fidélité au français et la réponse baoulé ; aucune nouveauté architecturale revendiquée.
+
+Parent : modèle étape 7 teacher_french sélectionné à 50, SHA256 e6fe5b71079842d2644dba26ccfcc03c59fdfd0a9e4cdb509afad1ff613b885e.
+Bras A : SwiGLU 768, 13 782 528 paramètres.
+Bras B : SwiGLU 1536, 20 860 416 paramètres, nouveaux canaux de sortie nuls ; copies des autres poids. Aucun poids externe. Même tokenizer 4096.
+
+Données : 48 vues BibleQA train, 8 validation et 8 test, 40 familles de cibles sur 38 lignes sources mtBCI déjà présentes. Chapitres historiques conservés. Les nouvelles questions bibliques n'avaient pas été évaluées, mais les textes de traduction correspondants appartiennent à des partitions déjà utilisées lors des évaluations précédentes. Les récits évangéliques peuvent se recouvrir entre chapitres/livres. Les passages religieux ne sont pas des dialogues quotidiens enregistrés. Les réponses baoulé sont des extraits exacts, pas une validation de leur naturel.
+
+Budget : 400 pas par bras, seed 42, mêmes tirages et mêmes tokens non rembourrés (à vérifier après exécution). Ce budget n'est pas égal en FLOPs, mémoire ou temps. LR 1e-5, warmup40 puis cosine jusqu'à 20%, AdamW(.9,.98), weight_decay .01, label smoothing .05, clip1.0, bf16 L4.
+Mélange des objectifs : BibleQA .25 ; QA quotidien étape7 .35 ; réponses SMOL étape6 .15 ; anciens domaines .15 en rotation ; traductions quotidiennes étape5 .05 ; 14 réponses simples .05. Moyenne de perte par token pour chaque groupe, somme pondérée des groupes. Le nombre de tokens de chaque groupe ne définit donc pas son poids dans l'objectif.
+
+Contrôles avant entraînement : préservation float32 vérifiée sur les vrais poids et un lot de quatre exemples ; BF16 comparé séparément. La différence maximale BF16 mesurée est 0.0390625 sur les logits, avec mêmes argmax sur ce lot seulement. Aucun déterminisme numérique global GPU revendiqué. Petit contrôle CPU : cache/full decode cohérents, nouveaux canaux de sortie avec gradients non nuls. Reprise exacte du trainer vérifiée sur fixture CPU avec poids, AdamW, RNG et compteurs ; pas de preuve bitwise GPU.
+
+Sélection : toutes les 50 étapes, score .35 CE Bible validation + .35 CE QA quotidien validation + .2 CE anciens domaines + .1 CE SMOL validation. Gardes : 14 réponses simples exactes, anciens domaines <= perte initiale + .05, SMOL <= initiale + .10, QA quotidien <= initiale + .15. Les étapes inéligibles ne remplacent pas le meilleur checkpoint. Le parent reste candidat à l'étape0. Choix du bras gelé avant calcul des tests. Les anciennes partitions test sont des contrôles de régression déjà observés, pas une nouvelle preuve indépendante.
+
+Sauvegarde : checkpoint-best.pt pour la sélection, checkpoint-last.pt complet avec optimiseur/RNG/compteurs/signature à 0/100/200/300/400 dans Drive, puis model.pt léger pour l'inférence. Aucun poids entraîné téléchargé sur la machine locale. Un arrêt puis relancement reprend uniquement une signature identique. Les temps de fin comprennent calcul, validations et I/O Drive ; ils ne constituent pas un benchmark de débit GPU pur.
+
+Résultats prévus : CE, chrF++, correspondance exacte, sorties complètes pour Bible8 et quotidien40, anciens tests4/5/6 et maintien14. Une graine et huit exemples bibliques test ne suffisent pas à conclure sur la conversation générale ou la supériorité architecturale. À compléter après exécution par le bilan réel, sans réécrire ce protocole.

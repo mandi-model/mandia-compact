@@ -1,0 +1,249 @@
+{
+  "pilot_control": {
+    "gained": 6,
+    "lost": 1,
+    "changes": [
+      {
+        "id": "teacher-0074-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est la mangue que Koffi cueille.\nMessage : Peux-tu préciser le fruit que cueille Koffi ?",
+        "reference": "Koffi titi mango.",
+        "before": "Koffi wun ako.",
+        "after": "Koffi titi mango."
+      },
+      {
+        "id": "teacher-0112-4",
+        "became_exact": true,
+        "prompt": "Contexte : Aka consomme le pain.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+        "reference": "Aka di kpaun",
+        "before": "Aka di jungble.",
+        "after": "Aka di kpaun"
+      },
+      {
+        "id": "teacher-0137-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Aka qui élève beaucoup de poulets.\nMessage : Peux-tu décrire l’élevage dont s’occupe Aka ?",
+        "reference": "Aka ta akɔ kpanngban",
+        "before": "Aka to ndre.",
+        "after": "Aka ta akɔ kpanngban"
+      },
+      {
+        "id": "teacher-0188-4",
+        "became_exact": false,
+        "prompt": "Contexte : Ce que voit Aka est un aigle.\nMessage : Peux-tu préciser l’animal qu’Aka aperçoit ?",
+        "reference": "Aka wun kɔliɛ.",
+        "before": "Aka wun kɔliɛ.",
+        "after": "Aka wun ndo."
+      },
+      {
+        "id": "teacher-0229-4",
+        "became_exact": true,
+        "prompt": "Contexte : L’arrivée dont on parle est celle de l’institutrice.\nMessage : Peux-tu préciser qui est arrivé ?",
+        "reference": "Mɛtrɛsi bali.",
+        "before": "Be su kan blɔfuɛ.",
+        "after": "Mɛtrɛsi bali."
+      },
+      {
+        "id": "teacher-0290-4",
+        "became_exact": true,
+        "prompt": "Contexte : Koffi consomme les biscuits.\nMessage : Peux-tu préciser ce que Koffi est en train de manger ?",
+        "reference": "Koffi di bisikli.",
+        "before": "Koffi di jungble tro.",
+        "after": "Koffi di bisikli."
+      },
+      {
+        "id": "teacher-0373-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est mille francs que Yao a.\nMessage : Peux-tu préciser la somme d’argent que possède Yao ?",
+        "reference": "Yao le kotokun kun.",
+        "before": "Yao le pantanlo’n kun.",
+        "after": "Yao le kotokun kun."
+      }
+    ]
+  },
+  "expanded_bible": {
+    "gained": 19,
+    "lost": 0,
+    "changes": [
+      {
+        "id": "teacher-0032-4",
+        "became_exact": true,
+        "prompt": "Contexte : La sensation de faim est présente chez l’enfant.\nMessage : Peux-tu décrire ce que ressent l’enfant ?",
+        "reference": "ba le awe.",
+        "before": "Yao le pkanza.",
+        "after": "ba le awe."
+      },
+      {
+        "id": "teacher-0058-4",
+        "became_exact": true,
+        "prompt": "Contexte : La largeur du chemin est faible.\nMessage : Peux-tu préciser comment est le chemin ?",
+        "reference": "Atini'n ti fii",
+        "before": "Be kwla fa man fluwa bue duman mun be ti.",
+        "after": "Atini'n ti fii"
+      },
+      {
+        "id": "teacher-0066-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Mariame qui possède un mouton.\nMessage : Peux-tu dire quel animal possède Mariame ?",
+        "reference": "Mariame le bua",
+        "before": "Konan le bua",
+        "after": "Mariame le bua"
+      },
+      {
+        "id": "teacher-0074-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est la mangue que Koffi cueille.\nMessage : Peux-tu préciser le fruit que cueille Koffi ?",
+        "reference": "Koffi titi mango.",
+        "before": "Koffi wun ako.",
+        "after": "Koffi titi mango."
+      },
+      {
+        "id": "teacher-0082-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Aya qui a une cabane.\nMessage : Peux-tu préciser le logement qui appartient à Aya ?",
+        "reference": "Aya le jin",
+        "before": "Aya le n'si.",
+        "after": "Aya le jin"
+      },
+      {
+        "id": "teacher-0085-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Aya qui a un champ de coton.\nMessage : Peux-tu préciser la culture du champ qu’Aya possède ?",
+        "reference": "Aya le jese fie",
+        "before": "Aya le jin",
+        "after": "Aya le jese fie"
+      },
+      {
+        "id": "teacher-0106-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Aka qui conduit la voiture.\nMessage : Peux-tu décrire ce qu’Aka est en train de faire ?",
+        "reference": "Aka kondi l’auto.",
+        "before": "Aka to ndre.",
+        "after": "Aka kondi l’auto."
+      },
+      {
+        "id": "teacher-0112-4",
+        "became_exact": true,
+        "prompt": "Contexte : Aka consomme le pain.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+        "reference": "Aka di kpaun",
+        "before": "Aka di jungble.",
+        "after": "Aka di kpaun"
+      },
+      {
+        "id": "teacher-0137-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Aka qui élève beaucoup de poulets.\nMessage : Peux-tu décrire l’élevage dont s’occupe Aka ?",
+        "reference": "Aka ta akɔ kpanngban",
+        "before": "Aka to ndre.",
+        "after": "Aka ta akɔ kpanngban"
+      },
+      {
+        "id": "teacher-0166-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Konan qui fait sécher ses vêtements.\nMessage : Peux-tu décrire ce que Konan fait de ses habits ?",
+        "reference": "Konan wlɛ i tralɛ’",
+        "before": "Be su kan blɔfuɛ.",
+        "after": "Konan wlɛ i tralɛ’"
+      },
+      {
+        "id": "teacher-0209-4",
+        "became_exact": true,
+        "prompt": "Contexte : La chèvre consomme de l’herbe.\nMessage : Peux-tu préciser ce que la chèvre mange ?",
+        "reference": "boli di cɔkɔ",
+        "before": "Konan le boli.",
+        "after": "boli di cɔkɔ"
+      },
+      {
+        "id": "teacher-0229-4",
+        "became_exact": true,
+        "prompt": "Contexte : L’arrivée dont on parle est celle de l’institutrice.\nMessage : Peux-tu préciser qui est arrivé ?",
+        "reference": "Mɛtrɛsi bali.",
+        "before": "Be su kan blɔfuɛ.",
+        "after": "Mɛtrɛsi bali."
+      },
+      {
+        "id": "teacher-0240-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est Aya qu’Aka console.\nMessage : Peux-tu décrire ce qu’Aka fait pour Aya ?",
+        "reference": "Aka lualua Aya.",
+        "before": "Aka di ndo.",
+        "after": "Aka lualua Aya."
+      },
+      {
+        "id": "teacher-0241-4",
+        "became_exact": true,
+        "prompt": "Contexte : Yao monte à bord du bateau.\nMessage : Peux-tu préciser où Yao est en train de monter ?",
+        "reference": "Yao fu mmeli nun.",
+        "before": "Yao di jungble tro.",
+        "after": "Yao fu mmeli nun."
+      },
+      {
+        "id": "teacher-0290-4",
+        "became_exact": true,
+        "prompt": "Contexte : Koffi consomme les biscuits.\nMessage : Peux-tu préciser ce que Koffi est en train de manger ?",
+        "reference": "Koffi di bisikli.",
+        "before": "Koffi di jungble tro.",
+        "after": "Koffi di bisikli."
+      },
+      {
+        "id": "teacher-0334-4",
+        "became_exact": true,
+        "prompt": "Contexte : Koffi est en proie à la colère.\nMessage : Peux-tu décrire ce que ressent Koffi ?",
+        "reference": "Koffi ti nyannyrinfuɛ.",
+        "before": "Koffi di jungble tro.",
+        "after": "Koffi ti nyannyrinfuɛ."
+      },
+      {
+        "id": "teacher-0339-4",
+        "became_exact": true,
+        "prompt": "Contexte : Il y a de la chaleur aujourd’hui.\nMessage : Peux-tu préciser le temps qu’il fait aujourd’hui ?",
+        "reference": "nyaan o lɛ adɛ.",
+        "before": "Konan le akanza.",
+        "after": "nyaan o lɛ adɛ."
+      },
+      {
+        "id": "teacher-0363-4",
+        "became_exact": true,
+        "prompt": "Contexte : Le versement de mon salaire se fait chaque mois.\nMessage : Peux-tu préciser à quelle fréquence tu touches ta rémunération ?",
+        "reference": "Anglo kwalaa nun n nyan min akatua'n.",
+        "before": "N'kula yo like kula n'man wɔ, N'yo juman tɛ wo i osɔn, ɔ su kan ndɛ uflɛ vie mi.",
+        "after": "Anglo kwalaa nun n nyan min akatua'n."
+      },
+      {
+        "id": "teacher-0373-4",
+        "became_exact": true,
+        "prompt": "Contexte : C’est mille francs que Yao a.\nMessage : Peux-tu préciser la somme d’argent que possède Yao ?",
+        "reference": "Yao le kotokun kun.",
+        "before": "Yao le pantanlo’n kun.",
+        "after": "Yao le kotokun kun."
+      }
+    ]
+  },
+  "same_question_different_context": [
+    {
+      "ids": [
+        "teacher-0112-4",
+        "teacher-0249-4"
+      ],
+      "identical_question": "Peux-tu préciser ce qu’Aka est en train de manger ?",
+      "both_exact": true,
+      "outputs": [
+        "Aka di kpaun",
+        "Aka di sukla."
+      ]
+    },
+    {
+      "ids": [
+        "teacher-0117-4",
+        "teacher-0188-4"
+      ],
+      "identical_question": "Peux-tu préciser l’animal qu’Aka aperçoit ?",
+      "both_exact": true,
+      "outputs": [
+        "Aka wun ndo.",
+        "Aka wun kɔliɛ."
+      ]
+    }
+  ],
+  "limits": "Two previously observed known-target pairs only, not proof of general French understanding or native Baoule fluency."
+}

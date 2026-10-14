@@ -1,0 +1,765 @@
+{
+  "experiment": {
+    "stage": 10,
+    "date": "2026-10-14",
+    "parent_sha256": "f9932b33108013ebd0891295b8820d82cc98176e555d755eed0a83ddbcf4d0b9",
+    "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+    "steps": 1200,
+    "lr": 2e-05,
+    "seed": 42,
+    "architecture": "unchanged own 20,860,416 learned parameters; context ceiling 256->512 only; same RoPE and weights",
+    "reference": "same parent stage9 weights with context ceiling512, without training, so both can be evaluated on long inputs",
+    "new_data_counts": {
+      "train": {
+        "sentences": 135,
+        "long": 17,
+        "reply": 5
+      },
+      "validation": {
+        "sentences": 23,
+        "long": 4,
+        "reply": 3
+      },
+      "test": {
+        "sentences": 38,
+        "long": 9,
+        "reply": 5
+      }
+    },
+    "mix": ".25 new sentence translation8, .20 new paragraphs/documents2, .15 new+stage9 written replies4, .20 stage6 translation/reply8 alternating, .10 balanced old8, .05 wiki translation8, .03 prior BibleQA4, .02 old reply4",
+    "selection": ".45 new sentence validation CE + .20 new paragraph/document CE + .20 old SMOL reply validation CE + .10 authored birthday-advice QA CE + .05 old balanced CE; retain14; oldCE<=initial+.15; oldSMOLreply<=initial+.10; no known40 in selection",
+    "fresh_test": "12 new sentence families, 2 new document families for translation, 2 new written-dialogue families; no source families shared across new splits; test after validation selection fixed",
+    "limits": [
+      "one seed and one continuation, no architecture or curriculum ablation",
+      "new French written by assistant from source English; no native Baoule validation",
+      "new dialogues written, not recorded; only5 fresh next-turn test replies",
+      "birthday reply validation uses authored questions, not authentic conversational turns",
+      "long views reuse sentence content within same source partition",
+      "512 token ceiling enables execution, not reliable semantic long-text translation"
+    ],
+    "data_sha256": {
+      "mandia-compact-s2s-etape10/nouveaux-paralleles.jsonl": "820ef82951d2a8702fc39738820a585124d93ed9f192f6e04429fe2a8e31a768",
+      "mandia-compact-s2s-etape4/parallel-prepare.jsonl": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+      "mandia-compact-s2s-etape5/quotidien-prepare.jsonl": "370d3bb631a4ad4765fbe3b15e0f6019c0470ce03c687f87ac71f6fda6b3048c",
+      "mandia-compact-s2s-etape6/dialogues-prepare.jsonl": "9375c6a0918a5bf8056cecd42df0c8aff90c3439220bc45bfe10e8cc700a2184",
+      "mandia-compact-s2s-etape7/teacher-grounded-qa.jsonl": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b",
+      "mandia-compact-s2s-etape9/bible-etendue.jsonl": "36bf8130fa9c785e3e1f4ff931903f747c0bc1c064782e3146ba4200618b426c",
+      "mandia-compact-s2s-etape9/dialogues-ecrits-ajout.jsonl": "2e7a3f0634c96f0f8c91944db74133ca4ff0d0bc968baa4987f208a82782809a"
+    },
+    "code_sha256": {
+      "mandia-compact-s2s-etape10/mandia_stage10.py": "e7d1726c78c707a46ac7482bdaad29eb8a63c1fac9bc42de3b503a3e111bffce",
+      "mandia-compact-s2s-etape7/mandia_stage7.py": "6044fb5633f0d0438000f005849f78db20c3b6c5edc2b693530818b53322ea41",
+      "mandia-compact-s2s-etape6/code/mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+      "mandia-compact-s2s-etape6/code/mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+      "mandia-compact-s2s-etape6/code/mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+      "mandia-compact-s2s-etape6/code/mandia_stage5.py": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+      "mandia-compact-s2s-etape6/code/mandia_stage6.py": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1"
+    },
+    "gpu": "NVIDIA L4",
+    "torch": "2.11.0+cu130"
+  },
+  "training": {
+    "best_step": 100,
+    "best_score": 4.717493765485692,
+    "steps": 1200,
+    "real_tokens": 3715903,
+    "supervised_tokens": 1535605,
+    "negative_forward_tokens": 0,
+    "valid_negative_pairs": 0,
+    "wall_seconds": 540.2027651839999,
+    "history": [
+      {
+        "step": 0,
+        "validation": {
+          "new_sentence_ce": 5.144906864356723,
+          "new_long_ce": 5.377163167772347,
+          "new_authored_reply_ce": 5.562230890447443,
+          "old_smol_reply_ce": 5.63551171146222,
+          "old_ce": 3.9789426068936624,
+          "trained14": 1.0,
+          "selection_score": 5.272913284196866,
+          "eligible": true
+        }
+      },
+      {
+        "step": 100,
+        "objective": 2.7100227056071162,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 4.50664760790946,
+          "new_long_ce": 4.624357255477479,
+          "new_authored_reply_ce": 5.301250573360559,
+          "old_smol_reply_ce": 5.174572541346004,
+          "old_ce": 3.9918265045136514,
+          "trained14": 1.0,
+          "selection_score": 4.717493765485692,
+          "eligible": true
+        }
+      },
+      {
+        "step": 200,
+        "objective": 2.289496469311416,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 4.523850510361871,
+          "new_long_ce": 4.637414005215607,
+          "new_authored_reply_ce": 5.314657500295928,
+          "old_smol_reply_ce": 5.351372410408893,
+          "old_ce": 4.038724656271146,
+          "trained14": 1.0,
+          "selection_score": 4.766891995630893,
+          "eligible": true
+        }
+      },
+      {
+        "step": 300,
+        "objective": 1.8122439561411738,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 4.629932485191356,
+          "new_long_ce": 4.735326330089037,
+          "new_authored_reply_ce": 5.363908247514204,
+          "old_smol_reply_ce": 5.520120649195429,
+          "old_ce": 4.056717527486514,
+          "trained14": 1.0,
+          "selection_score": 4.873785715318749,
+          "eligible": true
+        }
+      },
+      {
+        "step": 400,
+        "objective": 1.5727618727833033,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 4.735503453841053,
+          "new_long_ce": 4.883267706332926,
+          "new_authored_reply_ce": 5.3659210205078125,
+          "old_smol_reply_ce": 5.653470015644434,
+          "old_ce": 4.078498836162947,
+          "trained14": 1.0,
+          "selection_score": 4.9788411424828745,
+          "eligible": true
+        }
+      },
+      {
+        "step": 500,
+        "objective": 1.3532317774370313,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 4.8325090830064195,
+          "new_long_ce": 4.9398360438853,
+          "new_authored_reply_ce": 5.334846727775805,
+          "old_smol_reply_ce": 5.759050359773399,
+          "old_ce": 4.097833128601096,
+          "trained14": 1.0,
+          "selection_score": 5.0527826972922645,
+          "eligible": false
+        }
+      },
+      {
+        "step": 600,
+        "objective": 1.189616340212524,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 4.9147777693417884,
+          "new_long_ce": 5.050929234680517,
+          "new_authored_reply_ce": 5.333159938003078,
+          "old_smol_reply_ce": 5.808479119296098,
+          "old_ce": 4.088734008099723,
+          "trained14": 1.0,
+          "selection_score": 5.121284361204421,
+          "eligible": false
+        }
+      },
+      {
+        "step": 700,
+        "objective": 1.1928579630330205,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 4.969689514769637,
+          "new_long_ce": 5.126005545674755,
+          "new_authored_reply_ce": 5.346782337535512,
+          "old_smol_reply_ce": 5.916959696148165,
+          "old_ce": 4.106578652483728,
+          "trained14": 1.0,
+          "selection_score": 5.184960496388658,
+          "eligible": false
+        }
+      },
+      {
+        "step": 800,
+        "objective": 1.1665464704856277,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 5.013734390324091,
+          "new_long_ce": 5.164062840978526,
+          "new_authored_reply_ce": 5.3685080788352275,
+          "old_smol_reply_ce": 5.895407605527052,
+          "old_ce": 4.101626732519186,
+          "trained14": 1.0,
+          "selection_score": 5.210006709456438,
+          "eligible": false
+        }
+      },
+      {
+        "step": 900,
+        "objective": 1.2489074179902673,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 5.026357348737295,
+          "new_long_ce": 5.162215760300279,
+          "new_authored_reply_ce": 5.362956653941762,
+          "old_smol_reply_ce": 5.916250048585199,
+          "old_ce": 4.097631967864619,
+          "trained14": 1.0,
+          "selection_score": 5.218731232496286,
+          "eligible": false
+        }
+      },
+      {
+        "step": 1000,
+        "objective": 1.1357356142252684,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 5.052647262769146,
+          "new_long_ce": 5.183386435055866,
+          "new_authored_reply_ce": 5.396424727006392,
+          "old_smol_reply_ce": 5.9353119959285605,
+          "old_ce": 4.100434772848082,
+          "trained14": 1.0,
+          "selection_score": 5.242095165786044,
+          "eligible": false
+        }
+      },
+      {
+        "step": 1100,
+        "objective": 1.0751064224168658,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 5.076298037541235,
+          "new_long_ce": 5.228690206005586,
+          "new_authored_reply_ce": 5.384912664240057,
+          "old_smol_reply_ce": 5.958405603816853,
+          "old_ce": 4.101507841747121,
+          "trained14": 1.0,
+          "selection_score": 5.265319937369406,
+          "eligible": false
+        }
+      },
+      {
+        "step": 1200,
+        "objective": 1.0895056631416082,
+        "hinge": 0.0,
+        "validation": {
+          "new_sentence_ce": 5.085994834736648,
+          "new_long_ce": 5.231319150445182,
+          "new_authored_reply_ce": 5.375386555989583,
+          "old_smol_reply_ce": 5.956771774671564,
+          "old_ce": 4.099711495111189,
+          "trained14": 1.0,
+          "selection_score": 5.268840091009359,
+          "eligible": false
+        }
+      }
+    ]
+  },
+  "before": {
+    "fresh_sentence_translation12": {
+      "ce": 5.348479766845703,
+      "generation": {
+        "rows": 12,
+        "chrF_pp": 14.456120158610059,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        33,
+        32,
+        39,
+        20,
+        35,
+        30,
+        30,
+        15,
+        34,
+        28,
+        98,
+        25
+      ]
+    },
+    "fresh_document_sentences26": {
+      "ce": 5.376697564580638,
+      "generation": {
+        "rows": 26,
+        "chrF_pp": 11.46217911022017,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        16,
+        19,
+        13,
+        29,
+        4,
+        10,
+        27,
+        5,
+        6,
+        13,
+        27,
+        78,
+        5,
+        22,
+        29,
+        10,
+        49,
+        25,
+        35,
+        10,
+        17,
+        29,
+        13,
+        37,
+        13,
+        7
+      ]
+    },
+    "fresh_paragraphs7": {
+      "ce": 5.607693142361111,
+      "generation": {
+        "rows": 7,
+        "chrF_pp": 12.696725216763685,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        48,
+        45,
+        60,
+        50,
+        49,
+        46,
+        70
+      ]
+    },
+    "fresh_whole_documents2": {
+      "ce": 5.63821967364532,
+      "generation": {
+        "rows": 2,
+        "chrF_pp": 8.771711590478368,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        77,
+        87
+      ]
+    },
+    "fresh_written_replies5": {
+      "ce": 5.277436537549675,
+      "generation": {
+        "rows": 5,
+        "chrF_pp": 11.251950105546628,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        12,
+        12,
+        6,
+        31,
+        64
+      ]
+    },
+    "previous_written_replies5": {
+      "ce": 6.146549036007117,
+      "generation": {
+        "rows": 5,
+        "chrF_pp": 3.5043179071021253,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        7,
+        13,
+        10,
+        6,
+        4
+      ]
+    },
+    "known_daily40": {
+      "ce": 0.3001126698999597,
+      "generation": {
+        "rows": 40,
+        "chrF_pp": 88.79836684278332,
+        "exact_match": 0.875,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        5,
+        4,
+        2,
+        7,
+        7,
+        7,
+        6,
+        6,
+        6,
+        4,
+        5,
+        9,
+        4,
+        6,
+        5,
+        5,
+        7,
+        6,
+        6,
+        8,
+        7,
+        6,
+        5,
+        4,
+        5,
+        5,
+        10,
+        7,
+        6,
+        6,
+        11,
+        7,
+        7,
+        7,
+        9,
+        7,
+        13,
+        4,
+        7,
+        5
+      ]
+    },
+    "old_stage4": {
+      "selection_score": 3.657706145340433,
+      "domains": {
+        "everyday": {
+          "loss": 3.6292795002703104,
+          "supervised_tokens": 737,
+          "rows": 68
+        },
+        "software": {
+          "loss": 3.644005898317676,
+          "supervised_tokens": 978,
+          "rows": 109
+        },
+        "gospel": {
+          "loss": 3.4934126870518902,
+          "supervised_tokens": 8630,
+          "rows": 169
+        },
+        "lexical": {
+          "loss": 3.8641264957218553,
+          "supervised_tokens": 1439,
+          "rows": 308
+        }
+      }
+    },
+    "old_stage5": {
+      "loss": 4.303500362377071,
+      "tasks": {
+        "translate": {
+          "loss": 4.2389405983776305,
+          "rows": 52,
+          "tokens": 398
+        },
+        "guided": {
+          "loss": 4.368060126376512,
+          "rows": 52,
+          "tokens": 398
+        }
+      }
+    },
+    "old_stage6": {
+      "loss": 5.212645307211534,
+      "tasks": {
+        "translate": {
+          "loss": 5.170352724645411,
+          "tokens": 542,
+          "rows": 25
+        },
+        "reply": {
+          "loss": 5.254937889777657,
+          "tokens": 461,
+          "rows": 15
+        }
+      }
+    },
+    "trained14": {
+      "rows": 14,
+      "chrF_pp": 100.0,
+      "exact_match": 1.0,
+      "no_eos": 0,
+      "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+    }
+  },
+  "after": {
+    "fresh_sentence_translation12": {
+      "ce": 4.697999572753906,
+      "generation": {
+        "rows": 12,
+        "chrF_pp": 12.81325624661803,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        33,
+        14,
+        25,
+        16,
+        18,
+        24,
+        36,
+        30,
+        74,
+        17,
+        29,
+        11
+      ]
+    },
+    "fresh_document_sentences26": {
+      "ce": 4.808850622480842,
+      "generation": {
+        "rows": 26,
+        "chrF_pp": 12.476202816536336,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        7,
+        25,
+        13,
+        25,
+        36,
+        14,
+        6,
+        5,
+        12,
+        20,
+        23,
+        21,
+        16,
+        6,
+        22,
+        21,
+        151,
+        27,
+        46,
+        5,
+        22,
+        27,
+        13,
+        53,
+        28,
+        6
+      ]
+    },
+    "fresh_paragraphs7": {
+      "ce": 5.020705678104576,
+      "generation": {
+        "rows": 7,
+        "chrF_pp": 13.974812601743414,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        29,
+        47,
+        96,
+        34,
+        85,
+        35,
+        29
+      ]
+    },
+    "fresh_whole_documents2": {
+      "ce": 5.027016625615763,
+      "generation": {
+        "rows": 2,
+        "chrF_pp": 15.692374085611496,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        163,
+        174
+      ]
+    },
+    "fresh_written_replies5": {
+      "ce": 5.054488694736723,
+      "generation": {
+        "rows": 5,
+        "chrF_pp": 11.361469985420278,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        10,
+        7,
+        5,
+        11,
+        53
+      ]
+    },
+    "previous_written_replies5": {
+      "ce": 5.6861974886148285,
+      "generation": {
+        "rows": 5,
+        "chrF_pp": 5.075686227151677,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        6,
+        13,
+        11,
+        6,
+        14
+      ]
+    },
+    "known_daily40": {
+      "ce": 0.4847447888163112,
+      "generation": {
+        "rows": 40,
+        "chrF_pp": 70.68252590227651,
+        "exact_match": 0.65,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "generated_tokens": [
+        5,
+        6,
+        2,
+        7,
+        17,
+        7,
+        6,
+        6,
+        6,
+        7,
+        7,
+        9,
+        4,
+        6,
+        5,
+        5,
+        6,
+        6,
+        6,
+        8,
+        7,
+        6,
+        5,
+        6,
+        5,
+        5,
+        10,
+        7,
+        6,
+        4,
+        11,
+        6,
+        7,
+        7,
+        7,
+        7,
+        15,
+        6,
+        7,
+        5
+      ]
+    },
+    "old_stage4": {
+      "selection_score": 3.6942512246294106,
+      "domains": {
+        "everyday": {
+          "loss": 3.711910051115494,
+          "supervised_tokens": 737,
+          "rows": 68
+        },
+        "software": {
+          "loss": 3.6800425086772273,
+          "supervised_tokens": 978,
+          "rows": 109
+        },
+        "gospel": {
+          "loss": 3.5644282158667075,
+          "supervised_tokens": 8630,
+          "rows": 169
+        },
+        "lexical": {
+          "loss": 3.820624122858213,
+          "supervised_tokens": 1439,
+          "rows": 308
+        }
+      }
+    },
+    "old_stage5": {
+      "loss": 4.224389358980572,
+      "tasks": {
+        "translate": {
+          "loss": 4.173262898047366,
+          "rows": 52,
+          "tokens": 398
+        },
+        "guided": {
+          "loss": 4.275515819913778,
+          "rows": 52,
+          "tokens": 398
+        }
+      }
+    },
+    "old_stage6": {
+      "loss": 4.883560843261261,
+      "tasks": {
+        "translate": {
+          "loss": 4.80930770367274,
+          "tokens": 542,
+          "rows": 25
+        },
+        "reply": {
+          "loss": 4.957813982849783,
+          "tokens": 461,
+          "rows": 15
+        }
+      }
+    },
+    "trained14": {
+      "rows": 14,
+      "chrF_pp": 100.0,
+      "exact_match": 1.0,
+      "no_eos": 0,
+      "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+    }
+  },
+  "parameters": 20860416,
+  "limits": [
+    "one seed and one continuation, no architecture or curriculum ablation",
+    "new French written by assistant from source English; no native Baoule validation",
+    "new dialogues written, not recorded; only5 fresh next-turn test replies",
+    "birthday reply validation uses authored questions, not authentic conversational turns",
+    "long views reuse sentence content within same source partition",
+    "512 token ceiling enables execution, not reliable semantic long-text translation"
+  ]
+}

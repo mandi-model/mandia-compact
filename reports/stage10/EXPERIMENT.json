@@ -1,0 +1,59 @@
+{
+  "stage": 10,
+  "date": "2026-10-14",
+  "parent_sha256": "f9932b33108013ebd0891295b8820d82cc98176e555d755eed0a83ddbcf4d0b9",
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "steps": 1200,
+  "lr": 2e-05,
+  "seed": 42,
+  "architecture": "unchanged own 20,860,416 learned parameters; context ceiling 256->512 only; same RoPE and weights",
+  "reference": "same parent stage9 weights with context ceiling512, without training, so both can be evaluated on long inputs",
+  "new_data_counts": {
+    "train": {
+      "sentences": 135,
+      "long": 17,
+      "reply": 5
+    },
+    "validation": {
+      "sentences": 23,
+      "long": 4,
+      "reply": 3
+    },
+    "test": {
+      "sentences": 38,
+      "long": 9,
+      "reply": 5
+    }
+  },
+  "mix": ".25 new sentence translation8, .20 new paragraphs/documents2, .15 new+stage9 written replies4, .20 stage6 translation/reply8 alternating, .10 balanced old8, .05 wiki translation8, .03 prior BibleQA4, .02 old reply4",
+  "selection": ".45 new sentence validation CE + .20 new paragraph/document CE + .20 old SMOL reply validation CE + .10 authored birthday-advice QA CE + .05 old balanced CE; retain14; oldCE<=initial+.15; oldSMOLreply<=initial+.10; no known40 in selection",
+  "fresh_test": "12 new sentence families, 2 new document families for translation, 2 new written-dialogue families; no source families shared across new splits; test after validation selection fixed",
+  "limits": [
+    "one seed and one continuation, no architecture or curriculum ablation",
+    "new French written by assistant from source English; no native Baoule validation",
+    "new dialogues written, not recorded; only5 fresh next-turn test replies",
+    "birthday reply validation uses authored questions, not authentic conversational turns",
+    "long views reuse sentence content within same source partition",
+    "512 token ceiling enables execution, not reliable semantic long-text translation"
+  ],
+  "data_sha256": {
+    "mandia-compact-s2s-etape10/nouveaux-paralleles.jsonl": "820ef82951d2a8702fc39738820a585124d93ed9f192f6e04429fe2a8e31a768",
+    "mandia-compact-s2s-etape4/parallel-prepare.jsonl": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+    "mandia-compact-s2s-etape5/quotidien-prepare.jsonl": "370d3bb631a4ad4765fbe3b15e0f6019c0470ce03c687f87ac71f6fda6b3048c",
+    "mandia-compact-s2s-etape6/dialogues-prepare.jsonl": "9375c6a0918a5bf8056cecd42df0c8aff90c3439220bc45bfe10e8cc700a2184",
+    "mandia-compact-s2s-etape7/teacher-grounded-qa.jsonl": "3cfe3c27ed8e221cad480755f9ee1a0fcee1c67583f58744cda427932e94910b",
+    "mandia-compact-s2s-etape9/bible-etendue.jsonl": "36bf8130fa9c785e3e1f4ff931903f747c0bc1c064782e3146ba4200618b426c",
+    "mandia-compact-s2s-etape9/dialogues-ecrits-ajout.jsonl": "2e7a3f0634c96f0f8c91944db74133ca4ff0d0bc968baa4987f208a82782809a"
+  },
+  "code_sha256": {
+    "mandia-compact-s2s-etape10/mandia_stage10.py": "e7d1726c78c707a46ac7482bdaad29eb8a63c1fac9bc42de3b503a3e111bffce",
+    "mandia-compact-s2s-etape7/mandia_stage7.py": "6044fb5633f0d0438000f005849f78db20c3b6c5edc2b693530818b53322ea41",
+    "mandia-compact-s2s-etape6/code/mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+    "mandia-compact-s2s-etape6/code/mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+    "mandia-compact-s2s-etape6/code/mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+    "mandia-compact-s2s-etape6/code/mandia_stage5.py": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+    "mandia-compact-s2s-etape6/code/mandia_stage6.py": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1"
+  },
+  "gpu": "NVIDIA L4",
+  "torch": "2.11.0+cu130"
+}

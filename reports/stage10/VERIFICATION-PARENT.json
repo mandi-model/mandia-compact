@@ -1,0 +1,6 @@
+{
+  "same_short_logits_bitwise_fp32": true,
+  "original_context": 256,
+  "new_context": 512,
+  "parameters": 20860416
+}

@@ -1,0 +1,29 @@
+MandiaCompact — étape 11 — protocole préenregistré avant entraînement
+14 octobre 2026
+
+Objectif : réduire les répétitions et renforcer la dépendance au français fourni. Taille inchangée : 20 860 416 paramètres. Parent : étape10, poids sélectionnés à100. La génération des comparaisons reste gloutonne, sans blocage des répétitions ni allongement artificiel.
+
+Trois bras de300 étapes : CE ; CE+contraste source (.3 par groupe) ; CE+contraste source+unlikelihood(.1). Même mélange, mêmes lots, mêmes passages auxiliaires et mêmes initialisations. Le témoin calcule également les pertes auxiliaires pondérées par zéro. Ce protocole isole les objectifs ; il n'établit pas de supériorité en coût d'entraînement.
+
+L'objectif contrastif oppose la vraisemblance de la réponse avec la bonne source française à celle avec une autre source du lot ; masque différent document/prompt/réponse. Marge.2. Les négatifs peuvent néanmoins être sémantiquement compatibles.
+
+La banque négative est générée UNE fois par le parent gelé, seulement à partir des sources TRAIN. Les cibles positives baoulé restent publiées. Les complétions de8 tokens déjà apparus dans la même sortie sont pénalisées si cet8-gramme n'apparaît pas dans la référence positive. PAD/BOS/EOS/autres tokens spéciaux sont exclus. C'est une adaptation limitée du sequence unlikelihood : banque statique, pas reproduction exacte du papier, et certaines répétitions légitimes restent possibles. La banque ne couvre pas toutes les futures boucles des candidats.
+
+Source : Welleck et al., Neural Text Generation with Unlikelihood Training (2019).
+https://arxiv.org/abs/1908.04319
+https://arxiv.org/html/1908.04319v2
+Le papier présente des pénalités token/séquence pour réduire la dégénérescence. Ses résultats ne prouvent pas une amélioration français-baoulé ; nous la mesurons séparément.
+
+Source : Cai et al., Group-wise Contrastive Learning for Neural Dialogue Generation (2020).
+https://aclanthology.org/2020.findings-emnlp.70/
+Le papier soutient l'intérêt d'apprendre avec des signaux positifs et négatifs en dialogue. Notre hinge avec source permutée est un protocole différent, déjà introduit dans notre étape6, pas une reproduction du group-wise dual sampling ni une nouveauté revendiquée.
+
+Corpus : Google SMOL, CC-BY-4.0, révision fdaff3a1a019f89fa30a562a85d7c1d3e9150444.
+https://huggingface.co/datasets/google/smol
+Les nouveaux39 tests sont issus de4 documents jamais utilisés dans les jeux préparés étapes4 à10. Français traduit/adapté par l'assistant depuis l'anglais ; baoulé publié copié exactement.30 traductions,6 répliques issues de2 dialogues écrits (discussion entre automobilistes et scène comique fictive),3 questions pratiques construites sur les réponses publiées d'un monologue informatique. Pas de nouvelles conversations spontanées enregistrées, pas de validation native. Les vues d'un même document restent toutes en TEST ; les questions informatiques partagent du contenu avec les traductions du même test.
+
+Sélection sur validation fixée avant tests ; étape0 autorisée si aucune amélioration. Score détaillé dans EXPERIMENT.json : pertes de validation, hinge de source permutée, excès de répétition de mots4 sur4 sondes réservées. Garde-fous pertes antérieures et conservation des14 répliques simples entraînées. Les anciens40 cas sont une régression sur familles connues, pas une mesure de conversation générale.
+
+Rapporter chrF++, pertes CE, NLL source correcte/permutée, sorties vides, arrêt EOS, longueur, proportion de4-grammes de mots réutilisés. Aucun de ces indicateurs ne remplace un jugement baoulé natif. Ne pas conclure « comprend vraiment » à partir d'un seul gain. Les tests ne servent ni à générer les négatifs d'entraînement ni à choisir le candidat.
+
+Checkpoints complets AdamW/RNG et meilleurs poids de chaque bras sauvegardés atomiquement dans Drive. Les paramètres lourds ne sont pas téléchargés sur le Mac. Les fichiers de l'étape10 et les modèles publics précédents restent conservés.

@@ -1,0 +1,95 @@
+MandiaCompact — correspondances bibliques et supervision ancrée
+Préparation du 14 octobre 2026 ; résultats séparés dans rapport-etape9.json.
+
+L'idée proposée est exploitable : un corpus parallèle permet au réseau d'ajuster
+ses poids sur des correspondances français–baoulé. Des contextes différents où
+reviennent les mêmes mots et structures peuvent aider à apprendre des régularités.
+Le résultat doit se mesurer sur d'autres phrases ; lire ou mémoriser les passages
+ne démontre pas à lui seul la maîtrise des dialogues ordinaires.
+
+Rôle de l'assistant : rédiger et contrôler le français à partir des textes sources,
+poser des questions sur ces textes, conserver la réponse baoulé publiée, tracer
+son origine. L'assistant n'est pas un locuteur natif et ses traductions baoulé
+libres ne sont pas admises comme références fiables. Il ne fournit ici ni ses
+poids, ni ses logits : c'est une augmentation assistée, pas une distillation
+numérique du grand modèle dans le petit.
+
+Exemple de construction : contexte français décrivant le baptême ; question sur
+le lieu, les actions ou les participants ; réponse reproduisant la phrase baoulé
+alignée. Les extraits baoulé ne sont utilisés que lorsqu'ils sont attestés et
+localisables dans la source. Les nouvelles questions de cette étape répondent
+avec la ligne complète : elles peuvent inclure plus de détails que nécessaire.
+Les reformulations génériques sont étiquetées séparément des questions de sens.
+
+Volume préparé et conservé après contrôle de longueur, sans troncature :
+- Bible : 843 vues, 631 TRAIN, 88 validation, 124 test ; 721 lignes sources.
+  718 reformulations contextualisées et 125 vues de questions sémantiques.
+  Le TRAIN contient 523 lignes sources et 525 réponses baoulé distinctes ;
+  522 reformulations et 109 vues de questions sémantiques. Les vues ne sont
+  pas des textes indépendants supplémentaires.
+- Quotidien : 786 vues sur les 393 exemples Wiktionary déjà admis ;
+  554 TRAIN sur 277 réponses distinctes, 128 validation, 104 test.
+  Deux consignes contextuelles par exemple ; ce ne sont pas de nouveaux faits.
+- SMOL : 16 réponses de 4 documents supplémentaires, 8 TRAIN/2 documents,
+  3 validation/1 document, 5 test/1 document. Baoulé repris des traductions
+  publiées ; français rédigé depuis l'anglais. Dialogues écrits, pas enregistrés.
+  Les phrases avec désaccord visible siècles/années ou acres/hectares ne sont
+  pas incluses. Aucune garantie de correction native du reste.
+
+Les partages bibliques historiques par chapitre et ceux du Wiktionary sont
+conservés. Les cibles bibliques identiques après normalisation sont disjointes
+entre TRAIN/validation/test. Les quatre nouveaux documents SMOL n'apparaissent
+pas dans le corpus d'étape 6. Les récits entre Évangiles peuvent se recouper.
+Les traductions de certains anciens holdouts ont été évaluées auparavant.
+Le test des 40 questions est déjà observé et porte sur des réponses connues :
+il reste une mesure de régression, pas une précision générale en conversation.
+
+Expérience : même parent MandiaCompact de 20 860 416 paramètres, deux bras de
+600 mises à jour, un seul seed. Seul le groupe Bible TRAIN change : ancien pilote
+contre préparation étendue. Les deux bras reçoivent les mêmes nouveaux groupes
+quotidien et SMOL ; mêmes poids de mélange et tailles de lots, mais tokens et
+FLOPs différents. La sélection utilise la validation, avec garde contre l'oubli.
+Le meilleur checkpoint peut rester celui du parent à l'étape 0 si aucune
+amélioration admissible n'apparaît. Les poids finaux retenus et l'état complet de
+reprise après 600 étapes sont des fichiers distincts, tous dans Google Drive.
+
+Sources de données :
+1. mtBCI-1.0, Kouassi Konan Jean Claude, 2024.
+   https://github.com/Kjeanclaude/mtBCI-1.0-Corpus
+   https://doi.org/10.5121/ijcsit.2024.16501
+   Attribution de l'auteur à conserver. Les droits des éditions bibliques
+   sous-jacentes et les identifiants d'édition/verset ne sont pas précisés dans
+   l'extrait : cette étape réutilise le corpus déjà admis et n'importe pas la
+   Bible entière. Aucune filiation avec Louis Segond n'est affirmée.
+2. Wiktionnaire français, extraction Kaikki du baoulé.
+   https://kaikki.org/frwiktionary/Baoul%C3%A9/
+   CC-BY-SA-4.0 ; URL de la page et modifications conservées par ligne.
+3. Google SMOL, révision fdaff3a1a019f89fa30a562a85d7c1d3e9150444.
+   https://huggingface.co/datasets/google/smol
+   CC-BY-4.0 ; source anglaise et phrases baoulé originales conservées.
+4. La Bible baoulé NYANMIƐN NDƐ'N 1998 est bien présentée comme édition
+   de l'Alliance Biblique de Côte d'Ivoire par le diffuseur :
+   https://www.bible.com/versions/3080-bb98-nyanmi%C6%90n-nd%C6%90n-1998
+   Cette page ne démontre ni une traduction depuis Louis Segond ni une licence
+   d'entraînement. Aucune nouvelle collecte massive depuis cette page.
+
+Recherche :
+- Self-Instruct, Wang et al., ACL 2023 : génération d'instructions/exemples
+  puis filtrage. Résultats sur GPT-3, sans preuve de compétence du professeur
+  en baoulé. Ici, nous appliquons la rédaction des consignes et l'ancrage aux
+  réponses attestées ; pas une reproduction complète de l'article.
+  https://aclanthology.org/2023.acl-long.754/
+- Les huit lectures précédentes et leurs PDF restent sauvegardés dans le dossier
+  étape 8. Aucun gain architectural ou SOTA n'est déduit de la présente étape.
+- Piste Tree-AI-lab/smoltalk-multilingue : décrite dans un résultat indexé, mais
+  page/fichiers/API Hugging Face non accessibles (401 lors de la vérification).
+  Ni qualité, ni statut d'authenticité, ni licence des fichiers vérifiés : pas
+  intégré à cet entraînement.
+- Common Voice est de la parole lue ; WAXAL exploité ici est monolingue ;
+  ces ressources ne sont pas présentées comme des dialogues français–baoulé.
+
+Pour progresser après l'essai : contrôler les erreurs de personnes, de négation,
+de temps et de lieu sur des sorties réelles ; enrichir des questions spécifiques
+avec réponses attestées ; constituer des échanges ordinaires nouveaux et relus.
+La validation native reste nécessaire avant de qualifier les réponses de
+naturelles ou de publier une estimation de leur correction linguistique.

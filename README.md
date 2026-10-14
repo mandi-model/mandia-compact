@@ -1,11 +1,45 @@
-# MandiaCompact S2S
+# Mandia N’zassa 21M
 
-Projet de recherche Mandia : comprendre une entrée française et produire du baoulé avec un petit modèle construit et entraîné depuis zéro. **Prototype expérimental, conversation générale encore peu fiable.**
+Petit modèle Mandia **français → baoulé**, construit et entraîné depuis zéro. **Version de recherche v0.1 : traduction et conversation encore peu fiables.** Le projet s’appelait auparavant MandiaCompact ; le renommage conserve l’historique et les anciens checkpoints.
 
-- **Fiche modèle** : https://dataset.mandia.org/gnakalehacker/mandia-compact
-- **13 782 528 paramètres**, encodeur-décodeur hybride convolution causale / GQA, tokenizer ByteBPE de 4096 tokens.
-- Code et rapports dans ce dépôt ; poids d'inférence disponibles dans [la Release de recherche étape 6](https://github.com/mandi-model/mandia-compact/releases/tag/stage6-research-v1).
-- Les checkpoints complets de travail (poids, AdamW, états RNG et compteurs) restent sauvegardés dans Google Drive. Aucun dossier Drive personnel n'est rendu public par ce dépôt.
+N’zassa évoque un tissu assemblé à partir de plusieurs morceaux : une image de notre combinaison convolution/GQA et du lien entre les langues. La [Compagnie N’Zassa Danse](https://nzassadanse.wixsite.com/nzassadanse/biographie) documente cette image culturelle akan. Ce choix est symbolique, pas une nouvelle revendication scientifique.
+
+- [Fiche modèle Mandia](https://dataset.mandia.org/gnakalehacker/mandia-nzassa) — catégorie **Modèle**.
+- **20 860 416 paramètres**, encodeur2 / décodeur6, FFN1536, vocabulaire4096, plafond512 tokens.
+- [Version publique v0.1 : poids et variantes](https://github.com/mandi-model/mandia-nzassa/releases/tag/nzassa-21m-v0.1), code, tokenizer, données préparées, protocoles et rapports dans ce dépôt.
+- Export de référence : étape10, sélection validation100. Trois exports étape11 sont fournis pour étudier les échecs ; ils ne remplacent pas la référence.
+- AdamW/RNG et les checkpoints complets restent dans le Drive de travail ; aucun dossier Drive n’est publié.
+
+## Résultats récents, avec leurs limites
+
+Trois continuations étape11 de300 mises à jour, graine42, mêmes lots et passages auxiliaires, architecture inchangée. Sélection sur validation : contraste, étape50 ; aucun candidat promu après le test. Les répétitions peuvent diminuer sans amélioration de sens.
+
+| Mesure | Référence étape10 | CE | Contraste | Contraste + UL |
+|---|---:|---:|---:|---:|
+| chrF++30 nouvelles traductions |11.14|11.32|11.35|13.29|
+| chrF++6 nouvelles répliques écrites |10.80|8.31|7.52|7.82|
+| Répétition mots4 sur9 vues longues déjà observées |21.9%|17.6%|25.3%|7.2%|
+| Correspondances exactes,40 cibles déjà connues |26/40|25/40|25/40|22/40|
+
+39 nouveaux tests issus de4 documents :30 traductions,6 répliques de2 scénarios écrits,3 questions pratiques construites. Français adapté par assistant, baoulé publié copié ; **pas de validation native ni de nouvelles conversations enregistrées**.0/39 correspondances exactes pour chaque modèle ; cela ne mesure pas directement la justesse linguistique. Le diagnostic de source élargi porte sur28 paires de traduction et6 de dialogue ; aucune preuve de compréhension générale. Les9 vues longues partagent2 documents déjà observés. Voir [rapports étape11](reports/stage11) et [fiche technique](MODEL_CARD.md).
+
+## Démarrer
+
+```bash
+python -m pip install -r requirements.txt
+# Télécharger mandia-nzassa-21m-reference.pt dans la Release v0.1.
+python inference.py --weights /chemin/mandia-nzassa-21m-reference.pt --mode translate --text "Les enfants vont à l’école."
+```
+
+Le script vérifie les empreintes et charge uniquement les tenseurs avec `weights_only=True`. Il traite les longs textes par segments, sans perdre silencieusement les mots ; ce support technique ne garantit pas la fidélité des traductions. `--mode reply --context '...'` permet un dialogue expérimental ; `--json` affiche les limites/EOS. La génération est gloutonne, sans blocage artificiel des répétitions.
+
+Pour étudier une variante, fournir son manifeste :
+
+```bash
+python inference.py --weights /chemin/mandia-nzassa-21m-source-contrastive-ul.pt --manifest weights/source_contrastive_ul-manifest.json --mode translate --text "Votre texte français."
+```
+
+Les manifestes étape6/7 restent disponibles pour les exports13M. Les noms de classes et scripts historiques sont conservés pour ne pas casser la reproduction. **Texte uniquement** ; pas de Space d’inférence ou de voix annoncé. Les notebooks sont des outils de calcul facultatifs du projet, pas un dataset.
 
 ## État des expériences
 
@@ -23,7 +57,7 @@ Consulter [MODEL_CARD.md](MODEL_CARD.md) et les empreintes dans [weights/manifes
 
 ```bash
 python -m pip install -r requirements.txt
-python inference.py --weights /chemin/mandia-compact-stage6-ce.pt --text 'Bonjour !' --mode reply
+python inference.py --weights /chemin/mandia-compact-stage6-ce.pt --manifest weights/stage6-manifest.json --text 'Bonjour !' --mode reply
 ```
 
 `reply` produit une réponse ; `translate` vise une traduction. Le modèle est texte uniquement. Il n'effectue pas encore de reconnaissance ni de synthèse vocale.
@@ -32,7 +66,7 @@ python inference.py --weights /chemin/mandia-compact-stage6-ce.pt --text 'Bonjou
 
 [notebooks/stage4.ipynb](notebooks/stage4.ipynb) démarre l'expérience initiale avec de nouveaux poids. Les étapes 5 et 6 continuent les checkpoints des étapes précédentes, dans le même Drive. Lire les chemins et cellules avant exécution ; sélectionner un GPU bf16. Les notebooks publics ont leurs sorties effacées : les mesures effectivement obtenues sont dans `reports/`.
 
-Colab est un environnement d'exécution facultatif du projet. **Ce dépôt est un projet de modèle ; les données d'entraînement et leurs crédits sont dans `data/`.** Un Space de démonstration pourra être ajouté ultérieurement ; aucun service public d'inférence MandiaCompact n'est annoncé ici.
+Colab est un environnement d'exécution facultatif du projet. **Ce dépôt est un projet de modèle ; les données d'entraînement et leurs crédits sont dans `data/`.** Un Space de démonstration pourra être ajouté ultérieurement ; aucun service public d'inférence Mandia N’zassa n'est annoncé ici.
 
 Les modules historiques sont conservés pour documenter les runs. Leur arborescence de runtime et leurs données sont recréées par les notebooks ; ne pas déplacer les fichiers d'un run en cours ou modifier son code gelé. Les checkpoints complets sont écrits dans Drive tous les 100 pas avec contrôle de signature avant reprise. Le test de reprise CPU vérifie les poids, AdamW, RNG et compteurs ; une égalité bit à bit CUDA n'est pas revendiquée.
 
@@ -50,7 +84,7 @@ Sur 40 formulations françaises réservées de **40 cibles déjà connues**, les
 
 L'assistant a rédigé les questions et variantes françaises ; il n'a ni inventé les cibles baoulé ni transmis ses poids/logits ou un raisonnement privé. Voir [le bilan](reports/stage7/BILAN-FINAL.txt), [la relecture technique](reports/stage7/RELECTURE-SORTIES.json), [les données et recherches](reports/stage7/RECHERCHE-DONNEES.json) et [la méthode](RESEARCH_NEXT.md).
 
-[Poids QA de recherche étape 7](https://github.com/mandi-model/mandia-compact/releases/tag/stage7-qa-research-v1), séparés du modèle étape 6 :
+[Poids QA de recherche étape 7](https://github.com/mandi-model/mandia-nzassa/releases/tag/stage7-qa-research-v1), séparés du modèle étape 6 :
 
 ```bash
 python inference.py --weights /chemin/mandia-compact-stage7-qa.pt --manifest weights/stage7-qa-manifest.json --context 'Ce que voit Aka est un aigle.' --text 'Peux-tu préciser l’animal qu’Aka aperçoit ?' --mode reply

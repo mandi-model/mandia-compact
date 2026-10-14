@@ -1,0 +1,45 @@
+MandiaCompact — lecture ciblée et décisions expérimentales
+14 octobre 2026
+
+État : huit textes intégraux téléchargés depuis leurs sources primaires ; sections de méthode, résultats et limites pertinentes examinées. Ce document sépare les résultats des auteurs de nos hypothèses. Aucun article ne prouve une amélioration pour le baoulé ou pour notre modèle.
+
+1. Sennrich et Zhang, ACL 2019 — Revisiting Low-Resource Neural Machine Translation: A Case Study
+https://aclanthology.org/P19-1021/
+Lecture : sections 3–5, tableau 2 et annexe A. Les réglages d’un système riche en données se transfèrent mal à un très petit corpus. Dans leurs expériences RNN, vocabulaire réduit, petits lots et régularisation changent fortement le résultat. Décision Mandia : conserver pour la continuation le tokenizer 4096 existant ; un essai 2048 exigerait un entraînement distinct, avec tokenizer appris exclusivement sur train. Comparer dropout 0,1/0,2/0,3 et lots mesurés en tokens sur validation, sans copier tous les réglages à la fois.
+
+2. Araabi et Monz, COLING 2020 — Optimizing Transformer for Low-Resource Neural Machine Translation
+https://aclanthology.org/2020.coling-main.304/
+Lecture : sections 2–3, tableaux 1–6. Les auteurs testent notamment largeur FFN, têtes, profondeur et plusieurs dropouts. L’effet du BPE diffère de celui observé pour les RNN de 2019 ; les réglages optimaux changent avec le volume. Décision : commencer par une ablation isolée. Ne pas reprendre automatiquement leur label smoothing élevé ou leur word dropout : notre modèle hybride, nos cibles courtes et nos noms propres diffèrent de leurs expériences. Les résultats publiés sont des pistes, pas des valeurs optimales pour Mandia.
+
+3. Signoroni et al., LowResNLP 2025 — Efficient Architectures For Low-Resource Machine Translation
+https://aclanthology.org/2025.lowresnlp-1.6/
+Lecture : sections 3–5, tableaux 2, 8–9 et limites. Étude de petits encodeurs-décodeurs sur quatre paires, corpus de 21–50 k phrases, BPE 4 k. L’efficacité dépend de la combinaison profondeur/largeur. Leur PIES est un ratio paramètres/score : il ne mesure directement ni latence, ni énergie. Décision : enregistrer chrF++, erreurs de sens, paramètres, tokens, temps GPU, mémoire et latence. Aucun gain d’efficacité ne sera déduit du seul nombre de paramètres.
+
+4. Sennrich, Haddow et Birch, ACL 2016 — Improving Neural Machine Translation Models with Monolingual Data
+https://aclanthology.org/P16-1009/
+Lecture : sections 3.1–3.2, 4.2.5 et conclusion. Rétrotraduction : textes réels dans la langue cible, source générée par un modèle inverse, puis mélange avec le parallèle réel. Décision : conserver des cibles baoulé attestées. Ne pas appeler « rétrotraduction » un simple autoencodeur, une paraphrase française ou un texte baoulé inventé. La méthode reste à tester quand un modèle inverse utilisable sera disponible. Surpondérer le monolingue peut affaiblir la dépendance à la source française.
+
+5. Kim et Rush, EMNLP 2016 — Sequence-Level Knowledge Distillation
+https://aclanthology.org/D16-1139/
+Lecture : sections 2–5, objectifs au mot et à la séquence. La distillation peut apprendre à un élève à reproduire les traductions d’un professeur compétent ; elle ne garantit pas de corriger un professeur faible dans la langue cible. Décision : aucune prétention de distillation par logits, auxquels nous n’avons pas accès ici. Mon rôle actuel est de rédiger et relire les questions françaises. Les réponses baoulé restent copiées de sources identifiées. Ce travail s’appelle augmentation assistée, et non transfert de mes poids ou de mon raisonnement interne.
+
+6. Li et al., Findings ACL 2024 — X-Instruction
+https://aclanthology.org/2024.findings-acl.30/
+Lecture : sections 3–5, préparation des graines, raffinement et diversification. Les auteurs construisent des instructions en langue forte autour de réponses tirées de corpus en langues moins dotées. Leurs expériences utilisent notamment LLaMA-2 7B/13B, et ne démontrent pas la méthode sur un petit modèle baoulé. Adaptation Mandia : questions françaises ancrées dans les passages parallèles disponibles, réponse baoulé originale ou extrait contigu, provenance et limites conservées. La sélection automatique ne remplace pas une validation linguistique native.
+
+7. Chen, Goodfellow et Shlens, ICLR 2016 — Net2Net
+https://arxiv.org/abs/1511.05641
+Lecture : introduction et section 2. Les transformations préservant la fonction permettent d’agrandir un réseau déjà entraîné. Adaptation expérimentale Mandia : élargir SwiGLU 768→1536 en copiant les canaux existants et en initialisant à zéro les nouvelles colonnes de sortie. Ce n’est ni une nouvelle architecture démontrée, ni une reproduction de leur algorithme de réplication des neurones. Paramètres comptés : 13 782 528 → 20 860 416 ; option 2304 : 27 938 304. Vérification CPU sur petit modèle aléatoire : sorties préservées à tolérance numérique, cache correct, gradients non nuls dans les nouvelles colonnes. Poids réels/GPU : à vérifier dans Colab avant entraînement.
+
+8. Hoffmann et al., 2022 — Training Compute-Optimal Large Language Models (Chinchilla)
+https://arxiv.org/abs/2203.15556
+Lecture : méthodologie, échelles testées et limites, notamment régime inférieur à une époque. Ce travail concerne le préentraînement de grands modèles autorégressifs ; il n’impose pas un ratio universel pour notre continuation supervisée encodeur-décodeur. La règle approximative de 20 tokens par paramètre donnerait 400–600 M de tokens pour 20–30 M, mais ne constitue ici ni un objectif validé ni une garantie. Répéter la Bible ou multiplier ses éditions ne crée pas autant de contenu indépendant. Décision : compter séparément contenu unique, vues reformulées et tokens effectivement consommés.
+
+Application préparée
+Un pilote de 64 exemples bibliques est construit à partir de 38 lignes déjà présentes dans mtBCI : 48 vues train, 8 validation, 8 test, 40 familles de cibles. Les réponses sont des extraits exacts ; les chapitres conservent les partitions historiques. Aucun nouveau dialogue quotidien enregistré n’a été admis. Le pilote sert à vérifier la chaîne SFT, pas à prétendre disposer d’un grand nouveau corpus. Les versions complètes de la Bible et leurs audios restent des sources à documenter séparément : édition, droits, correspondance texte/audio.
+
+Critère de progrès
+Les 6/40 antérieurs mesurent des formulations nouvelles sur des réponses déjà connues. Nous devons aussi mesurer fidélité au contexte, noms, négations, réponses sur cibles distinctes et qualité naturelle. Une baisse de perte ou quelques noms exacts ne suffiront pas à déclarer une bonne conversation en baoulé. Les essais 13,8 M et 20,9 M garderont mêmes données, mêmes tirages et même budget de tokens ; le coût de calcul supplémentaire sera mesuré et déclaré.
+
+Mesure du corpus disponible (audit exact, avant filtres de longueur)
+L’union des paires supervisées TRAIN préparées des étapes 4 à 8 représente 5 320 couples français/baoulé distincts, 4 442 cibles baoulé distinctes, 67 887 tokens de cibles uniques et 156 861 tokens source+cible sur les couples uniques, séparateurs compris. Les textes monolingues WAXAL ne sont pas inclus dans ce chiffre. La déduplication est textuelle, pas sémantique. Cela confirme que des centaines de millions de tokens uniques ne sont pas actuellement disponibles pour cette paire ; une architecture de 20–30 M reste un essai limité, pas une application validée de Chinchilla. Détail : VOLUME-DONNEES.json.

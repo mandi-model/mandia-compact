@@ -1,0 +1,29 @@
+{
+  "public_cli_real21m_loaded_and_executed": true,
+  "weights_sha256": "5d3004982bdc53ea361d7bb23f99ef8800fa1f1163ee01a0388abffa5b357db0",
+  "code_sha256": {
+    "inference.py": "d13270fd47cc077272fa913b58bb5e7bf25ecbc27c8212116ba87cad6f1d377e",
+    "src/mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+    "src/mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+    "src/traduire_texte.py": "bab37bd49cf9ab270987b6062cc14e06833d3ce70e84a523d8d772bd6b73a0aa",
+    "tokenizer.json": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+    "weights/manifest.json": "2f53be9bbea61e1050f018384a0d6ee2bbd26025be232f13f9ffb637461cf5c9"
+  },
+  "actual_result": {
+    "text_bci": "E ti su, ye, ye kan n'ga be yo be man ye me ml'in vie.",
+    "chunks": [
+      {
+        "source_fr": "Les enfants vont à l’école, tandis que les adultes vont au travail.",
+        "source_tokens": 28,
+        "baoule": "E ti su, ye, ye kan n'ga be yo be man ye me ml'in vie.",
+        "generated_tokens": 24,
+        "ended_eos": true
+      }
+    ],
+    "all_chunks_ended_eos": true,
+    "all_input_processed": true,
+    "native_validated": false
+  },
+  "heavy_local_weight_created": false,
+  "native_validated": false
+}

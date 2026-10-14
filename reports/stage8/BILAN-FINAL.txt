@@ -1,0 +1,25 @@
+MandiaCompact étape 8 — bilan réel du 14 octobre 2026
+
+Deux continuations de 400 pas terminées sur NVIDIA L4. Même parent étape7, mêmes corpus/tirages, 1 048 745 tokens source+cible consommés et 334 216 tokens supervisés par bras. Le coût de calcul n’est pas égal : une seule graine, pas un benchmark à FLOPs constants. Les temps comprennent validations et I/O Drive.
+
+Mesure                         Parent7     Petit13,8M    Élargi20,9M
+QA quotidien exact /40          6           15            16
+QA quotidien chrF++             32.592      48.389        49.508
+Bible QA exact /8               0           0             0
+Bible QA chrF++                 16.314      19.626        19.187
+Bible QA CE (plus bas mieux)     4.505       4.536         4.547
+Ancien test4 CE                 3.688       3.677         3.681
+Ancien test5 CE                 4.242       4.258         4.260
+Ancien test6 CE                 5.057       5.125         5.136
+Réponses simples entraînées     14/14       14/14         14/14
+Temps du run avec I/O (s)        —           139.79        142.64
+
+Sélection sur validation avant tests : wide_20m, meilleur checkpoint à 100 pour les deux bras. Les états à 400 servent à la reprise ; ils ne sont pas les poids sélectionnés. Dès 150, la garde sur SMOL bloque les remplacements malgré une baisse du score composite. Le petit modèle reste un candidat important : un seul exemple exact de moins pour environ 34 % de paramètres en moins que le large. Aucun gagnant d’efficacité générale établi.
+
+Interprétation : amélioration sur formulations françaises des mêmes 40 familles de cibles déjà connues depuis les étapes5/7 ; ce test a déjà été observé et sert au suivi, pas à une estimation indépendante de généralisation. La comparaison avec le parent combine continuation et ajout du pilote biblique : sans bras sans Bible, on ne peut pas attribuer le gain à la Bible. La comparaison petit/large isole la largeur sur ces données, mais une graine et un gain de 1/40 ne démontrent pas une supériorité robuste. Bootstrap exploratoire apparié du gain exact quotidien : 0 à 7,5 points de pourcentage, 10 000 tirages par famille ; l’intervalle inclut zéro.
+
+Relecture technique des 48 sorties par bras : les deux modèles distinguent maintenant correctement le couple singe/aigle sur les deux questions identiques ; le pain reste confondu avec une autre cible. Mariame possédant un mouton devient encore Konan. Les réponses bibliques inventent des suites, remplacent des lieux ou omettent les faits attendus ; la hausse du chevauchement chrF++ ne corrige pas ce problème. La perte biblique test augmente légèrement. Aucune validation native de naturel. Certaines anciennes pertes test régressent.
+
+Décision : conserver les deux variantes et tous les checkpoints comme résultats de recherche. Aucun remplacement silencieux de la référence publique et aucune annonce de bonne conversation ou de meilleure efficacité. La priorité suivante est davantage de paires quotidiennes fiables, diversité de réponses et contrôle des noms/négations ; ne pas augmenter automatiquement à 30 M. Les huit lectures et les notes sont archivées dans ce dossier Drive.
+
+Sauvegarde : 6 fichiers .pt privés, 693335868 octets (environ 693 Mo décimaux), hashes dans SAUVEGARDE-VERIFIEE.json. Poids, états AdamW/RNG et compteurs en Drive ; aucun checkpoint entraîné enregistré localement.

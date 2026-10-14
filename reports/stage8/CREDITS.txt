@@ -1,0 +1,11 @@
+MandiaCompact étape 8 — crédits et périmètre
+
+Implémentation Mandia : élargissement SwiGLU, orchestration de l'expérience et questions françaises rédigées pour ce pilote. Composants de l'architecture déjà publiés dans la littérature ; pas de nouveauté revendiquée. Code du projet : Apache-2.0.
+
+Bible QA : réponses et contextes provenant uniquement des lignes Gospel déjà présentes dans Kjeanclaude/mtBCI-1.0-Corpus, Kouassi Konan Jean Claude, article « Baoulé Related Parallel Corpora for Machine Translation tasks: mtBCI-1.0 » (2024), DOI 10.5121/ijcsit.2024.16501 ; https://github.com/Kjeanclaude/mtBCI-1.0-Corpus . La notice auteur mentionne Creative Commons Attribution sans version précisée dans les éléments précédemment collectés. Cela n'établit pas une licence générale pour les éditions complètes de la Bible ou les audios des éditeurs. Les éditions/versets inconnus n'ont pas été inventés. Pas d'import intégral nouveau ni de publication de nouveaux poids étape8 à ce stade.
+
+Rejeu : Wiktionary français, exemples baoulé extraits par Kaikki, CC-BY-SA-4.0 avec liens de lemme et crédits étapes5/7 conservés ; google/smol, CC-BY-4.0, révision fdaff3a1a019f89fa30a562a85d7c1d3e9150444, traductions baoulé publiées, français préparé par assistant ; mtBCI et GATITOS des étapes antérieures, conserver leurs notices distinctes. Ne pas assimiler les licences des données à celle du code.
+
+Articles : huit PDF primaires privés sauvegardés dans Drive pour lecture/recherche, avec liens et empreintes dans BIBLIOGRAPHIE-SOURCES.json. Les textes des articles ne sont pas des données d'entraînement de Mandia.
+
+Relecture : contrôle structurel et cohérence française par assistant ; aucune validation par un locuteur natif, aucune promesse de naturel des réponses. Les exemples bibliques sont des questions textuelles sur passages ; aucun nouveau dialogue enregistré. Les paraphrases françaises ne constituent pas une distillation des logits ou poids de l'assistant.

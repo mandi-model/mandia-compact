@@ -1,0 +1,9 @@
+{
+  "actual_stage11_trainer_cpu_resume_bitwise_equal": true,
+  "weights_optimizer_rng_and_counters": true,
+  "gold_8grams_protected": true,
+  "repeated_8gram_completions_masked": true,
+  "ul_gradient_lowers_negative_probability": true,
+  "padding_eos_special_tokens_excluded": true,
+  "cuda_bitwise_not_claimed": true
+}

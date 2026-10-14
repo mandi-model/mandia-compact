@@ -1,0 +1,22 @@
+## Résultats réels — 3 ×300 étapes sur L4,20,86 M de paramètres
+
+**Répetitions réduites sur certains tests, compréhension et dialogues encore insuffisants. Aucun candidat promu ; référence publique conservée.**
+Sélection interne sur validation : `source_contrastive`, étape50. CE retient50 ; contraste+UL retient100. Cette sélection interne ne constitue pas une recommandation de déploiement.
+
+| Mesure test | Parent étape10 | CE | Contraste | Contraste+UL |
+|---|---:|---:|---:|---:|
+| chrF++ traductions nouvelles30 | 11.14 | 11.32 | 11.35 | 13.29 |
+| chrF++ répliques nouvelles6 | 10.80 | 8.31 | 7.52 | 7.82 |
+| chrF++ questions pratiques3 | 14.10 | 13.87 | 13.87 | 14.28 |
+| Répétition mots4, nouvelles traductions | 6.0% | 1.8% | 2.8% | 3.8% |
+| Répétition mots4, anciens textes longs9 | 21.9% | 17.6% | 25.3% | 7.2% |
+| Réponses exactes,40 familles déjà connues | 26/40 | 25/40 | 25/40 | 22/40 |
+| Écart NLL source,28 paires traduction | 0.095 | 0.098 | 0.098 | 0.084 |
+
+**Lecture :** l’essai UL baisse les répétitions des anciens textes longs de21,9% à7,2%, mais le score des nouvelles répliques baisse de10,80 à7,82 et les40 cas connus passent de26 à22 correspondances exactes. Le contraste retenu sur validation baisse également le score des répliques à7,52 et augmente les répétitions des longs textes à25,3%. Tous les essais donnent0 correspondance exacte sur les39 nouveaux exemples. Exactitude textuelle et chrF++ ne sont pas une validation linguistique native.
+
+**Source française :** le diagnostic élargi porte sur28 paires de traductions et6 de dialogue, avec rotation choisie uniquement sur les identités des documents. Le contraste passe de0,095 à0,098 de marge NLL en traduction, sans gain probant de compréhension. La première mesure du rapport historique ne comptait que2 paires valides ; consulter DIAGNOSTIC-SOURCE-COMPLET.json. Sélection inchangée après ce diagnostic.
+
+**Données et limites :** nouveaux tests issus de4 documents jamais admis auparavant.30 traductions,6 répliques de2 dialogues écrits/générés,3 questions pratiques construites ; français adapté par assistant, cibles baoulé publiées dans SMOL, sans validation native. Aucune nouvelle conversation spontanée enregistrée. Les anciens40 exemples portent sur des familles déjà apprises. Même décodage glouton, sans blocage des répétitions. Certains gains de répétition accompagnent des sorties plus courtes : longueurs, EOS, sorties vides et pertes sont dans le rapport.
+
+**Sauvegarde :** meilleurs poids, exports et checkpoints complets de reprise300 des3 essais dans Drive. Neuf fichiers lourds,1 252 347 930 octets, aucun téléchargé sur le Mac. Journaux réels et code conservés. La voix sera une étape ultérieure ; la qualité du texte n’est pas encore suffisante.

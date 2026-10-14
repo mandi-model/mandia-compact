@@ -1,0 +1,29 @@
+MandiaCompact — étape 9 exécutée le 14 octobre 2026 sur NVIDIA L4.
+Deux bras de 600 mises à jour terminés ; architecture inchangée : 20 860 416 paramètres.
+Sélection sur validation avant ouverture des tests : expanded_bible.
+Parent étape 8 : 16/40 sur la régression connue.
+Comparaison :
+- pilot_control: meilleur checkpoint 100, 21/40, chrF++ 61.084; temps 245.59s incluant validation et Drive.
+  prior_bible8: 0/8, chrF++ 17.672, CE 4.60178.
+  expanded_bible12: 0/12, chrF++ 16.835, CE 3.53354.
+  broad_daily16: 0/16, chrF++ 12.136, CE 4.53926.
+  new_written_dialogue5: 0/5, chrF++ 5.162, CE 6.09200.
+- expanded_bible: meilleur checkpoint 450, 35/40, chrF++ 88.798; temps 247.25s incluant validation et Drive.
+  prior_bible8: 0/8, chrF++ 19.538, CE 4.49268.
+  expanded_bible12: 0/12, chrF++ 18.117, CE 3.29295.
+  broad_daily16: 0/16, chrF++ 14.264, CE 4.49157.
+  new_written_dialogue5: 0/5, chrF++ 3.504, CE 6.14750.
+
+Limites :
+known40 is a previously observed regression with known target families, not conversational accuracy
+new written dialogue test: 5 replies from one source document, no native validation
+Bible and Wiktionary translation holdouts were already evaluated in earlier stages; QA formats differ
+expanded Bible mainly reformulation views; no full Bible imported and no Louis Segond lineage assumed
+same architecture and number of updates, not matched tokens/FLOPs; one seed only
+new data and continued training are combined in parent comparison; Bible-specific effect assessed against pilot_control only
+
+Les 843 vues Bible réutilisent des passages déjà disponibles : pas de collecte de la Bible entière. 631 TRAIN dont 109 vues de questions sémantiques ; le reste consiste en reformulations contextualisées.
+La comparaison contrôle/candidat isole le groupe Bible ; comparer au parent combine les nouvelles données et la continuation. Pas de preuve de supériorité générale, de fluidité native ou de SOTA.
+Checkpoints complets de reprise après 600 mises à jour et meilleurs poids distincts, tous sur Drive. Aucun poids lourd téléchargé sur le Mac.
+
+Relecture : 19 nouvelles correspondances exactes, aucune ancienne perdue sur les 40. Les deux paires observées de questions identiques avec contextes différents sont exactes (2/2). Les cinq nouveaux tours restent hors contexte ; 35/40 ne valide donc pas la conversation libre.

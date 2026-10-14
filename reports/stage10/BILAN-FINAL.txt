@@ -1,0 +1,23 @@
+MandiaCompact étape10 — 14 octobre 2026, NVIDIA L4.
+1200 mises à jour ; meilleur checkpoint sur validation : 100.
+20 860 416 paramètres ; limite512 ; parent comparé avec les mêmes poids et la même limite512 sans entraînement.
+La sélection ne repose pas sur les 40 questions connues.
+Phrases nouvelles (12): chrF++ 14.456 -> 12.813; correspondances 0 -> 0 / 12; sans EOS 0 -> 0.
+Phrases de documents réservés (26): chrF++ 11.462 -> 12.476; correspondances 0 -> 0 / 26; sans EOS 0 -> 0.
+Blocs réservés (7): chrF++ 12.697 -> 13.975; correspondances 0 -> 0 / 7; sans EOS 0 -> 0.
+Textes complets réservés (2): chrF++ 8.772 -> 15.692; correspondances 0 -> 0 / 2; sans EOS 0 -> 0.
+Nouveaux tours écrits (5): chrF++ 11.252 -> 11.361; correspondances 0 -> 0 / 5; sans EOS 0 -> 0.
+Anciens tours écrits (5): chrF++ 3.504 -> 5.076; correspondances 0 -> 0 / 5; sans EOS 0 -> 0.
+Questions connues (40, régression): chrF++ 88.798 -> 70.683; correspondances 35 -> 26 / 40; sans EOS 0 -> 0.
+parent: ancien CE équilibré 3.65771; ancien SMOL CE 5.21265; 14 réponses simples 1.0.
+retenu: ancien CE équilibré 3.69425; ancien SMOL CE 4.88356; 14 réponses simples 1.0.
+
+Limites :
+one seed and one continuation, no architecture or curriculum ablation
+new French written by assistant from source English; no native Baoule validation
+new dialogues written, not recorded; only5 fresh next-turn test replies
+birthday reply validation uses authored questions, not authentic conversational turns
+long views reuse sentence content within same source partition
+512 token ceiling enables execution, not reliable semantic long-text translation
+
+Relecture : les sorties longues restent répétitives et les nouveaux dialogues inadéquats au contexte. Le score chrF++ supérieur sur 2 textes ne démontre pas leur fidélité. La proximité entre pertes avec source correcte et permutée reste préoccupante. Le candidat est conservé pour recherche ; la référence publique n’est pas remplacée.

@@ -1,0 +1,438 @@
+{
+  "bible": [
+    {
+      "id": "bibleqa-2239-0-0",
+      "prompt_fr": "Contexte : Jésus naquit à Bethléem la patrie de David, en Judée, à l'époque où Hérode était roi. Après sa naissance, des savants, spécialistes des étoiles, vinrent d'Orient. Ils arrivèrent à Jérusalem.\nMessage : Raconte où Jésus naît et où arrivent les savants dans ce passage.",
+      "reference_bci": "Be wuli Jésus Bɛtleɛm, Zide mɛn'n nun. Blɛ sɔ'n nun, famiɛn Erɔd yɛ ɔ sie nvle sɔ nin-ɔn. Mɛn nun sa sifuɛ wie'm be fin wia afiliɛ be bali Zerizalɛm lɛ.",
+      "generated_bci": "Kɛ be ɔli'n, be ɔli Zurdɛn'n nun, ɔ nin be nga be ti nun-man be atin. Be ti Nyanmiɛn ndɛ, be nin i sɔnnzɔnfuɛ'm be su, be nga be ti-man be nun.",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    },
+    {
+      "id": "bibleqa-2248-1-0",
+      "prompt_fr": "Contexte : Ils furent remplis d'une très grande joie en la voyant là.\nMessage : Que ressentent les savants en voyant l'étoile arrêtée ?",
+      "reference_bci": "Kɛ be wunnin kɛ nzraama'n ɔ'a jran'n, be klun jɔli dan kpa.",
+      "generated_bci": "Be kwla'a be wla-man be nuan sran kun i awlo nun ndε mun be nun.",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    },
+    {
+      "id": "bibleqa-2249-2-0",
+      "prompt_fr": "Contexte : Ils entrèrent dans la maison et virent l'enfant avec sa mère, Marie.\nMessage : Que voient les savants en entrant dans la maison ?",
+      "reference_bci": "Be wluli sua lɔ, be wunnin bakan'n nin i nin Mari.",
+      "generated_bci": "Kɛ be ɔli'n, be wunnin kɛ be ti Nyanmiɛn nuan ijɔfuɛ'n, be su wie, ɔ nin i srɛlɛ sua'm be kwlaa be o lɛ be nun.",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    },
+    {
+      "id": "bibleqa-2250-3-0",
+      "prompt_fr": "Contexte : Ils se mirent à genoux pour adorer l'enfant; puis ils ouvrirent leurs bagages et lui offrirent des cadeaux: de l'or, de l'encens et de la myrrhe .\nMessage : Comment les savants rendent-ils hommage à l'enfant ?",
+      "reference_bci": "Be kotoli i bo, be mɛnmɛnnin i.",
+      "generated_bci": "Kɛ be ɔli'n, be ɔli lɔ ndɛ kleli sran'm be kɛ: «An man e nin i lika'n, ɔ yo sɔ-ɔ, yɛ ɔ ti Nyanmiɛn ndɛ, yɛ ɔ ti Nyanmiɛn ndɛ, ɔ nin i mma mun, yɛ ɔ ti-ɔ .",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    },
+    {
+      "id": "bibleqa-2250-4-0",
+      "prompt_fr": "Contexte : Ils se mirent à genoux pour adorer l'enfant; puis ils ouvrirent leurs bagages et lui offrirent des cadeaux: de l'or, de l'encens et de la myrrhe .\nMessage : Quels cadeaux offrent les savants après avoir ouvert leurs bagages ?",
+      "reference_bci": "Be nyannjili be trɔ mun, be cɛli i sika ɔkwlɛ, nin ansans, ɔ nin mir .",
+      "generated_bci": "Kɛ be ɔli'n, be nga be ti Krist nin-ɔn, be nga be ti-man be nun kun'",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    },
+    {
+      "id": "bibleqa-2251-5-0",
+      "prompt_fr": "Contexte : Ensuite, Dieu les avertit dans un rêve de ne pas retourner auprès d'Hérode; ils prirent alors un autre chemin pour rentrer dans leur pays.\nMessage : Pourquoi les savants prennent-ils un autre chemin pour rentrer ?",
+      "reference_bci": "I sin be fa atin uflɛ be ɔli be mɛn nun, afin Nyanmiɛn seli be laliɛ nun kɛ nan man be sa be sin Erɔd wun lɔ kun.",
+      "generated_bci": "Kɛ be ɔli'n, be wunnin kɛ be ti Nyanmiɛn nuan ijɔfuɛ'n, be su yɛ be ti-ɔ.",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    },
+    {
+      "id": "bibleqa-2254-6-0",
+      "prompt_fr": "Contexte : Joseph se leva donc, prit avec lui l'enfant et sa mère, en pleine nuit, et se réfugia en Égypte.\nMessage : Que fait Joseph pendant la nuit après l'avertissement ?",
+      "reference_bci": "Yɛ Zozɛf jasoli kɔnguɛ-ɔ, ɔ fali bakan'n nin i nin, nan b'a wɔ Ezipt.",
+      "generated_bci": "Kɛ ɔ ɔli i nuan lɔ'n, ɔ wunnin sran kpanngban, ɔ nin i mma mun, ɔ nin i mma mun, ɔ nin i mma mun, be nga be o lɛ'n be su be.",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    },
+    {
+      "id": "bibleqa-2255-7-0",
+      "prompt_fr": "Contexte : Il y resta jusqu'à la mort d'Hérode.\nMessage : Jusqu'à quel événement Joseph reste-t-il en Égypte ?",
+      "reference_bci": "Ɔ trannin lɔ lele san Erɔd wuli.",
+      "generated_bci": "Kɛ be ɔli'n, Nyanmiɛn wa fa kɔ lika vie sua nu, yɛ ɔ fa kɔ lika vie sa.",
+      "eos": true,
+      "domain": "bible_qa",
+      "native_validated": false
+    }
+  ],
+  "daily": [
+    {
+      "id": "teacher-0006-4",
+      "prompt_fr": "Contexte : C’est Konan qui possède une chèvre.\nMessage : Peux-tu préciser quel animal est à Konan ?",
+      "reference_bci": "Konan le boli.",
+      "generated_bci": "Konan le boli.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0032-4",
+      "prompt_fr": "Contexte : La sensation de faim est présente chez l’enfant.\nMessage : Peux-tu décrire ce que ressent l’enfant ?",
+      "reference_bci": "ba le awe.",
+      "generated_bci": "Yao le pkanza.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0038-4",
+      "prompt_fr": "Contexte : J’ai compris le propos.\nMessage : Est-ce que tu as compris ce qui a été dit ?",
+      "reference_bci": "N tili",
+      "generated_bci": "N tili",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0050-4",
+      "prompt_fr": "Contexte : La timidité caractérise Aya.\nMessage : Quel est le trait de caractère d’Aya ici ?",
+      "reference_bci": "Aya ti nyansafuɛ.",
+      "generated_bci": "Aya ti nyansafuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0058-4",
+      "prompt_fr": "Contexte : La largeur du chemin est faible.\nMessage : Peux-tu préciser comment est le chemin ?",
+      "reference_bci": "Atini'n ti fii",
+      "generated_bci": "Be kwla fa man fluwa bue duman mun be ti sran-mmla",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0060-4",
+      "prompt_fr": "Contexte : La guitare est l’instrument dont Koffi joue.\nMessage : Peux-tu nommer l’instrument dont joue Koffi ?",
+      "reference_bci": "Koffi bo gita.",
+      "generated_bci": "Koffi bo gita.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0061-4",
+      "prompt_fr": "Contexte : C’est le perroquet que Koffi voit.\nMessage : Peux-tu préciser ce que Koffi voit ?",
+      "reference_bci": "Koffi wun ako.",
+      "generated_bci": "Koffi wun ako.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0066-4",
+      "prompt_fr": "Contexte : C’est Mariame qui possède un mouton.\nMessage : Peux-tu dire quel animal possède Mariame ?",
+      "reference_bci": "Mariame le bua",
+      "generated_bci": "Konan le bua",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0074-4",
+      "prompt_fr": "Contexte : C’est la mangue que Koffi cueille.\nMessage : Peux-tu préciser le fruit que cueille Koffi ?",
+      "reference_bci": "Koffi titi mango.",
+      "generated_bci": "Koffi wun ako.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0082-4",
+      "prompt_fr": "Contexte : C’est Aya qui a une cabane.\nMessage : Peux-tu préciser le logement qui appartient à Aya ?",
+      "reference_bci": "Aya le jin",
+      "generated_bci": "Aya le n'si.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0085-4",
+      "prompt_fr": "Contexte : C’est Aya qui a un champ de coton.\nMessage : Peux-tu préciser la culture du champ qu’Aya possède ?",
+      "reference_bci": "Aya le jese fie",
+      "generated_bci": "Aya le jin",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0106-4",
+      "prompt_fr": "Contexte : C’est Aka qui conduit la voiture.\nMessage : Peux-tu décrire ce qu’Aka est en train de faire ?",
+      "reference_bci": "Aka kondi l’auto.",
+      "generated_bci": "Aka to ndre.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0112-4",
+      "prompt_fr": "Contexte : Aka consomme le pain.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+      "reference_bci": "Aka di kpaun",
+      "generated_bci": "Aka di jun.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0117-4",
+      "prompt_fr": "Contexte : Ce que voit Aka est le singe.\nMessage : Peux-tu préciser l’animal qu’Aka aperçoit ?",
+      "reference_bci": "Aka wun ndo.",
+      "generated_bci": "Aka wun ndo.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0118-4",
+      "prompt_fr": "Contexte : Aka ne retrouve plus l’argent qu’il a perdu.\nMessage : Peux-tu préciser ce qu’Aka a perdu ?",
+      "reference_bci": "Aka mlin sika",
+      "generated_bci": "Aka di ndo.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0137-4",
+      "prompt_fr": "Contexte : C’est Aka qui élève beaucoup de poulets.\nMessage : Peux-tu décrire l’élevage dont s’occupe Aka ?",
+      "reference_bci": "Aka ta akɔ kpanngban",
+      "generated_bci": "Aka to ndre.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0157-4",
+      "prompt_fr": "Contexte : Le visage de Konan est pourvu d’une barbe.\nMessage : Peux-tu préciser ce que Konan porte au visage ?",
+      "reference_bci": "Konan le akanza.",
+      "generated_bci": "Yao le akanza.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0159-4",
+      "prompt_fr": "Contexte : Koffi se saisit des souris.\nMessage : Peux-tu préciser quels animaux Koffi capture ?",
+      "reference_bci": "Koffi tra gbekle",
+      "generated_bci": "Koffi wun ako.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0166-4",
+      "prompt_fr": "Contexte : C’est Konan qui fait sécher ses vêtements.\nMessage : Peux-tu décrire ce que Konan fait de ses habits ?",
+      "reference_bci": "Konan wlɛ i tralɛ’",
+      "generated_bci": "Be su kan blɔfuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0180-4",
+      "prompt_fr": "Contexte : Jouer du balafon est une chose qu’Awa sait faire.\nMessage : Peux-tu préciser de quel instrument Awa est capable de jouer ?",
+      "reference_bci": "Awa si jomlo to.",
+      "generated_bci": "Awa si jomlo to.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0181-4",
+      "prompt_fr": "Contexte : Le balafon est l’instrument dont Aka joue.\nMessage : Peux-tu nommer l’instrument dont joue Aka ?",
+      "reference_bci": "Aka to jomlo.",
+      "generated_bci": "Aka to jomlo.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0188-4",
+      "prompt_fr": "Contexte : Ce que voit Aka est un aigle.\nMessage : Peux-tu préciser l’animal qu’Aka aperçoit ?",
+      "reference_bci": "Aka wun kɔliɛ.",
+      "generated_bci": "Aka wun kɔliɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0189-4",
+      "prompt_fr": "Contexte : C’est en français qu’ils sont en train de parler.\nMessage : Peux-tu préciser la langue dans laquelle ils parlent ?",
+      "reference_bci": "Be su kan blɔfuɛ.",
+      "generated_bci": "Be su kan blɔfuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0196-4",
+      "prompt_fr": "Contexte : C’est papa qui a une canne.\nMessage : Peux-tu préciser l’objet que papa possède ?",
+      "reference_bci": "baba le kpɔnman.",
+      "generated_bci": "Konan le akanza.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0209-4",
+      "prompt_fr": "Contexte : La chèvre consomme de l’herbe.\nMessage : Peux-tu préciser ce que la chèvre mange ?",
+      "reference_bci": "boli di cɔkɔ",
+      "generated_bci": "Konan le boli.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0229-4",
+      "prompt_fr": "Contexte : L’arrivée dont on parle est celle de l’institutrice.\nMessage : Peux-tu préciser qui est arrivé ?",
+      "reference_bci": "Mɛtrɛsi bali.",
+      "generated_bci": "Be su kan blɔfuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0230-4",
+      "prompt_fr": "Contexte : La sauce que mange Konan est au gombo.\nMessage : Peux-tu préciser la sauce que Konan est en train de manger ?",
+      "reference_bci": "konan di jungble tro.",
+      "generated_bci": "konan di jungble tro.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0240-4",
+      "prompt_fr": "Contexte : C’est Aya qu’Aka console.\nMessage : Peux-tu décrire ce qu’Aka fait pour Aya ?",
+      "reference_bci": "Aka lualua Aya.",
+      "generated_bci": "Aka to ndo.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0241-4",
+      "prompt_fr": "Contexte : Yao monte à bord du bateau.\nMessage : Peux-tu préciser où Yao est en train de monter ?",
+      "reference_bci": "Yao fu mmeli nun.",
+      "generated_bci": "Yao di jungble tro.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0244-4",
+      "prompt_fr": "Contexte : L’achat d’Aka porte sur des champignons.\nMessage : Peux-tu préciser ce qu’Aka est en train d’acheter ?",
+      "reference_bci": "Aka to ndre.",
+      "generated_bci": "Aka to ndre.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0246-4",
+      "prompt_fr": "Contexte : C’est Yao qui a un pantalon.\nMessage : Peux-tu préciser le vêtement que possède Yao ?",
+      "reference_bci": "Yao le pantanlo’n kun.",
+      "generated_bci": "Yao le pantanlo’n kun.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0248-4",
+      "prompt_fr": "Contexte : L’achat de papa porte sur des chaussures.\nMessage : Peux-tu préciser ce que papa est en train d’acheter ?",
+      "reference_bci": "Baba to ngbabua.",
+      "generated_bci": "Aka to ndre.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0249-4",
+      "prompt_fr": "Contexte : Aka consomme le sucre.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+      "reference_bci": "Aka di sukla.",
+      "generated_bci": "Aka di sukla.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0290-4",
+      "prompt_fr": "Contexte : Koffi consomme les biscuits.\nMessage : Peux-tu préciser ce que Koffi est en train de manger ?",
+      "reference_bci": "Koffi di bisikli.",
+      "generated_bci": "Koffi di jungble tro.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0334-4",
+      "prompt_fr": "Contexte : Koffi est en proie à la colère.\nMessage : Peux-tu décrire ce que ressent Koffi ?",
+      "reference_bci": "Koffi ti nyannyrinfuɛ.",
+      "generated_bci": "Koffi di jungble tro.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0339-4",
+      "prompt_fr": "Contexte : Il y a de la chaleur aujourd’hui.\nMessage : Peux-tu préciser le temps qu’il fait aujourd’hui ?",
+      "reference_bci": "nyaan o lɛ adɛ.",
+      "generated_bci": "Konan le akanza.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0363-4",
+      "prompt_fr": "Contexte : Le versement de mon salaire se fait chaque mois.\nMessage : Peux-tu préciser à quelle fréquence tu touches ta rémunération ?",
+      "reference_bci": "Anglo kwalaa nun n nyan min akatua'n.",
+      "generated_bci": "N'kula yo like kula n'man wɔ, N'yo juman tɛ wo i osɔn, ɔ su kan ndɛ uflɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0364-4",
+      "prompt_fr": "Contexte : C’est le football qui est ma passion.\nMessage : Peux-tu préciser ce qui constitue ta passion ?",
+      "reference_bci": "Min akloliɛ y'ɔle banɔn.",
+      "generated_bci": "N'si sɔ. N'kula kɔ nian tele mɔ n'dɛ di jun.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0373-4",
+      "prompt_fr": "Contexte : C’est mille francs que Yao a.\nMessage : Peux-tu préciser la somme d’argent que possède Yao ?",
+      "reference_bci": "Yao le kotokun kun.",
+      "generated_bci": "Yao le pantanlo’n kun.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0390-4",
+      "prompt_fr": "Contexte : Yao dispose de beaucoup de richesses.\nMessage : Peux-tu décrire la richesse de Yao ?",
+      "reference_bci": "Yao ti anyanbeunfuɛ.",
+      "generated_bci": "Yao ti anyanbeunfuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    }
+  ]
+}

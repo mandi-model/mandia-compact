@@ -1,0 +1,14 @@
+{
+  "selected_by_validation": "source_contrastive",
+  "steps": {
+    "ce_control": 50,
+    "source_contrastive": 50,
+    "source_contrastive_ul": 100
+  },
+  "scores": {
+    "ce_control": 4.80816188602815,
+    "source_contrastive": 4.796752597977556,
+    "source_contrastive_ul": 4.833895170454576
+  },
+  "test_not_used": true
+}

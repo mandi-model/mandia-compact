@@ -1,0 +1,26 @@
+{
+  "rows": 39,
+  "counts": {
+    "fresh_translation": 30,
+    "fresh_written_reply": 6,
+    "fresh_authored_advice": 3
+  },
+  "source_documents": [
+    "gambia_typical__mffpotmtacmoitid",
+    "topic_162__atatysbtt",
+    "topic_389__sibsiiiisytiia",
+    "topic_587__weyiwiniwaaotiwenwy"
+  ],
+  "source_documents_seen_in_prior_prepared_sets": false,
+  "targets_seen_in_prior_train": false,
+  "test_not_used_for_training_or_selection": true,
+  "data_sha256": "731bae931a6141b1392fd1862e4ddafe0d6bf73d6c4d37ee6f7702ea6ce767cd",
+  "limits": [
+    "written/generated SMOL source, not spontaneous recorded conversations",
+    "French assistant-authored; Baoule copied exactly, no native review",
+    "six direct replies from only two written source documents, road dispute and fictional comedy",
+    "three computer advice prompts constructed from exact translated monologue responses; not authentic dialogue",
+    "translation and advice from doc34 overlap within test only",
+    "all previously observed tests are regression tests, not fresh tests"
+  ]
+}

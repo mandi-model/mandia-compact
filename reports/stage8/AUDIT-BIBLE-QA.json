@@ -1,0 +1,56 @@
+{
+  "rows": 64,
+  "counts": {
+    "train": 48,
+    "validation": 8,
+    "test": 8
+  },
+  "unique_target_families": 40,
+  "unique_original_rows": 38,
+  "chapters": {
+    "train": [
+      "Marc 1",
+      "Matthieu 3"
+    ],
+    "validation": [
+      "Luc 1"
+    ],
+    "test": [
+      "Matthieu 2"
+    ]
+  },
+  "all_answers_exact_source_spans": true,
+  "original_chapter_splits_preserved": true,
+  "normalized_answer_overlap_between_splits": false,
+  "native_validation": false,
+  "newly_collected_authentic_daily_dialogues": 0,
+  "bible_qa_is_not_daily_dialogue": true,
+  "qa_test_is_new_but_inherited_translation_holdouts_have_been_evaluated_before": true,
+  "data_sha256": "868ea39a2961c3b590260b3a7fab51581b82aed7db75726c4ab7369d1ede6a0e",
+  "source_sha256": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "encoded_stats": {
+    "train": {
+      "rows": 48,
+      "source_tokens": 2983,
+      "target_tokens": 1584,
+      "max_source_tokens": 87,
+      "max_target_tokens": 49
+    },
+    "validation": {
+      "rows": 8,
+      "source_tokens": 542,
+      "target_tokens": 286,
+      "max_source_tokens": 89,
+      "max_target_tokens": 56
+    },
+    "test": {
+      "rows": 8,
+      "source_tokens": 565,
+      "target_tokens": 202,
+      "max_source_tokens": 101,
+      "max_target_tokens": 53
+    }
+  },
+  "max_source_tokens_for_pilot": 160
+}

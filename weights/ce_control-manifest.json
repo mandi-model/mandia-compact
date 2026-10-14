@@ -1,0 +1,20 @@
+{
+  "name": "Mandia N’zassa 21M",
+  "architecture": "own hybrid encoder-decoder",
+  "parameters": 20860416,
+  "stage": 11,
+  "selected_arm": "ce_control",
+  "selected_step": 50,
+  "status": "experimental ablation; not promoted",
+  "source_max": 512,
+  "max_new_tokens": 512,
+  "weights": {
+    "filename": "mandia-nzassa-21m-ce-control.pt",
+    "bytes": 83483096,
+    "sha256": "a5377f1b824c092717da1d8fae33c34fc0b5195183905fe3f02d7f6e629cc50c",
+    "url": "https://github.com/mandi-model/mandia-nzassa/releases/download/nzassa-21m-v0.1/mandia-nzassa-21m-ce-control.pt"
+  },
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "native_validated": false,
+  "full_optimizer_checkpoints": "private working Drive; inference export only in this release"
+}

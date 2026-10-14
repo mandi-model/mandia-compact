@@ -1,0 +1,20 @@
+{
+  "fixture": "random tiny CPU model, not trained weights or quality benchmark",
+  "preserves_eval_logits_with_tolerance": true,
+  "max_absolute_error": 5.960464477539063e-08,
+  "preserves_argmax": true,
+  "cached_decode_matches_full": true,
+  "all_added_down_columns_receive_nonzero_gradient": true,
+  "extra_down_gradient_l1": {
+    "encoder.0.ffn.down.weight": 2.790287494659424,
+    "decoder.0.ffn.down.weight": 8.73589038848877,
+    "decoder.1.ffn.down.weight": 8.880581855773926,
+    "decoder.2.ffn.down.weight": 9.140435218811035
+  },
+  "gpu_bf16_equivalence_not_yet_verified": true,
+  "parameter_counts_by_ffn_dimension": {
+    "768": 13782528,
+    "1536": 20860416,
+    "2304": 27938304
+  }
+}

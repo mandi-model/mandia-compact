@@ -1,0 +1,889 @@
+{
+  "fresh_sentence_translation12": [
+    {
+      "id": "s10-sent-0",
+      "prompt_fr": "Cela me permet de travailler en suivant mon intuition et d'adapter ma façon d'enseigner à la manière dont le public apprend.",
+      "reference_bci": "E man ati'n n'di juman n'bɔ n'kunnu n'klo kokun n'kle sran n'ga me ti me fluwa n'bɔ n'klo.",
+      "generated_bci": "Be su kan blɔfuɛ me ti kpa tra sika ɔkwlɛ. Be kwla'a yo-man sran me n'ga be fa man i sɔ like nun'n.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-19",
+      "prompt_fr": "Profitons-en avant de partir pour l'aéroport en début d'après-midi et de dire au revoir à l'île Maurice.",
+      "reference_bci": "Yo i kpa nan ya ɔ aeropori midi issi'n kanhan n'dɛnu kɔkun kale Mauritus.",
+      "generated_bci": "Ye kula yo sɔ. N'kula faman mi juman ekun sɛ adɛ nan a idjɔ, nin'gue n'ga Tom seli nion.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-56",
+      "prompt_fr": "Faites du bénévolat quelque part : dans une soupe populaire, un vestiaire solidaire ou un centre d'hébergement pour personnes sans abri.",
+      "reference_bci": "Be n'ga be seli kɛ be yo: gbo nu tro, trãlɛ, be n'ga be lɛ sua n'ga be lafi guassu mu.",
+      "generated_bci": "I sɔ'n ti, ndɛ nga be fa kan n'gua guassu sa, be fa kɔ loto siesiefuɛ lɔ lika kun b'ɔ o i ndɛ'n su'n.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-67",
+      "prompt_fr": "La paix s'accompagne de joie, de force, d'espoir et de foi.",
+      "reference_bci": "Aklun'juɛ man fɛ kaka, umien, like n'ga ye lafi su, eni akun'nda kpa.",
+      "generated_bci": "Kε ɔ fin kε sran kun ɔ nin i mma mun, be tilε sran kun su.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-78",
+      "prompt_fr": "Maman plonge la main dans l'enveloppe et en sort une lettre écrite d'une écriture soignée et réfléchie.",
+      "reference_bci": "Man'mi fali enveloppe kɔkun fali lettri n'ga be klɛli i sa, be klun' n'dɛnu.",
+      "generated_bci": "Koffi fa kpa i wun'n ti, man a wun sran uflɛ'm be wun, sanguɛ be yo i wun sran kun b'a wun'n ti.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-128",
+      "prompt_fr": "L'arbre peut atteindre vingt mètres de haut et possède une fine écorce lisse de couleur brun grisâtre.",
+      "reference_bci": "Waka kwla ɲin e to mɛtri ablãn, eni iwun'bu trontron, ni ibu ble.",
+      "generated_bci": "Kɛ ɔ fin Galile mɛn'n nun lɔ'n, ɔ fin Galile mɛn'n nun lɔ lika kun mli'n ɔ kɔ lɔ.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-161",
+      "prompt_fr": "Le menu du dîner est toutefois beaucoup plus raffiné, aussi bien dans sa présentation que dans son contenu.",
+      "reference_bci": "Aliɛ diwa n'ga be wo lɛ andɛ, cɛ ye sɔ, eti like kpa n'ga be kwla fa kle sran.",
+      "generated_bci": "Sran kwlakwla ɔ le atin mɔ ɔ bu i ti bo nun'n, ɔ ti kɛ ɔ yo sa tɛ'n sa, ɔ yo sɔ.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-205",
+      "prompt_fr": "Savoir bien utiliser un dictionnaire est un excellent moyen d'apprendre plus vite le vocabulaire, de mieux comprendre ses lectures et de mieux orthographier les mots.",
+      "reference_bci": "Dictionnaire nu like suan lɛ e ti like kpa mɔ e yo a ɲan like kaka ɔ akun'nda nu, a ti n'dɛ me nin'dɛ, kɔkun a kwla yijɔ kpa.",
+      "generated_bci": "Tʃɛtʃɛ, N'siman. E yo wafa sɛ ?",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-217",
+      "prompt_fr": "Bien sûr, les jeunes plants semblent toujours vouloir pousser soit tout devant le massif, soit dans le potager.",
+      "reference_bci": "E ti su kɛ nin'gue dualɛ e kle kɛ be ɲi kpa i awɛ ɲunnu, anzɛɛ ɲa n'ɲa like me nu.",
+      "generated_bci": "Kɛ ɔ ɔli i nuan lɔ'n, ɔ wunnin kɛ ye ko lɛ adɛ'n, ɔ yo man be bɔ be o lɛ adɛ'n nun.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-227",
+      "prompt_fr": "Je n'avais plus d'appétit après avoir vu cette bouillie gluante garnie de rondelles de concombre.",
+      "reference_bci": "Aliɛ dilɛ ku'nman kun kɛ n'wunli baka n'dron n'dron n'ga be ton ni concombre n'ga be kpɛpkɛ.",
+      "generated_bci": "N'kula yo like kula n'man wɔ, N'kula nian tele n'ga nu n'ga ɔ ti kpa tra su",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-244",
+      "prompt_fr": "Elle aime la randonnée et la natation, et s'intéresse beaucoup à la protection de la nature, à la littérature, au cinéma et à l'histoire.",
+      "reference_bci": "E klo blo kolɛ eni n'zue wɛlɛ kɔkun e wuka ijre mu ni waka mu be sielɛ, blɔfuɛ fluwa like, cinéma eni lã n'dɛ'm.",
+      "generated_bci": "Kɛ ɔ fin Galile mɛn'n nun lɔ'n, ɔ ti kpa, ɔ fata kɛ be bo be awlo bowa nun, ɔ fin nvle kun i nun ninnge mun be wun siesielε kε ɔ fin i bɔbɔ nin i yi nin i mma mun be wun, ɔ ti sran-mmla nin ɔ nin i mma mun be wun siesielε kε ɔ fata kε be yo be man be nyrun kɔlε'n, be yo i like wafa umien nun sran mun be suɔ.",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-sent-278",
+      "prompt_fr": "J'ai hâte d'entendre le récit de cette merveilleuse découverte que Steve et toi avez faite !",
+      "reference_bci": "N'kula min'dɛ man nan man wun issɔ like n'ga Ani Steve ame yoli!",
+      "generated_bci": "N'sissɔ, Nannan, a kanli i bowlɛ nu, sanguɛ n'ga a fa min man wɔ",
+      "eos": true,
+      "domain": "new_sentence_translation",
+      "native_validated": false
+    }
+  ],
+  "fresh_document_sentences26": [
+    {
+      "id": "s10-doc-73-sentence-0",
+      "prompt_fr": "La vue depuis le sommet de la montagne était à couper le souffle.",
+      "reference_bci": "Kpɔlɛ dan su lɔ lika nianlɛ ti like n'ga kpɛ sran umien.",
+      "generated_bci": "Sran'm be kwlaa be wa wun-man be, yɛ be kun Jésus.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-1",
+      "prompt_fr": "Le soleil brillait, les oiseaux chantaient et les nuages se trouvaient sous nos pieds.",
+      "reference_bci": "Via wolɛ kpaja, annuman meolɛ be kpan, kɔkun nianmien su wo ye bo.",
+      "generated_bci": "Kɛ be fin gua bo mɔ be fa be wun mun, be kwlaa be su ndɛ ɔ.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-2",
+      "prompt_fr": "J'avais du mal à croire que nous étions montés aussi haut.",
+      "reference_bci": "Man kula lafiman su kɛ ye wo n'glo sɔ dan.",
+      "generated_bci": "Be nga be fa kpa nun mun be fa-man be nuan",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-3",
+      "prompt_fr": "Nous avions marché pendant des heures pour arriver là, et chaque pas en valait la peine.",
+      "reference_bci": "Ye nantili ye j'ai nu nan ya julɔ, kɔkun ajalɛ kula yoli i fɛ.",
+      "generated_bci": "Kɛ ɔ fin i sɔ'n ti, like nga a fa kpa nun'n, a kan ndɛ nga a fa kpa nun'n.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-4",
+      "prompt_fr": "Alors que nous admirions le paysage, un camion est passé.",
+      "reference_bci": "Kɛ ye jranli lɛ nan ya nian lika nu, loto dan kun sinli.",
+      "generated_bci": "alua kun.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-5",
+      "prompt_fr": "C'était un gros et vieux camion couvert de boue.",
+      "reference_bci": "E ti loto dan, n'ga wa ye kpin'gbin, kɔkun fa guɛguɛ wun.",
+      "generated_bci": "Yao le pantanlo’n kun",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-6",
+      "prompt_fr": "Le conducteur avait sorti la tête par la fenêtre et souriait.",
+      "reference_bci": "Loto kondifuɛ wolɛ fa i ti n'fite i fenɛtri nu, yin e sri.",
+      "generated_bci": "Kε ɔ fin kε be wu be ɔ, akonan ɔ ti sran kpa man be wa yo i fɔundi-mmla ɔ.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-7",
+      "prompt_fr": "Il devait apprécier la vue autant que nous.",
+      "reference_bci": "E kloli lika nianlɛ vie kɛ ye sa.",
+      "generated_bci": "Ɔ ti sa kekle.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-8",
+      "prompt_fr": "Nous avons regardé le camion s'éloigner, puis nous avons de nouveau porté notre attention sur le paysage.",
+      "reference_bci": "Ye nianli loto dan mɔ su sin, kɔkun ye kakili lika uflɛ nianlɛ.",
+      "generated_bci": "Awa kun le si.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-9",
+      "prompt_fr": "Nous sommes restés là-haut un moment, simplement pour profiter de l'instant.",
+      "reference_bci": "Ye fali blɛ kan ye yali lɔ kan, nan ya wunyi fɛ n'kpa.",
+      "generated_bci": "E ti su, vie kɛ ewa yo n'gua.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-10",
+      "prompt_fr": "C'était une journée parfaite et nous étions heureux d'avoir fait l'effort de monter jusqu'au sommet.",
+      "reference_bci": "E yoli tʃin kun mɔ yo fɛ, kɔkun e yoli ye fɛ kɛ ye kula nantili ye juli kpɔlɛ su lɔ.",
+      "generated_bci": "I sɔ'n ti, n kan kle sran uflɛ'm be yo min n'ga su kan n'gua guassu sa.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-11",
+      "prompt_fr": "En commençant à redescendre, nous nous sommes rendu compte que la vue était encore plus belle d'en bas.",
+      "reference_bci": "Kɛ ye bo yessin salɛ n'bo, ye wunliyi kɛ lika ti klanman ekun dja'ngua nu.",
+      "generated_bci": "Kɛ be ko kan'n, be wa fa be wun ase, sanguɛ be su kan be nyrun, sanguɛ be su kan be nyrun, sanguɛ be su kan be nyrun, sanguɛ be su kan be nyrun, sanguɛ be su kan be nyrun, sanguɛ be su kan be nyrun, sanguɛ be su kan be nyrun, sanguɛ be su kan be nyrun.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-12",
+      "prompt_fr": "Nous apercevions le camion au loin ; il ressemblait à un point minuscule.",
+      "reference_bci": "Ye kula wunli loto dan mua lɔ, kɔkun ti kɛ n'zɔliɛ kan kun.",
+      "generated_bci": "Be su kan blɔfuɛ.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-13",
+      "prompt_fr": "C'était étonnant de penser que nous venions de nous trouver là-haut à le regarder d'en haut.",
+      "reference_bci": "E bo nuan kɛ bu kɛ ye kula juli n'glo lɔ, nan ya nian n'gua wa.",
+      "generated_bci": "I sɔ'n ti, n kan kle sran uflɛ'm be kɛ be ti Nyanmiɛn nuan ijɔfuɛ'n.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-sentence-14",
+      "prompt_fr": "La descente a été plus facile que la montée et nous avons très vite retrouvé notre voiture.",
+      "reference_bci": "Kpɔlɛ i ja'ngua balɛ ti pɔpɔ tra i ti su lɔ fulɛ, kɔkun ye natili ye sali ye sin nindɛ ye loto wun lɛ.",
+      "generated_bci": "Sran me buye tɛ mɔ ɔ ti nvle kun su ɔ. Be ti dan n'ga su, sanngɛ a kan n'ga sa.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-0",
+      "prompt_fr": "Louer une voiture est un moyen pratique de se déplacer lorsqu'on visite une nouvelle ville ou un nouveau pays.",
+      "reference_bci": "Loto n'ga be fa ma be me ti wafa kpa kun mɔ a kula fa wulan klɔ dan uflɛ nu ni n'vle uflɛ nu.",
+      "generated_bci": "Fluwa bue nga ɔ ti ndɛ ndɛ i ndɛ.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-1",
+      "prompt_fr": "Cela permet d'explorer les lieux à son rythme et peut coûter moins cher que les transports en commun.",
+      "reference_bci": "Be ti wafa pɔpɔ n'ga a kula fa wlan wɔ bɔbɔ a klunklo wulanlɛ kɔkun i gua kula yo pɔpɔ tra loto n'ga sran n'gba funu.",
+      "generated_bci": "Sran mun be ngba, kε be wu be ɔ, be ngba be sε, fɔndi nun, sran-mmala nun. Be fa be fa be wun, wa tran'n be ti-man be wun, sanguɛ be yo.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-2",
+      "prompt_fr": "Lorsque vous louez une voiture, il est important de comparer les prix de plusieurs entreprises et de lire attentivement les petites lignes du contrat.",
+      "reference_bci": "Sɛ awin a fa loto n'ga be man, efata kɛ a niannian societe vie me gua nu kɔkun nian be loto falɛ n'mla fluwa nu kpa ka.",
+      "generated_bci": "Sran kwlakwla ɔ le atin ɔ bu i bɔbɔ ti bo nun like wafa nga be fa kpa nun mun be wun'n.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-3",
+      "prompt_fr": "Pensez à demander quels frais supplémentaires s'appliquent, par exemple pour le carburant, l'assurance ou les péages.",
+      "reference_bci": "Wussa be gua n'gba nu kpa, kɛ essensi i gua, assuranci, anzɛ tualɛ.",
+      "generated_bci": "Be kwla'a be fa-man be nuan sran kun i awlo nun ndε mun be nun ngbεn, i sɔ ti be fa be wun-man be ti nun.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-4",
+      "prompt_fr": "Il est aussi conseillé de photographier la voiture avant de partir avec, afin de garder une preuve de son état en cas de dommage.",
+      "reference_bci": "Efata kɛ a fa loto i foto nan wa wɔ niyi, nan wa kula sie i n'zɔliɛ sɛ sa tɛ vie sin.",
+      "generated_bci": "Koffi ti kpata su sran fi like.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-5",
+      "prompt_fr": "Si vous comptez louer une voiture pour une longue durée, vous pourrez peut-être obtenir une meilleure offre avec un forfait.",
+      "reference_bci": "Sɛ awin fa loto a fa kɔ tʃin kaka su, efata kɛ a yo nan be ti i gua su be man wɔ.",
+      "generated_bci": "E ti su, vie fi ɔ nin be nga be o lɛ'n be su",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-6",
+      "prompt_fr": "Ces forfaits comprennent généralement un nombre déterminé de jours de location, un kilométrage illimité et d'autres avantages.",
+      "reference_bci": "Issɔ gua kpɔlɛ sɔ tʃin n'ga a wa di ni loto me wonu, kɔkun like uflɛ n'ga a kula yo eni like vie me ekun.",
+      "generated_bci": "Yao di jue, N'siman kun'gba, a kanli i sɔ like, a kanli i kɔ ko diin.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-7",
+      "prompt_fr": "Vous pouvez aussi obtenir une réduction en réservant votre voiture à l'avance.",
+      "reference_bci": "Be kula tiwɔ su sɛ a dumua a kan kle be kɛ a fa.",
+      "generated_bci": "Ɔ ti sa kekle n'ga su o be ti nun.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-8",
+      "prompt_fr": "Au moment de récupérer votre voiture de location, inspectez-la soigneusement pour repérer les éventuels dommages.",
+      "reference_bci": "Tʃin n'ga assu fa loto, niannian inu nin'gue me kpa sɛ lika vie tiya sakiwa.",
+      "generated_bci": "E ti sa kekle, yɛ a kan ndɛ uflɛ nin i srɛlɛ sua'm be nun. Be fa ndɛ uflɛ sɔ mun ekun i, sanguɛ be su kan be man be wun.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-9",
+      "prompt_fr": "Si vous constatez un dommage, faites-le inscrire sur le contrat de location.",
+      "reference_bci": "Sɛ a wun lika sakiwa vie, klɛyi i falɛ fluwa nu.",
+      "generated_bci": "Fluwa bue nga ɔ le ndɛ uflɛ vie mun ekun i nun.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-sentence-10",
+      "prompt_fr": "Vous devriez aussi photographier la voiture avant de partir avec.",
+      "reference_bci": "Efata kɛ a fa loto i foto nan wa fa wɔ.",
+      "generated_bci": "Kɛ ɔ ɔli i bue kun.",
+      "eos": true,
+      "domain": "new_document_sentence",
+      "native_validated": false
+    }
+  ],
+  "fresh_paragraphs7": [
+    {
+      "id": "s10-doc-73-paragraph-0",
+      "prompt_fr": "La vue depuis le sommet de la montagne était à couper le souffle. Le soleil brillait, les oiseaux chantaient et les nuages se trouvaient sous nos pieds. J'avais du mal à croire que nous étions montés aussi haut. Nous avions marché pendant des heures pour arriver là, et chaque pas en valait la peine.",
+      "reference_bci": "Kpɔlɛ dan su lɔ lika nianlɛ ti like n'ga kpɛ sran umien. Via wolɛ kpaja, annuman meolɛ be kpan, kɔkun nianmien su wo ye bo. Man kula lafiman su kɛ ye wo n'glo sɔ dan. Ye nantili ye j'ai nu nan ya julɔ, kɔkun ajalɛ kula yoli i fɛ.",
+      "generated_bci": "Kɛ ɔ fin i sɔnnzɔnfuɛ'm be wa fa be b'ɔ ti Nyanmiɛn nuan ijɔfuɛ'n, ɔ yo sɔ, yɛ ɔ yo sɔ-ɔ. Be wa yo sɔ, yɛ be nga be ti-man be nuan-ɔ.",
+      "eos": true,
+      "domain": "new_paragraph_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-paragraph-4",
+      "prompt_fr": "Alors que nous admirions le paysage, un camion est passé. C'était un gros et vieux camion couvert de boue. Le conducteur avait sorti la tête par la fenêtre et souriait. Il devait apprécier la vue autant que nous.",
+      "reference_bci": "Kɛ ye jranli lɛ nan ya nian lika nu, loto dan kun sinli. E ti loto dan, n'ga wa ye kpin'gbin, kɔkun fa guɛguɛ wun. Loto kondifuɛ wolɛ fa i ti n'fite i fenɛtri nu, yin e sri. E kloli lika nianlɛ vie kɛ ye sa.",
+      "generated_bci": "E ti sɔ. Be kwla'a yo-man be bu-man be nuan sran kun i awlo nun ndε mun be nun. Be ti-man be yo-man be yo-man be nuan sran kun nun.",
+      "eos": true,
+      "domain": "new_paragraph_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-paragraph-8",
+      "prompt_fr": "Nous avons regardé le camion s'éloigner, puis nous avons de nouveau porté notre attention sur le paysage. Nous sommes restés là-haut un moment, simplement pour profiter de l'instant. C'était une journée parfaite et nous étions heureux d'avoir fait l'effort de monter jusqu'au sommet. En commençant à redescendre, nous nous sommes rendu compte que la vue était encore plus belle d'en bas.",
+      "reference_bci": "Ye nianli loto dan mɔ su sin, kɔkun ye kakili lika uflɛ nianlɛ. Ye fali blɛ kan ye yali lɔ kan, nan ya wunyi fɛ n'kpa. E yoli tʃin kun mɔ yo fɛ, kɔkun e yoli ye fɛ kɛ ye kula nantili ye juli kpɔlɛ su lɔ. Kɛ ye bo yessin salɛ n'bo, ye wunliyi kɛ lika ti klanman ekun dja'ngua nu.",
+      "generated_bci": "E ti sa kekle, kɛ be fa yi sran'n, ɔ fata kɛ ewa yo like tɛ mɔ be fa yo sran mun n'ga be yo be sie i kpa'n. Be ti kɛ n'ga sa. Be ti n'gua like, be wa yo i sɔ.",
+      "eos": true,
+      "domain": "new_paragraph_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-73-paragraph-12",
+      "prompt_fr": "Nous apercevions le camion au loin ; il ressemblait à un point minuscule. C'était étonnant de penser que nous venions de nous trouver là-haut à le regarder d'en haut. La descente a été plus facile que la montée et nous avons très vite retrouvé notre voiture.",
+      "reference_bci": "Ye kula wunli loto dan mua lɔ, kɔkun ti kɛ n'zɔliɛ kan kun. E bo nuan kɛ bu kɛ ye kula juli n'glo lɔ, nan ya nian n'gua wa. Kpɔlɛ i ja'ngua balɛ ti pɔpɔ tra i ti su lɔ fulɛ, kɔkun ye natili ye sali ye sin nindɛ ye loto wun lɛ.",
+      "generated_bci": "E ti sa kekle, ɔ yo sɔ. N'zu sa ɔ wun kɛ e yo sa tɛ sa'n, ɔ yo sɛ yɛ a kan n'ga be fa yo like b'ɔ o i sa nun'n nun'n.",
+      "eos": true,
+      "domain": "new_paragraph_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-paragraph-0",
+      "prompt_fr": "Louer une voiture est un moyen pratique de se déplacer lorsqu'on visite une nouvelle ville ou un nouveau pays. Cela permet d'explorer les lieux à son rythme et peut coûter moins cher que les transports en commun. Lorsque vous louez une voiture, il est important de comparer les prix de plusieurs entreprises et de lire attentivement les petites lignes du contrat. Pensez à demander quels frais supplémentaires s'appliquent, par exemple pour le carburant, l'assurance ou les péages.",
+      "reference_bci": "Loto n'ga be fa ma be me ti wafa kpa kun mɔ a kula fa wulan klɔ dan uflɛ nu ni n'vle uflɛ nu. Be ti wafa pɔpɔ n'ga a kula fa wlan wɔ bɔbɔ a klunklo wulanlɛ kɔkun i gua kula yo pɔpɔ tra loto n'ga sran n'gba funu. Sɛ awin a fa loto n'ga be man, efata kɛ a niannian societe vie me gua nu kɔkun nian be loto falɛ n'mla fluwa nu kpa ka. Wussa be gua n'gba nu kpa, kɛ essensi i gua, assuranci, anzɛ tualɛ.",
+      "generated_bci": "Be kwla'a be wla-man be nuan sran kun i awlo nun ndε mun be nun ngbεn, i sɔ ti ti yε be kan be wun, sanguɛ be kwla kan ndε mɔ be kwla'a be yo'a nun.",
+      "eos": true,
+      "domain": "new_paragraph_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-paragraph-4",
+      "prompt_fr": "Il est aussi conseillé de photographier la voiture avant de partir avec, afin de garder une preuve de son état en cas de dommage. Si vous comptez louer une voiture pour une longue durée, vous pourrez peut-être obtenir une meilleure offre avec un forfait. Ces forfaits comprennent généralement un nombre déterminé de jours de location, un kilométrage illimité et d'autres avantages. Vous pouvez aussi obtenir une réduction en réservant votre voiture à l'avance.",
+      "reference_bci": "Efata kɛ a fa loto i foto nan wa wɔ niyi, nan wa kula sie i n'zɔliɛ sɛ sa tɛ vie sin. Sɛ awin fa loto a fa kɔ tʃin kaka su, efata kɛ a yo nan be ti i gua su be man wɔ. Issɔ gua kpɔlɛ sɔ tʃin n'ga a wa di ni loto me wonu, kɔkun like uflɛ n'ga a kula yo eni like vie me ekun. Be kula tiwɔ su sɛ a dumua a kan kle be kɛ a fa.",
+      "generated_bci": "E ti sa kekle, ɔ kwla wlu ase kɛ be ti Nyanmiɛn nuan ijɔfuɛ'n, ɔ ti kpa, afin like nga a kan'n ti. Be ti yɛ a kan n'ga be ti kpa tra-man.",
+      "eos": true,
+      "domain": "new_paragraph_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-paragraph-8",
+      "prompt_fr": "Au moment de récupérer votre voiture de location, inspectez-la soigneusement pour repérer les éventuels dommages. Si vous constatez un dommage, faites-le inscrire sur le contrat de location. Vous devriez aussi photographier la voiture avant de partir avec.",
+      "reference_bci": "Tʃin n'ga assu fa loto, niannian inu nin'gue me kpa sɛ lika vie tiya sakiwa. Sɛ a wun lika sakiwa vie, klɛyi i falɛ fluwa nu. Efata kɛ a fa loto i foto nan wa fa wɔ.",
+      "generated_bci": "E ti sɔ. N'siman kun'gba kɛ ye bu angunda nan ya kan n'gua. Ye kula fa man wɔ. E yo sɔ. Be kwla'a yo-man be awlo. Be wa yo like tεtε fite su, be nga be ti-man be tra-man kun'n.",
+      "eos": true,
+      "domain": "new_paragraph_translation",
+      "native_validated": false
+    }
+  ],
+  "fresh_whole_documents2": [
+    {
+      "id": "s10-doc-73-whole",
+      "prompt_fr": "La vue depuis le sommet de la montagne était à couper le souffle. Le soleil brillait, les oiseaux chantaient et les nuages se trouvaient sous nos pieds. J'avais du mal à croire que nous étions montés aussi haut. Nous avions marché pendant des heures pour arriver là, et chaque pas en valait la peine. Alors que nous admirions le paysage, un camion est passé. C'était un gros et vieux camion couvert de boue. Le conducteur avait sorti la tête par la fenêtre et souriait. Il devait apprécier la vue autant que nous. Nous avons regardé le camion s'éloigner, puis nous avons de nouveau porté notre attention sur le paysage. Nous sommes restés là-haut un moment, simplement pour profiter de l'instant. C'était une journée parfaite et nous étions heureux d'avoir fait l'effort de monter jusqu'au sommet. En commençant à redescendre, nous nous sommes rendu compte que la vue était encore plus belle d'en bas. Nous apercevions le camion au loin ; il ressemblait à un point minuscule. C'était étonnant de penser que nous venions de nous trouver là-haut à le regarder d'en haut. La descente a été plus facile que la montée et nous avons très vite retrouvé notre voiture.",
+      "reference_bci": "Kpɔlɛ dan su lɔ lika nianlɛ ti like n'ga kpɛ sran umien. Via wolɛ kpaja, annuman meolɛ be kpan, kɔkun nianmien su wo ye bo. Man kula lafiman su kɛ ye wo n'glo sɔ dan. Ye nantili ye j'ai nu nan ya julɔ, kɔkun ajalɛ kula yoli i fɛ. Kɛ ye jranli lɛ nan ya nian lika nu, loto dan kun sinli. E ti loto dan, n'ga wa ye kpin'gbin, kɔkun fa guɛguɛ wun. Loto kondifuɛ wolɛ fa i ti n'fite i fenɛtri nu, yin e sri. E kloli lika nianlɛ vie kɛ ye sa. Ye nianli loto dan mɔ su sin, kɔkun ye kakili lika uflɛ nianlɛ. Ye fali blɛ kan ye yali lɔ kan, nan ya wunyi fɛ n'kpa. E yoli tʃin kun mɔ yo fɛ, kɔkun e yoli ye fɛ kɛ ye kula nantili ye juli kpɔlɛ su lɔ. Kɛ ye bo yessin salɛ n'bo, ye wunliyi kɛ lika ti klanman ekun dja'ngua nu. Ye kula wunli loto dan mua lɔ, kɔkun ti kɛ n'zɔliɛ kan kun. E bo nuan kɛ bu kɛ ye kula juli n'glo lɔ, nan ya nian n'gua wa. Kpɔlɛ i ja'ngua balɛ ti pɔpɔ tra i ti su lɔ fulɛ, kɔkun ye natili ye sali ye sin nindɛ ye loto wun lɛ.",
+      "generated_bci": "E ti sɔ. N'siman kun bɔ be fa kan n'ga ti-man kpa'n, sanngɛ ɔ'a bu-man, yɛ ɔ yo sɔ-ɔ. N'a yo-man kɛ ye ko kan n'ga sa. N'kula yo-man kun b'ɔ o i sa nun'n nun'n, ɔ yo sɔ.",
+      "eos": true,
+      "domain": "whole_document_translation",
+      "native_validated": false
+    },
+    {
+      "id": "s10-doc-97-whole",
+      "prompt_fr": "Louer une voiture est un moyen pratique de se déplacer lorsqu'on visite une nouvelle ville ou un nouveau pays. Cela permet d'explorer les lieux à son rythme et peut coûter moins cher que les transports en commun. Lorsque vous louez une voiture, il est important de comparer les prix de plusieurs entreprises et de lire attentivement les petites lignes du contrat. Pensez à demander quels frais supplémentaires s'appliquent, par exemple pour le carburant, l'assurance ou les péages. Il est aussi conseillé de photographier la voiture avant de partir avec, afin de garder une preuve de son état en cas de dommage. Si vous comptez louer une voiture pour une longue durée, vous pourrez peut-être obtenir une meilleure offre avec un forfait. Ces forfaits comprennent généralement un nombre déterminé de jours de location, un kilométrage illimité et d'autres avantages. Vous pouvez aussi obtenir une réduction en réservant votre voiture à l'avance. Au moment de récupérer votre voiture de location, inspectez-la soigneusement pour repérer les éventuels dommages. Si vous constatez un dommage, faites-le inscrire sur le contrat de location. Vous devriez aussi photographier la voiture avant de partir avec.",
+      "reference_bci": "Loto n'ga be fa ma be me ti wafa kpa kun mɔ a kula fa wulan klɔ dan uflɛ nu ni n'vle uflɛ nu. Be ti wafa pɔpɔ n'ga a kula fa wlan wɔ bɔbɔ a klunklo wulanlɛ kɔkun i gua kula yo pɔpɔ tra loto n'ga sran n'gba funu. Sɛ awin a fa loto n'ga be man, efata kɛ a niannian societe vie me gua nu kɔkun nian be loto falɛ n'mla fluwa nu kpa ka. Wussa be gua n'gba nu kpa, kɛ essensi i gua, assuranci, anzɛ tualɛ. Efata kɛ a fa loto i foto nan wa wɔ niyi, nan wa kula sie i n'zɔliɛ sɛ sa tɛ vie sin. Sɛ awin fa loto a fa kɔ tʃin kaka su, efata kɛ a yo nan be ti i gua su be man wɔ. Issɔ gua kpɔlɛ sɔ tʃin n'ga a wa di ni loto me wonu, kɔkun like uflɛ n'ga a kula yo eni like vie me ekun. Be kula tiwɔ su sɛ a dumua a kan kle be kɛ a fa. Tʃin n'ga assu fa loto, niannian inu nin'gue me kpa sɛ lika vie tiya sakiwa. Sɛ a wun lika sakiwa vie, klɛyi i falɛ fluwa nu. Efata kɛ a fa loto i foto nan wa fa wɔ.",
+      "generated_bci": "E ti sa kekle, kɛ be kan'n, i sɔ'n ti, like nga a kan'n, sanngɛ a kan ndɛ kun'gba kɛ nga sa. E yo. E yo. Sanguɛ n'ga be yo be man be sie su'n, sanguɛ be yo. Be fa be kan ndɛ sɔ'n ti, sanguɛ be yo. Be fa be kan ndɛ nga ɔ'a yo.",
+      "eos": true,
+      "domain": "whole_document_translation",
+      "native_validated": false
+    }
+  ],
+  "fresh_written_replies5": [
+    {
+      "id": "s10-reply-28-3",
+      "prompt_fr": "Contexte : Dialogue écrit. Dentiste : Laissez-moi regarder. Il examine les dents du patient. Il semble que vous ayez une carie. Je vais devoir retirer la partie abîmée avec la fraise et boucher le trou.\nMessage : Est-ce que cela va faire mal ?",
+      "reference_bci": "Ewa yo ya kan, sangɛ n'ma yo blɛblɛ nan nan eyo wɔ ya dan.",
+      "generated_bci": "N'ma yo. N'yowɔ kula.",
+      "eos": true,
+      "domain": "new_written_next_turn",
+      "native_validated": false
+    },
+    {
+      "id": "s10-reply-28-7",
+      "prompt_fr": "Contexte : Dialogue écrit. Dentiste : Cela peut être un peu désagréable, mais je ferai de mon mieux pour que ce soit aussi peu douloureux que possible. Dentiste : Il retire la partie abîmée et bouche le trou. C'est terminé !\nMessage : Merci, docteur. Ce n'était pas si terrible.",
+      "reference_bci": "Eyoman like. Min ɔ nuannu wunzinlɛ eni innu nunulɛ eyo wɔ tʃinjin nan wa ɲanman issɔ kunman'm kun.",
+      "generated_bci": "N'ma yo. N'yowɔ kula.",
+      "eos": true,
+      "domain": "new_written_next_turn",
+      "native_validated": false
+    },
+    {
+      "id": "s10-reply-113-1",
+      "prompt_fr": "Contexte : Dialogue écrit.\nMessage : Penses-tu que le système de la dot soit une bonne chose ?",
+      "reference_bci": "N'buɛ sɔ. N'bu kɛ ti wafa kun mɔ be fa sie bla'm bue kun su.",
+      "generated_bci": "Aka to ndre.",
+      "eos": true,
+      "domain": "new_written_next_turn",
+      "native_validated": false
+    },
+    {
+      "id": "s10-reply-113-5",
+      "prompt_fr": "Contexte : Dialogue écrit. A : Penses-tu que le système de la dot soit une bonne chose ? B : Je ne le pense pas. Je pense que c'est une forme de discrimination envers les femmes.\nMessage : Pourtant, certaines personnes disent que la dot est un moyen de protéger les femmes.",
+      "reference_bci": "N'buɛ kɛ e ti sakpa. Sanguɛ, N'bu kɛ e kula wula bla sa kekle nu.",
+      "generated_bci": "Min wun su fa kle sran kun mɔ ɔ ti sran kun i ndɛ. Be kwla'a yo be wun kɛ be kan n'gua be atin.",
+      "eos": true,
+      "domain": "new_written_next_turn",
+      "native_validated": false
+    },
+    {
+      "id": "s10-reply-113-10",
+      "prompt_fr": "Contexte : Dialogue écrit. A : Pourtant, certaines personnes disent que la dot est un moyen de protéger les femmes. B : Je ne pense pas que ce soit vrai. Au contraire, je pense que cela peut mettre les femmes en danger.\nMessage : Alors, que devrions-nous faire à propos du système de la dot, selon toi ?",
+      "reference_bci": "N'bu kɛ ye kula jran tʃindjin nan ya yo nan wa vie. Ye kula kle sran'm like tɛ n'ga jalɛ systɛmi eyo sran me nu, kɔkun efata kɛ ye jran n'mla n'ga e sekɛ nan sran me kplin jalɛ tualɛ su i.",
+      "generated_bci": "Amun kwla'a man-man be nuan sran kun i awlo nun ndε mun be nun. Be kwla'a be yo-man be awlo. Be kwla'a be yo-man be awlo. Be kwla'a be yo-man be yo-man be nuan sran kun i nun ndε mun be nun.",
+      "eos": true,
+      "domain": "new_written_next_turn",
+      "native_validated": false
+    }
+  ],
+  "previous_written_replies5": [
+    {
+      "id": "s9-smol-46-1",
+      "prompt_fr": "Contexte : L'enfant montre les plantes du salon.\nMessage : Maman, qu'est-ce que c'est ?",
+      "reference_bci": "N'ga me ti waka kan'gan mu,'' N'ga manmi kanli yɛwolɛ ''Be ti like n'ga me do wumien, kɛ wɔ ni mi.''",
+      "generated_bci": "Aka di bisikli.",
+      "eos": true,
+      "domain": "smol_written_reply",
+      "native_validated": false
+    },
+    {
+      "id": "s9-smol-46-3",
+      "prompt_fr": "Contexte : L'enfant demande à sa maman s'il peut toucher les plantes.\nMessage : Est-ce que je peux les toucher ?",
+      "reference_bci": "N'tili, a kula, sangɛ yo blɛblɛ,'' N'ga manmi seli yɛwolɛ ''I n'ɲa me sakilɛ yayã.''",
+      "generated_bci": "N'lɛ n'dɛ kekle vie mi juman dilɛ lɔ.",
+      "eos": true,
+      "domain": "smol_written_reply",
+      "native_validated": false
+    },
+    {
+      "id": "s9-smol-46-7",
+      "prompt_fr": "Contexte : L'enfant vient de toucher une feuille douce.\nMessage : J'aime bien cette plante.",
+      "reference_bci": "Eyo mi fɛ,'' N'ga manmi kanli nion. ''Waka kangan mu be ti kpa be man ye. Be wukaye be yo awunmuan sanwun kɔkun beyo ye yo kpa.''",
+      "generated_bci": "konan di jungble tro.",
+      "eos": true,
+      "domain": "smol_written_reply",
+      "native_validated": false
+    },
+    {
+      "id": "s9-smol-46-10-11",
+      "prompt_fr": "Contexte : L'enfant montre le câble qui longe le sol.\nMessage : Qu'est-ce que c'est ?",
+      "reference_bci": "N'ɲanman ɔ,'' N'ga manmi kanli yɛwolɛ. Be fa ja Tele eni talɛ be afien.''",
+      "generated_bci": "I gua wa yo dan.",
+      "eos": true,
+      "domain": "smol_written_reply",
+      "native_validated": false
+    },
+    {
+      "id": "s9-smol-46-13",
+      "prompt_fr": "Contexte : L'enfant demande à sa maman s'il peut toucher le câble électrique.\nMessage : Est-ce que je peux le toucher ?",
+      "reference_bci": "Tʃɛtʃɛ, a kula man,'' N'ga manmi kanli yɛwolɛ. ''Issɔ nanman kula yo tɛ. E kula kpuju wɔnu.''",
+      "generated_bci": "Aka di bua",
+      "eos": true,
+      "domain": "smol_written_reply",
+      "native_validated": false
+    }
+  ],
+  "known_daily40": [
+    {
+      "id": "teacher-0006-4",
+      "prompt_fr": "Contexte : C’est Konan qui possède une chèvre.\nMessage : Peux-tu préciser quel animal est à Konan ?",
+      "reference_bci": "Konan le boli.",
+      "generated_bci": "Konan le boli.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0032-4",
+      "prompt_fr": "Contexte : La sensation de faim est présente chez l’enfant.\nMessage : Peux-tu décrire ce que ressent l’enfant ?",
+      "reference_bci": "ba le awe.",
+      "generated_bci": "ba le awe.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0038-4",
+      "prompt_fr": "Contexte : J’ai compris le propos.\nMessage : Est-ce que tu as compris ce qui a été dit ?",
+      "reference_bci": "N tili",
+      "generated_bci": "N tili",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0050-4",
+      "prompt_fr": "Contexte : La timidité caractérise Aya.\nMessage : Quel est le trait de caractère d’Aya ici ?",
+      "reference_bci": "Aya ti nyansafuɛ.",
+      "generated_bci": "Aya ti nyansafuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0058-4",
+      "prompt_fr": "Contexte : La largeur du chemin est faible.\nMessage : Peux-tu préciser comment est le chemin ?",
+      "reference_bci": "Atini'n ti fii",
+      "generated_bci": "Atini'n ti fii",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0060-4",
+      "prompt_fr": "Contexte : La guitare est l’instrument dont Koffi joue.\nMessage : Peux-tu nommer l’instrument dont joue Koffi ?",
+      "reference_bci": "Koffi bo gita.",
+      "generated_bci": "Koffi bo gita.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0061-4",
+      "prompt_fr": "Contexte : C’est le perroquet que Koffi voit.\nMessage : Peux-tu préciser ce que Koffi voit ?",
+      "reference_bci": "Koffi wun ako.",
+      "generated_bci": "Koffi wun ako.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0066-4",
+      "prompt_fr": "Contexte : C’est Mariame qui possède un mouton.\nMessage : Peux-tu dire quel animal possède Mariame ?",
+      "reference_bci": "Mariame le bua",
+      "generated_bci": "Mariame le bua",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0074-4",
+      "prompt_fr": "Contexte : C’est la mangue que Koffi cueille.\nMessage : Peux-tu préciser le fruit que cueille Koffi ?",
+      "reference_bci": "Koffi titi mango.",
+      "generated_bci": "Koffi titi mango.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0082-4",
+      "prompt_fr": "Contexte : C’est Aya qui a une cabane.\nMessage : Peux-tu préciser le logement qui appartient à Aya ?",
+      "reference_bci": "Aya le jin",
+      "generated_bci": "Aya le jin",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0085-4",
+      "prompt_fr": "Contexte : C’est Aya qui a un champ de coton.\nMessage : Peux-tu préciser la culture du champ qu’Aya possède ?",
+      "reference_bci": "Aya le jese fie",
+      "generated_bci": "Aya le jese fie",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0106-4",
+      "prompt_fr": "Contexte : C’est Aka qui conduit la voiture.\nMessage : Peux-tu décrire ce qu’Aka est en train de faire ?",
+      "reference_bci": "Aka kondi l’auto.",
+      "generated_bci": "Aka kondi l’auto.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0112-4",
+      "prompt_fr": "Contexte : Aka consomme le pain.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+      "reference_bci": "Aka di kpaun",
+      "generated_bci": "Aka di kpaun",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0117-4",
+      "prompt_fr": "Contexte : Ce que voit Aka est le singe.\nMessage : Peux-tu préciser l’animal qu’Aka aperçoit ?",
+      "reference_bci": "Aka wun ndo.",
+      "generated_bci": "Aka wun ndo.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0118-4",
+      "prompt_fr": "Contexte : Aka ne retrouve plus l’argent qu’il a perdu.\nMessage : Peux-tu préciser ce qu’Aka a perdu ?",
+      "reference_bci": "Aka mlin sika",
+      "generated_bci": "Aka ta akɔ kpanngban",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0137-4",
+      "prompt_fr": "Contexte : C’est Aka qui élève beaucoup de poulets.\nMessage : Peux-tu décrire l’élevage dont s’occupe Aka ?",
+      "reference_bci": "Aka ta akɔ kpanngban",
+      "generated_bci": "Aka ta akɔ kpanngban",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0157-4",
+      "prompt_fr": "Contexte : Le visage de Konan est pourvu d’une barbe.\nMessage : Peux-tu préciser ce que Konan porte au visage ?",
+      "reference_bci": "Konan le akanza.",
+      "generated_bci": "Konan le akanza.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0159-4",
+      "prompt_fr": "Contexte : Koffi se saisit des souris.\nMessage : Peux-tu préciser quels animaux Koffi capture ?",
+      "reference_bci": "Koffi tra gbekle",
+      "generated_bci": "Koffi wun ako.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0166-4",
+      "prompt_fr": "Contexte : C’est Konan qui fait sécher ses vêtements.\nMessage : Peux-tu décrire ce que Konan fait de ses habits ?",
+      "reference_bci": "Konan wlɛ i tralɛ’",
+      "generated_bci": "Konan wlɛ i tralɛ’",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0180-4",
+      "prompt_fr": "Contexte : Jouer du balafon est une chose qu’Awa sait faire.\nMessage : Peux-tu préciser de quel instrument Awa est capable de jouer ?",
+      "reference_bci": "Awa si jomlo to.",
+      "generated_bci": "Awa si jomlo to.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0181-4",
+      "prompt_fr": "Contexte : Le balafon est l’instrument dont Aka joue.\nMessage : Peux-tu nommer l’instrument dont joue Aka ?",
+      "reference_bci": "Aka to jomlo.",
+      "generated_bci": "Aka to jomlo.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0188-4",
+      "prompt_fr": "Contexte : Ce que voit Aka est un aigle.\nMessage : Peux-tu préciser l’animal qu’Aka aperçoit ?",
+      "reference_bci": "Aka wun kɔliɛ.",
+      "generated_bci": "Aka wun kɔliɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0189-4",
+      "prompt_fr": "Contexte : C’est en français qu’ils sont en train de parler.\nMessage : Peux-tu préciser la langue dans laquelle ils parlent ?",
+      "reference_bci": "Be su kan blɔfuɛ.",
+      "generated_bci": "Be su kan blɔfuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0196-4",
+      "prompt_fr": "Contexte : C’est papa qui a une canne.\nMessage : Peux-tu préciser l’objet que papa possède ?",
+      "reference_bci": "baba le kpɔnman.",
+      "generated_bci": "ba le awe.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0209-4",
+      "prompt_fr": "Contexte : La chèvre consomme de l’herbe.\nMessage : Peux-tu préciser ce que la chèvre mange ?",
+      "reference_bci": "boli di cɔkɔ",
+      "generated_bci": "boli di cɔkɔ",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0229-4",
+      "prompt_fr": "Contexte : L’arrivée dont on parle est celle de l’institutrice.\nMessage : Peux-tu préciser qui est arrivé ?",
+      "reference_bci": "Mɛtrɛsi bali.",
+      "generated_bci": "Mɛtrɛsi bali.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0230-4",
+      "prompt_fr": "Contexte : La sauce que mange Konan est au gombo.\nMessage : Peux-tu préciser la sauce que Konan est en train de manger ?",
+      "reference_bci": "konan di jungble tro.",
+      "generated_bci": "konan di jungble tro.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0240-4",
+      "prompt_fr": "Contexte : C’est Aya qu’Aka console.\nMessage : Peux-tu décrire ce qu’Aka fait pour Aya ?",
+      "reference_bci": "Aka lualua Aya.",
+      "generated_bci": "Aka lualua Aya.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0241-4",
+      "prompt_fr": "Contexte : Yao monte à bord du bateau.\nMessage : Peux-tu préciser où Yao est en train de monter ?",
+      "reference_bci": "Yao fu mmeli nun.",
+      "generated_bci": "Yao fu mmeli nun.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0244-4",
+      "prompt_fr": "Contexte : L’achat d’Aka porte sur des champignons.\nMessage : Peux-tu préciser ce qu’Aka est en train d’acheter ?",
+      "reference_bci": "Aka to ndre.",
+      "generated_bci": "Aka to ndre.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0246-4",
+      "prompt_fr": "Contexte : C’est Yao qui a un pantalon.\nMessage : Peux-tu préciser le vêtement que possède Yao ?",
+      "reference_bci": "Yao le pantanlo’n kun.",
+      "generated_bci": "Yao le pantanlo’n kun.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0248-4",
+      "prompt_fr": "Contexte : L’achat de papa porte sur des chaussures.\nMessage : Peux-tu préciser ce que papa est en train d’acheter ?",
+      "reference_bci": "Baba to ngbabua.",
+      "generated_bci": "N'sissɔ, Nannan.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0249-4",
+      "prompt_fr": "Contexte : Aka consomme le sucre.\nMessage : Peux-tu préciser ce qu’Aka est en train de manger ?",
+      "reference_bci": "Aka di sukla.",
+      "generated_bci": "Aka di sukla.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0290-4",
+      "prompt_fr": "Contexte : Koffi consomme les biscuits.\nMessage : Peux-tu préciser ce que Koffi est en train de manger ?",
+      "reference_bci": "Koffi di bisikli.",
+      "generated_bci": "Koffi di bisikli.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0334-4",
+      "prompt_fr": "Contexte : Koffi est en proie à la colère.\nMessage : Peux-tu décrire ce que ressent Koffi ?",
+      "reference_bci": "Koffi ti nyannyrinfuɛ.",
+      "generated_bci": "Koffi ti nyannyrinfuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0339-4",
+      "prompt_fr": "Contexte : Il y a de la chaleur aujourd’hui.\nMessage : Peux-tu préciser le temps qu’il fait aujourd’hui ?",
+      "reference_bci": "nyaan o lɛ adɛ.",
+      "generated_bci": "nyaan o lɛ adɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0363-4",
+      "prompt_fr": "Contexte : Le versement de mon salaire se fait chaque mois.\nMessage : Peux-tu préciser à quelle fréquence tu touches ta rémunération ?",
+      "reference_bci": "Anglo kwalaa nun n nyan min akatua'n.",
+      "generated_bci": "Anglo kwalaa nun n nyan min akatua'n.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0364-4",
+      "prompt_fr": "Contexte : C’est le football qui est ma passion.\nMessage : Peux-tu préciser ce qui constitue ta passion ?",
+      "reference_bci": "Min akloliɛ y'ɔle banɔn.",
+      "generated_bci": "N'sissɔ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0373-4",
+      "prompt_fr": "Contexte : C’est mille francs que Yao a.\nMessage : Peux-tu préciser la somme d’argent que possède Yao ?",
+      "reference_bci": "Yao le kotokun kun.",
+      "generated_bci": "Yao le kotokun kun.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    },
+    {
+      "id": "teacher-0390-4",
+      "prompt_fr": "Contexte : Yao dispose de beaucoup de richesses.\nMessage : Peux-tu décrire la richesse de Yao ?",
+      "reference_bci": "Yao ti anyanbeunfuɛ.",
+      "generated_bci": "Yao ti anyanbeunfuɛ.",
+      "eos": true,
+      "domain": "grounded_daily_qa",
+      "native_validated": false
+    }
+  ]
+}

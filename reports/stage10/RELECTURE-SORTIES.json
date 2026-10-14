@@ -1,0 +1,120 @@
+{
+  "whole_texts": [
+    {
+      "id": "s10-doc-73-whole",
+      "french_words": 199,
+      "generated_baoule_words": 123,
+      "reference_baoule_words": 210,
+      "repeated_4gram_occurrences": 58,
+      "total_4grams": 120,
+      "most_repeated_4grams": [
+        {
+          "tokens": [
+            "ɔ",
+            "yo",
+            "sɔ.",
+            "ɔ"
+          ],
+          "count": 6
+        },
+        {
+          "tokens": [
+            "yo",
+            "sɔ.",
+            "ɔ",
+            "yo"
+          ],
+          "count": 6
+        },
+        {
+          "tokens": [
+            "sɔ.",
+            "ɔ",
+            "yo",
+            "sɔ."
+          ],
+          "count": 6
+        }
+      ],
+      "note": "literal repetition diagnostic, not native adequacy score; output lengths differ"
+    },
+    {
+      "id": "s10-doc-97-whole",
+      "french_words": 187,
+      "generated_baoule_words": 138,
+      "reference_baoule_words": 211,
+      "repeated_4gram_occurrences": 60,
+      "total_4grams": 135,
+      "most_repeated_4grams": [
+        {
+          "tokens": [
+            "kpa",
+            "kɔkun",
+            "e",
+            "yo"
+          ],
+          "count": 7
+        },
+        {
+          "tokens": [
+            "kɔkun",
+            "e",
+            "yo",
+            "i"
+          ],
+          "count": 7
+        },
+        {
+          "tokens": [
+            "e",
+            "yo",
+            "i",
+            "kpa"
+          ],
+          "count": 6
+        }
+      ],
+      "note": "literal repetition diagnostic, not native adequacy score; output lengths differ"
+    }
+  ],
+  "source_permutation_gap": {
+    "parent": 0.058886170387268066,
+    "trained": 0.0447365865111351,
+    "rows": 38,
+    "interpretation": "Very small matched-versus-permuted NLL gap in this diagnostic. It does not establish semantic understanding."
+  },
+  "new_written_replies": [
+    {
+      "id": "s10-reply-28-3",
+      "prompt_fr": "Contexte : Dialogue écrit. Dentiste : Laissez-moi regarder. Il examine les dents du patient. Il semble que vous ayez une carie. Je vais devoir retirer la partie abîmée avec la fraise et boucher le trou.\nMessage : Est-ce que cela va faire mal ?",
+      "reference_bci": "Ewa yo ya kan, sangɛ n'ma yo blɛblɛ nan nan eyo wɔ ya dan.",
+      "generated_bci": "Like vie yɛ yo e yo mi ya kekle."
+    },
+    {
+      "id": "s10-reply-28-7",
+      "prompt_fr": "Contexte : Dialogue écrit. Dentiste : Cela peut être un peu désagréable, mais je ferai de mon mieux pour que ce soit aussi peu douloureux que possible. Dentiste : Il retire la partie abîmée et bouche le trou. C'est terminé !\nMessage : Merci, docteur. Ce n'était pas si terrible.",
+      "reference_bci": "Eyoman like. Min ɔ nuannu wunzinlɛ eni innu nunulɛ eyo wɔ tʃinjin nan wa ɲanman issɔ kunman'm kun.",
+      "generated_bci": "A lɛ iya wafa uflɛ?"
+    },
+    {
+      "id": "s10-reply-113-1",
+      "prompt_fr": "Contexte : Dialogue écrit.\nMessage : Penses-tu que le système de la dot soit une bonne chose ?",
+      "reference_bci": "N'buɛ sɔ. N'bu kɛ ti wafa kun mɔ be fa sie bla'm bue kun su.",
+      "generated_bci": "Aka di sɔ."
+    },
+    {
+      "id": "s10-reply-113-5",
+      "prompt_fr": "Contexte : Dialogue écrit. A : Penses-tu que le système de la dot soit une bonne chose ? B : Je ne le pense pas. Je pense que c'est une forme de discrimination envers les femmes.\nMessage : Pourtant, certaines personnes disent que la dot est un moyen de protéger les femmes.",
+      "reference_bci": "N'buɛ kɛ e ti sakpa. Sanguɛ, N'bu kɛ e kula wula bla sa kekle nu.",
+      "generated_bci": "Like vie yɛ yo e yo mi ya kekle kpa."
+    },
+    {
+      "id": "s10-reply-113-10",
+      "prompt_fr": "Contexte : Dialogue écrit. A : Pourtant, certaines personnes disent que la dot est un moyen de protéger les femmes. B : Je ne pense pas que ce soit vrai. Au contraire, je pense que cela peut mettre les femmes en danger.\nMessage : Alors, que devrions-nous faire à propos du système de la dot, selon toi ?",
+      "reference_bci": "N'bu kɛ ye kula jran tʃindjin nan ya yo nan wa vie. Ye kula kle sran'm like tɛ n'ga jalɛ systɛmi eyo sran me nu, kɔkun efata kɛ ye jran n'mla n'ga e sekɛ nan sran me kplin jalɛ tualɛ su i.",
+      "generated_bci": "E ti sɔ. E yo sɔ. Sanguɛ n'ga be yo be man ye me ml'in vie. Be kwla kan n'gua guassu, sanguɛ be sa minh. E yomi ya kɛ like nga a wa yo ɔ ."
+    }
+  ],
+  "decision": "Keep as an experimental translation candidate in private Drive; no claim of fluent dialogue or faithful arbitrary French translation; existing public baseline not replaced.",
+  "validation_interpretation": "best step100; validation deterioration after100; final1200 state saved only for resume, not selected as inference export"
+}
