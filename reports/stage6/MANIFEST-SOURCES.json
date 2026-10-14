@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "code/mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96",
+    "code/mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+    "code/mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+    "code/mandia_stage5.py": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+    "code/mandia_stage6.py": "4a8ef3a0b5fe609add76bd87c390a9907c6393dbabaca863d4ca3c6d6555f4c1",
+    "dialogues-prepare.jsonl": "9375c6a0918a5bf8056cecd42df0c8aff90c3439220bc45bfe10e8cc700a2184",
+    "AUDIT-DONNEES.json": "b60efe3a7bc4bdff47573c0df521223deb204f1d67284b518b1a56a40737136a",
+    "CREDITS.txt": "52182b758b69073a8671ec99d20e33fe59cdac7a7f7833a1d77bb64fecfd8f46",
+    "source-smoldoc-en-bci.jsonl": "fa56efac8e1df34fec3b81793677d4f33a3f92cfc187e92794dfe2cf9d1e6fdd",
+    "preparer-donnees.py": "7d7b61dcd2e5da10be2fad769e457fb978ad133b647f7b77bcc1d98e72f8de6f"
+  },
+  "execution": "completed_2x800_L4",
+  "scope": "private Drive runtime, no heavy local models",
+  "selected_by_validation": "ce_control",
+  "best_step": 100
+}

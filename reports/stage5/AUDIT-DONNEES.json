@@ -1,0 +1,41 @@
+{
+  "checked_date": "2026-10-13",
+  "raw_dictionary_entries": 826,
+  "dictionary_sha256": "fced90dc06d35a6bcb10d0c6588b843a4808e47bcdf02ba876b483d6df839256",
+  "counts": {
+    "raw_examples": 404,
+    "isolated_fragment": 2,
+    "unclear_markup_or_variants": 4,
+    "missing_translation": 3,
+    "exact_duplicate": 2
+  },
+  "prepared_rows": 393,
+  "splits": {
+    "train": 277,
+    "validation": 64,
+    "test": 52
+  },
+  "new_target_generation": "none; Baoule targets copied exactly from source. A fixed French guided-request prefix is applied to train, validation and test. No train/test French paraphrase generation.",
+  "grouping": "whole lemma page plus exact French and Baoule aliases; old holdouts excluded; new validation/test exact text not already in old parallel data",
+  "source_url": "https://kaikki.org/frwiktionary/Baoul%C3%A9/",
+  "native_validation": false,
+  "zenodo": {
+    "train": {
+      "recordings": 452,
+      "unique_transcripts": 449
+    },
+    "test": {
+      "recordings": 113,
+      "unique_transcripts": 113
+    },
+    "transcription": {
+      "recordings": 565,
+      "unique_transcripts": 560
+    }
+  },
+  "zenodo_train_admitted": false,
+  "zenodo_note": "CC-BY-4.0 metadata, recordings verified, transcriptions not validated; originally scraped from Glosbe including Bible fragments; no French labels in published TSV; kept as an indexed speech lead, not invented parallel examples",
+  "bible_full_imported": false,
+  "manual_admitted": false,
+  "manual_note": "282 PDF pages including ERIC cover, bilingual French/English glosses, real C-phase dialogues. OCR damages nasalization/tones. Original licence not established; selected pages visually inspected and indexed, not added to public training data."
+}

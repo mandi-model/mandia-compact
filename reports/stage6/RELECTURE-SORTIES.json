@@ -1,0 +1,18 @@
+{
+  "technical_reread_rows": 40,
+  "native_validation": false,
+  "exact_matches": 0,
+  "outputs_starting_with_generic_prefix": 19,
+  "prefix": "N'kula yo like",
+  "findings": [
+    "Repeated generic openings unrelated to source meaning",
+    "TV topic appears for a request about taking time for oneself",
+    "Long source facts about furniture/flowers often not preserved",
+    "No native fluency score assigned"
+  ],
+  "example_ids": [
+    "smoldoc-topic_173__dwiiiiijcatittn-translate-7",
+    "smoldoc-topic_43__fifaifiaif-translate-8"
+  ],
+  "deployment_recommendation": "experimental research candidate only"
+}

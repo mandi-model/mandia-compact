@@ -1,0 +1,402 @@
+[
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-0",
+    "prompt_fr": "Mon ami, j'ai vraiment le cœur brisé en ce moment. Ma copine vient de me quitter après deux ans de relation.",
+    "reference_bci": "« Yassua, mi anwlinba wa sangan dɔ n'ga su, mi soman n'ga ye wo nu wa gnan afuɛ n'gnon ya titinu. »",
+    "generated_bci": "N'kula yo like tɛ me kula ekun mi, kɔkun su kan n'gua.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-1",
+    "prompt_fr": "Qu'est-ce qui s'est passé ?",
+    "reference_bci": "« N'su sa wɔ ? »",
+    "generated_bci": "N'kula yo like mu",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-10",
+    "prompt_fr": "Il y a beaucoup d'autres personnes à rencontrer.",
+    "reference_bci": "Jue uflɛ kaka vie me o jen'zue nu. »",
+    "generated_bci": "I sɔ'n ti, n'ga n'ga be fa man sran'm be wun.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-11",
+    "prompt_fr": "Je sais. Mais je ne sais pas si je suis déjà prêt à rencontrer quelqu'un d'autre.",
+    "reference_bci": "« N'sissɔ. Sanguɛ n'siman sɛ n'kula fite ni sran ekun. »",
+    "generated_bci": "N'kula yo like vie vie.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-12",
+    "prompt_fr": "Ce n'est pas grave. Tu n'as pas besoin d'être prêt tout de suite. Prends simplement ton temps pour te remettre.",
+    "reference_bci": "E ti kpa. Efataman kɛ a siessie ɔwun ka. Fa wɔ blɛ nan yo juejue ka. »",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula di mi juman ekun.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-13",
+    "prompt_fr": "Merci, mon ami. Cela me touche.",
+    "reference_bci": "« Gna, kula. Mo ni mi yolɛ. »",
+    "generated_bci": "N'ya ti n'gua.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-14",
+    "prompt_fr": "De rien.",
+    "reference_bci": "« N'dɛ numanlɛ »",
+    "generated_bci": "n ti.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-2",
+    "prompt_fr": "Je ne sais pas. Elle a simplement dit qu'elle ne ressentait plus la même chose.",
+    "reference_bci": "« N'siya sɔ. E kanli kɛ e wunman beliɛ wlɛ kun.",
+    "generated_bci": "N'kula yo like tɛ wo n'ga.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-3",
+    "prompt_fr": "Je suis complètement perdu.",
+    "reference_bci": "Mi anwlin ti sanganwa.",
+    "generated_bci": "Ye ti sran tɛ",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-4",
+    "prompt_fr": "Je pensais que nous étions heureux.",
+    "reference_bci": "N'buli kɛ ye ti yewun anien. »",
+    "generated_bci": "N'kula yo like fi a wun sran'm.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-5",
+    "prompt_fr": "Je suis désolé, mon ami. Je comprends ce que tu ressens. Une rupture, c'est dur.",
+    "reference_bci": "« yaki, yassua. N'si afɛ n'ga a wun yi. Anwlin kpɛlɛ. »",
+    "generated_bci": "N'si sɔ. N'kula yo like tɛ wo n'ga.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-6",
+    "prompt_fr": "Oui. Je ne sais pas quoi faire.",
+    "reference_bci": "« Sakpa. N'wunman nin'gue mɔ n'kula yo. »",
+    "generated_bci": "N'si sɔ. N'yowɔ mu.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-7",
+    "prompt_fr": "Prends simplement un peu de temps pour toi.",
+    "reference_bci": "« Man ahun blɛ kan.",
+    "generated_bci": "N'kula nian tele.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-8",
+    "prompt_fr": "Pleure si tu en as besoin.",
+    "reference_bci": "Kpan min be ti sɛ akula.",
+    "generated_bci": "I yo lɛ adɛ.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-translate-9",
+    "prompt_fr": "Puis, lorsque tu seras prêt, commence à aller de l'avant.",
+    "reference_bci": "Kɔkun, sɛ wa vie, bo wulanlɛ n'bo.",
+    "generated_bci": "I sɔ'n ti, n'ga a wun sran uflɛ'm be kɛ be ti.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-0",
+    "prompt_fr": "Je suis actrice et je conçois des meubles. Je suis aussi passionnée par les fleurs, surtout celles qui fleurissent en hiver.",
+    "reference_bci": "n'ti filmi yofuɛ eni suanu like me klɛklɛ fuɛ kun. N'klo flɛri me vie, n'ga be blo nɛgi nu .",
+    "generated_bci": "I sɔ'n ti, n'ga be fa kɔ sran'm be wun ase, sanguɛ be su kan ndɛ uflɛ.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-1",
+    "prompt_fr": "Qu'est-ce qui vous a attirée vers le métier d'actrice et la conception de meubles ?",
+    "reference_bci": "N'zuɛ yoli yɛ a yo filmi eni dessin me klɛklɛlɛ wɔ ?",
+    "generated_bci": "I sɔ'n ti, n'ga n'ga be fa kɔ kɔ man sran mun, kɔkun ɔ ti n'ga n'ga be fa kɔ kɔ man mi juman.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-2",
+    "prompt_fr": "J'ai toujours aimé jouer et créer des choses.",
+    "reference_bci": "N'klo nin'gue me yolɛ eni be kplanlɛ.",
+    "generated_bci": "N'kula yo amun a wun sran'm.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-3",
+    "prompt_fr": "Le théâtre et le cinéma me permettent de m'exprimer de manière créative, et la conception de meubles me permet de créer quelque chose de beau et d'utile.",
+    "reference_bci": "Filmi yolɛ eyo n'kula yo n'kunuklo like'm, kɔkun like me be dessin klɛklɛlɛ eyo n'kle like n'ga me ti klanhan kɔkun sran me fa di juman.",
+    "generated_bci": "I sɔ'n ti, n'galɛ man ɔ wun manlɛ wafa me n'ga me ti kpa tra su, kɔkun ɔ ti like me nu, kɔkun ɔ ti man sran me n'ga me ti kpa.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-4",
+    "prompt_fr": "Quelles difficultés avez-vous rencontrées comme actrice et créatrice de meubles ?",
+    "reference_bci": "N'dɛ kekle beni yɛ a wunliyi kɛ a kaki filmi yofuɛ eni sua nu nin'gue me dessin klɛklɛlɛ ?",
+    "generated_bci": "I sɔ'n ti, n'ga n'ga be ye min sran mun, be nga me ti yɛ be ti-man be su.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-5",
+    "prompt_fr": "L'une des difficultés que j'ai rencontrées comme actrice est le manque de diversité dans ce secteur.",
+    "reference_bci": "N'dɛ kekle n'ga ma wunyi kɛ n'ti filmi yofuɛ kun yɛlɛ like wafa wafa industri me nu.",
+    "generated_bci": "Ɔ yo sɔ'n ti, nanwɔ di kɔwa, nanwɔ mu, sanngɛ sran kun yi ninnge mun be di juman.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-6",
+    "prompt_fr": "On m'a souvent dit que je n'avais pas le bon profil pour un rôle à cause de ma race ou de mon origine ethnique.",
+    "reference_bci": "Sran me semi vie kɛ n'timan sran efata kɛ e yo issɔ juman mi finwlɛ ni mi anien ti.",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula di mi juman ekun, sanguɛ n'ga a wun i sɛ nan bo i bo bolɛ nu.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-7",
+    "prompt_fr": "Comme créatrice de meubles, j'ai eu du mal à entrer dans un secteur dominé par les hommes.",
+    "reference_bci": "N'wunli yassua n'ga be kula juman kssɔ industri nu, kɛ n'di juman kɛ suanu like me klɛklɛlɛ.",
+    "generated_bci": "I sɔ'n ti, n'galɛfuɛ me n'ga be fa kɔ kɔ man i sua nu.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-8",
+    "prompt_fr": "Comment avez-vous surmonté ces difficultés ?",
+    "reference_bci": "Wafa sɛ yɛ a kula fiteli issɔ kekle nu ɔ ?",
+    "generated_bci": "N'kula nian tele n'ga be di be wun, nanwɔ mu, anzɛ ye n'gba ye nian man wɔ.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-translate-9",
+    "prompt_fr": "Je les ai surmontées en travaillant dur et en ne renonçant jamais.",
+    "reference_bci": "N'fiteli issɔ kekle nu kɛ n'dili juman kpa kɔkun man yakiman nu.",
+    "generated_bci": "N'si sɔ. N'kula kɔ yo like fi mɔ n'ga be fa yo like.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "translate"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-0",
+    "prompt_fr": "Message : Mon ami, j'ai vraiment le cœur brisé en ce moment. Ma copine vient de me quitter après deux ans de relation.",
+    "reference_bci": "« N'su sa wɔ ? »",
+    "generated_bci": "N'kula yo like tɛ",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-1",
+    "prompt_fr": "Contexte : Mon ami, j'ai vraiment le cœur brisé en ce moment. Ma copine vient de me quitter après deux ans de relation.\nMessage : Qu'est-ce qui s'est passé ?",
+    "reference_bci": "« N'siya sɔ. E kanli kɛ e wunman beliɛ wlɛ kun. Mi anwlin ti sanganwa. N'buli kɛ ye ti yewun anien. »",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula di mi juman ekun, kɔkun ɔ ti n'gua like me ti kpa.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-2",
+    "prompt_fr": "Contexte : Qu'est-ce qui s'est passé ?\nMessage : Je ne sais pas. Elle a simplement dit qu'elle ne ressentait plus la même chose. Je suis complètement perdu. Je pensais que nous étions heureux.",
+    "reference_bci": "« yaki, yassua. N'si afɛ n'ga a wun yi. Anwlin kpɛlɛ. »",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula di mi juman ekun, kɔkun ɔ yo sɔ.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-3",
+    "prompt_fr": "Contexte : Je ne sais pas. Elle a simplement dit qu'elle ne ressentait plus la même chose. Je suis complètement perdu. Je pensais que nous étions heureux.\nMessage : Je suis désolé, mon ami. Je comprends ce que tu ressens. Une rupture, c'est dur.",
+    "reference_bci": "« Sakpa. N'wunman nin'gue mɔ n'kula yo. »",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula di mi juman ekun, a kan n'ga n'ga a wun sran uflɛ'm.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-4",
+    "prompt_fr": "Contexte : Je suis désolé, mon ami. Je comprends ce que tu ressens. Une rupture, c'est dur.\nMessage : Oui. Je ne sais pas quoi faire.",
+    "reference_bci": "« Man ahun blɛ kan. Kpan min be ti sɛ akula. Kɔkun, sɛ wa vie, bo wulanlɛ n'bo. Jue uflɛ kaka vie me o jen'zue nu. »",
+    "generated_bci": "N'si sɔ. N'kula yo like tɛ wo adɛ.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-5",
+    "prompt_fr": "Contexte : Oui. Je ne sais pas quoi faire.\nMessage : Prends simplement un peu de temps pour toi. Pleure si tu en as besoin. Puis, lorsque tu seras prêt, commence à aller de l'avant. Il y a beaucoup d'autres personnes à rencontrer.",
+    "reference_bci": "« N'sissɔ. Sanguɛ n'siman sɛ n'kula fite ni sran ekun. »",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula di mi juman ekun, a wun sran uflɛ'm.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-6",
+    "prompt_fr": "Contexte : Prends simplement un peu de temps pour toi. Pleure si tu en as besoin. Puis, lorsque tu seras prêt, commence à aller de l'avant. Il y a beaucoup d'autres personnes à rencontrer.\nMessage : Je sais. Mais je ne sais pas si je suis déjà prêt à rencontrer quelqu'un d'autre.",
+    "reference_bci": "E ti kpa. Efataman kɛ a siessie ɔwun ka. Fa wɔ blɛ nan yo juejue ka. »",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula yo like tɛ wo i kpa.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-7",
+    "prompt_fr": "Contexte : Je sais. Mais je ne sais pas si je suis déjà prêt à rencontrer quelqu'un d'autre.\nMessage : Ce n'est pas grave. Tu n'as pas besoin d'être prêt tout de suite. Prends simplement ton temps pour te remettre.",
+    "reference_bci": "« Gna, kula. Mo ni mi yolɛ. »",
+    "generated_bci": "N'kula yo like tɛ wo n'ga. N'kula di mi juman ekun.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_173__dwiiiiijcatittn-reply-8",
+    "prompt_fr": "Contexte : Ce n'est pas grave. Tu n'as pas besoin d'être prêt tout de suite. Prends simplement ton temps pour te remettre.\nMessage : Merci, mon ami. Cela me touche.",
+    "reference_bci": "« N'dɛ numanlɛ »",
+    "generated_bci": "N'kula yo like kula n'ga. N'kula di mi juman ekun.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-reply-0",
+    "prompt_fr": "Message : Je suis actrice et je conçois des meubles. Je suis aussi passionnée par les fleurs, surtout celles qui fleurissent en hiver.",
+    "reference_bci": "N'zuɛ yoli yɛ a yo filmi eni dessin me klɛklɛlɛ wɔ ?",
+    "generated_bci": "N'kula yo like tɛ wo i ti bo nun.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-reply-1",
+    "prompt_fr": "Contexte : Je suis actrice et je conçois des meubles. Je suis aussi passionnée par les fleurs, surtout celles qui fleurissent en hiver.\nMessage : Qu'est-ce qui vous a attirée vers le métier d'actrice et la conception de meubles ?",
+    "reference_bci": "N'klo nin'gue me yolɛ eni be kplanlɛ. Filmi yolɛ eyo n'kula yo n'kunuklo like'm, kɔkun like me be dessin klɛklɛlɛ eyo n'kle like n'ga me ti klanhan kɔkun sran me fa di juman.",
+    "generated_bci": "I sɔ'n ti, n'ga be fa kɔ kɔ be wun, kɔkun be yo like fi mɔ be fa kɔ sran mun be yowa.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-reply-2",
+    "prompt_fr": "Contexte : Qu'est-ce qui vous a attirée vers le métier d'actrice et la conception de meubles ?\nMessage : J'ai toujours aimé jouer et créer des choses. Le théâtre et le cinéma me permettent de m'exprimer de manière créative, et la conception de meubles me permet de créer quelque chose de beau et d'utile.",
+    "reference_bci": "N'dɛ kekle beni yɛ a wunliyi kɛ a kaki filmi yofuɛ eni sua nu nin'gue me dessin klɛklɛlɛ ?",
+    "generated_bci": "N'kula yo like tɛ me ti kpa, kɔkun ɔ fata kɛ n'ga be fa yo like me n'ga be ti n'gba sa, kɔkun ɔ ti like me nu, kɔkun ɔ ti like fi.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-reply-3",
+    "prompt_fr": "Contexte : J'ai toujours aimé jouer et créer des choses. Le théâtre et le cinéma me permettent de m'exprimer de manière créative, et la conception de meubles me permet de créer quelque chose de beau et d'utile.\nMessage : Quelles difficultés avez-vous rencontrées comme actrice et créatrice de meubles ?",
+    "reference_bci": "N'dɛ kekle n'ga ma wunyi kɛ n'ti filmi yofuɛ kun yɛlɛ like wafa wafa industri me nu. Sran me semi vie kɛ n'timan sran efata kɛ e yo issɔ juman mi finwlɛ ni mi anien ti. N'wunli yassua n'ga be kula juman kssɔ industri nu, kɛ n'di juman kɛ suanu like me klɛklɛlɛ.",
+    "generated_bci": "N'kula yo like tɛ me kula",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-reply-4",
+    "prompt_fr": "Contexte : Quelles difficultés avez-vous rencontrées comme actrice et créatrice de meubles ?\nMessage : L'une des difficultés que j'ai rencontrées comme actrice est le manque de diversité dans ce secteur. On m'a souvent dit que je n'avais pas le bon profil pour un rôle à cause de ma race ou de mon origine ethnique. Comme créatrice de meubles, j'ai eu du mal à entrer dans un secteur dominé par les hommes.",
+    "reference_bci": "Wafa sɛ yɛ a kula fiteli issɔ kekle nu ɔ ?",
+    "generated_bci": "I sɔ'n ti, n'ga be fa kɔ kɔ man min n'ga be fa kɔ kɔ man i lika vie me nu, sanguɛ be kwla fa kɔ i lika vie me su ɔ.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  },
+  {
+    "id": "smoldoc-topic_43__fifaifiaif-reply-5",
+    "prompt_fr": "Contexte : L'une des difficultés que j'ai rencontrées comme actrice est le manque de diversité dans ce secteur. On m'a souvent dit que je n'avais pas le bon profil pour un rôle à cause de ma race ou de mon origine ethnique. Comme créatrice de meubles, j'ai eu du mal à entrer dans un secteur dominé par les hommes.\nMessage : Comment avez-vous surmonté ces difficultés ?",
+    "reference_bci": "N'fiteli issɔ kekle nu kɛ n'dili juman kpa kɔkun man yakiman nu.",
+    "generated_bci": "N'kula yo like tɛ wo n'ga be fa kɔ sran kun i sin i bo bolɛ nun. Be ti n'ga be fa kɔ kɔ man i sɔ.",
+    "eos": true,
+    "domain": "dialogue",
+    "native_validated": false,
+    "task": "reply"
+  }
+]

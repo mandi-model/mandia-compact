@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "markup_placeholder": 383,
+    "sample_marker": 2,
+    "empty": 1,
+    "exact_duplicates": 164,
+    "cross_corpus_train_collision_excluded": 130,
+    "cross_corpus_test_validation_collision_excluded": 5
+  },
+  "rows": {
+    "everyday/train": 460,
+    "everyday/test": 68,
+    "everyday/validation": 44,
+    "software/validation": 112,
+    "software/train": 809,
+    "software/test": 109,
+    "gospel/train": 729,
+    "gospel/test": 172,
+    "gospel/validation": 100,
+    "lexical/train": 2840,
+    "lexical/validation": 359,
+    "lexical/test": 308
+  },
+  "source_xls_sha256": "017badb6f2b6924ece44a95d736aafe082bc39ed237e6343b02d30be72d44804",
+  "license": "CC Attribution declared by author; version not specified; underlying source provenance retained; research trial, not legal clearance for every original publication",
+  "citation": "Kouassi, Konan Jean-Claude (2024), Baoulé Related Parallel Corpora for Machine Translation tasks: mtBCI-1.0, doi:10.5121/ijcsit.2024.16501",
+  "grouping": "exact French/BCI aliases + complete Gospel chapters, with cross-corpus holdout collisions excluded from training",
+  "limitations": "No Mandia native validation; near-duplicate semantic paraphrases not exhaustively identified; Gospel rows are not independently verified verse alignments.",
+  "post_tokenization_train_counts": {
+    "direct_everyday": 457,
+    "direct_software": 809,
+    "direct_gospel": 710,
+    "lexical_pivot": 2840,
+    "reply_demos": 14,
+    "waxal_monolingual_segments": 3118
+  },
+  "waxal": {
+    "original_official_train_records": 972,
+    "remote_bytes_considered": 5873292503,
+    "bytes_transferred_text_and_parquet_metadata_only": 2883944,
+    "audio_bytes_downloaded": 0,
+    "license": "CC-BY-4.0, University of Ghana subset",
+    "receipt": "WAXAL-TEXTE.json"
+  }
+}

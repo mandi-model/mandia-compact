@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-14",
+  "source": "https://huggingface.co/datasets/google/smol",
+  "revision": "fdaff3a1a019f89fa30a562a85d7c1d3e9150444",
+  "source_file_sha256": "fa56efac8e1df34fec3b81793677d4f33a3f92cfc187e92794dfe2cf9d1e6fdd",
+  "counts": {
+    "test/reply": 15,
+    "test/translate": 25,
+    "validation/reply": 6,
+    "validation/translate": 13,
+    "train/reply": 29,
+    "train/translate": 72
+  },
+  "documents": {
+    "train": [
+      "topic_12__mumumumumumu",
+      "topic_328__sjijwjijiwjbsajijiij",
+      "topic_446__ghgwggwwggwggggg",
+      "topic_507__atswotiwiiii",
+      "topic_525__ggigsbfwostttfsgigi"
+    ],
+    "validation": [
+      "topic_211__ppplpptpblipt"
+    ],
+    "test": [
+      "topic_173__dwiiiiijcatittn",
+      "topic_43__fifaifiaif"
+    ]
+  },
+  "excluded": [
+    {
+      "id": "smoldoc-topic_328__sjijwjijiwjbsajijiij-translate-9",
+      "reason": "exact_pair_duplicate"
+    }
+  ],
+  "no_cross_split_exact_prompt_answer_document": true,
+  "source_quality": "Written/synthetic English scenarios; Baoule professional translations as described by publisher, not real recorded conversations. French authored by assistant, unvalidated. Orthography varies.",
+  "manual_screening": "8 documents selected; car document restricted to first 6 sentences, nuclear-car fiction excluded. Role-prefix removal and space-joining only for Baoule; no new Baoule targets synthesized.",
+  "selection_before_training": true,
+  "native_validation": false,
+  "license": "CC-BY-4.0; French adaptations and source retained"
+}

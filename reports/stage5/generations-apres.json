@@ -1,0 +1,938 @@
+[
+  {
+    "id": "wiki-0021",
+    "prompt_fr": "Ils sont en train de passer.",
+    "reference_bci": "Be su sin.",
+    "generated_bci": "N su kunndɛ sua vie.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0022",
+    "prompt_fr": "Ajoua se réchauffe près du feu.",
+    "reference_bci": "Adjoua su tɔn sin.",
+    "generated_bci": "Aya wun nya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0023",
+    "prompt_fr": "Prends-moi en photo.",
+    "reference_bci": "Ci min foto.",
+    "generated_bci": "N'su ko la.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0027",
+    "prompt_fr": "Awa prend la chaise",
+    "reference_bci": "Awa fa bia",
+    "generated_bci": "Aka wunwa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0041",
+    "prompt_fr": "Koffi a un terrain.",
+    "reference_bci": "Koffi le asa kun.",
+    "generated_bci": "Koffi le ali.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0043",
+    "prompt_fr": "koffi a une femme.",
+    "reference_bci": "Koffi le bla.",
+    "generated_bci": "Be le aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0044",
+    "prompt_fr": "Akissi a une fille.",
+    "reference_bci": "Akissi le wa bla.",
+    "generated_bci": "Aya le aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0045",
+    "prompt_fr": "La femelle du chien.",
+    "reference_bci": "alua bla.",
+    "generated_bci": "MediaWiki i ndɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0046",
+    "prompt_fr": "Aya vient dormir.",
+    "reference_bci": "Aya bla la",
+    "generated_bci": "Aya kun",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0056",
+    "prompt_fr": "Cet homme est obèse.",
+    "reference_bci": "Bian nga ti minnan.",
+    "generated_bci": "Ɔ ti i klun.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0057",
+    "prompt_fr": "L’éponge d’Aya.",
+    "reference_bci": "Aya minnan.",
+    "generated_bci": "Aya i le n’nun.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0062",
+    "prompt_fr": "Le chemin du chat.",
+    "reference_bci": "Jeliwa atin'n.",
+    "generated_bci": "Aka wun ndɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0072",
+    "prompt_fr": "Aya mange le canard.",
+    "reference_bci": "Aya di labu.",
+    "generated_bci": "Aya di aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0093",
+    "prompt_fr": "Aya ramasse le riz.",
+    "reference_bci": "Aya flafla awie.",
+    "generated_bci": "Aya ti nya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0095",
+    "prompt_fr": "il suffit de peu de chose pour que je me fache .",
+    "reference_bci": "Min ngasi ti kaan sa.",
+    "generated_bci": "Ɔ ti fian sɛ",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0107",
+    "prompt_fr": "konan chasse le rat.",
+    "reference_bci": "Konan su fuan gadi.",
+    "generated_bci": "n'ga be wun iɔ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0116",
+    "prompt_fr": "L'année où il est allé à l'école.",
+    "reference_bci": "Afuɛ ɔ ɔli suklu`n",
+    "generated_bci": "Aka wun niɔ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0122",
+    "prompt_fr": "Kouadio coud un vêtement",
+    "reference_bci": "kouadio sou kpa tralɛ",
+    "generated_bci": "Kiko ti kpa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0134",
+    "prompt_fr": "il a un champ de riz",
+    "reference_bci": "Ɔ le awie fie",
+    "generated_bci": "ɔ le a di a",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0141",
+    "prompt_fr": "Aka a taillé une louche en bois",
+    "reference_bci": "Aka sɛli sɔkɔ kun",
+    "generated_bci": "Aka le a nian su",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0142",
+    "prompt_fr": "il a natté un séchoir",
+    "reference_bci": "ɔ wuli gbada kun",
+    "generated_bci": "Aya le n'gba",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0149",
+    "prompt_fr": "Aka a taillé une louche en bois",
+    "reference_bci": "Aka sɛli sᴐkᴐ kun",
+    "generated_bci": "Aka le a nian su",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0160",
+    "prompt_fr": "le village de Yao",
+    "reference_bci": "Yao kpɛn",
+    "generated_bci": "Ɔ fi Bouake",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0161",
+    "prompt_fr": "Ils battent des tams-tams",
+    "reference_bci": "Be su bo klɛn",
+    "generated_bci": "n'ga be fa man",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0167",
+    "prompt_fr": "koffi va au marché.",
+    "reference_bci": "Koffi kɔ gua bo.",
+    "generated_bci": "aka ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0169",
+    "prompt_fr": "Insan a un champ de piment.",
+    "reference_bci": "Insan le Mankun fie konan.",
+    "generated_bci": "Be le atin mɔ ɔ nyen i ndɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0176",
+    "prompt_fr": "Mawa a un crocodile.",
+    "reference_bci": "Mawa le bɔbɔ.",
+    "generated_bci": "Be le man.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0178",
+    "prompt_fr": "La sauce pistache.",
+    "reference_bci": "nviɛlɛ tro.",
+    "generated_bci": "Yao ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0199",
+    "prompt_fr": "papa dort sur la longue chaise en bambou.",
+    "reference_bci": "baba lafi pkɔpkɔ.",
+    "generated_bci": "aka wunwa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0204",
+    "prompt_fr": "Pourquoi le chien poursuit-il le chat ?",
+    "reference_bci": "Ngoe ti yɛ alua'n fuan jeliwa. nin-cn?",
+    "generated_bci": "Nya wun wɔ sɛ",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0215",
+    "prompt_fr": "Le chemin du chat.",
+    "reference_bci": "jeliwa atini.",
+    "generated_bci": "Aka wun ndɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0219",
+    "prompt_fr": "Konan est un prisonnier",
+    "reference_bci": "konan ti bisuafɛ",
+    "generated_bci": "Fluwa bue nga ɔ tia su",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0220",
+    "prompt_fr": "Aya est paresseuse.",
+    "reference_bci": "Aya ti fuɛntuɛ.",
+    "generated_bci": "Aya fa n'dɛ",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0232",
+    "prompt_fr": "aya se gratte vivement la tete.",
+    "reference_bci": "aya fuɛnfuɛnn i ti'su sa kpuakpua.",
+    "generated_bci": "aka wun, akoko.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0233",
+    "prompt_fr": "aya secoue son pagne.",
+    "reference_bci": "aya kpuju i tannin'n.",
+    "generated_bci": "I wun nyanndra'n i wun nyanndra.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0258",
+    "prompt_fr": "Kouadio tue le varan.",
+    "reference_bci": "Kouadjo kun akualasuɛ.",
+    "generated_bci": "Kouadio ti.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0267",
+    "prompt_fr": "Le mamba vert est ici.",
+    "reference_bci": "Aklɛn ti wa.",
+    "generated_bci": "Aka ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0282",
+    "prompt_fr": "Aya voit la rivière.",
+    "reference_bci": "Aya wun aboliɛ.",
+    "generated_bci": "Aya fa lawlɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0287",
+    "prompt_fr": "Koffi mange des légumes.",
+    "reference_bci": "Koffi di janun.",
+    "generated_bci": "Koffi ti a nian.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0291",
+    "prompt_fr": "Aka voit le lièvre.",
+    "reference_bci": "Aka wun bladiman.",
+    "generated_bci": "Aka wun aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0293",
+    "prompt_fr": "Awa a un bracelet.",
+    "reference_bci": "Awa le blenga.",
+    "generated_bci": "Aka le awa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0297",
+    "prompt_fr": "la route interdite.",
+    "reference_bci": "atintin ciliɛ.",
+    "generated_bci": "aka ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0304",
+    "prompt_fr": "ronfler en dormant.",
+    "reference_bci": "bo nglunman.",
+    "generated_bci": "aya ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0306",
+    "prompt_fr": "la hauteur de la maison est de trois mètres.",
+    "reference_bci": "sua’n i nglonglo ti mɛtri.",
+    "generated_bci": "Sran ti kpa tra sika ɔkwlɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0317",
+    "prompt_fr": "fait lui un nœud.",
+    "reference_bci": "bo i ngandro.",
+    "generated_bci": "Sran ti ɔ bɔbɔ be sa nun.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0348",
+    "prompt_fr": "Ake n'est pas propre.",
+    "reference_bci": "Ake ti fiɛn.",
+    "generated_bci": "Aya ti n'gba.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0352",
+    "prompt_fr": "le savant arrive.",
+    "reference_bci": "sifuɛ su ba.",
+    "generated_bci": "a ti i sa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0353",
+    "prompt_fr": "être en bons termes.",
+    "reference_bci": "di anuannzɛ",
+    "generated_bci": "aka ti.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0371",
+    "prompt_fr": "Yao a le torticolis.",
+    "reference_bci": "Yao le akɔmin-ya.",
+    "generated_bci": "Yao alili.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0376",
+    "prompt_fr": "Konan est un guerrier.",
+    "reference_bci": "Konan ti alɛkunfuɛ.",
+    "generated_bci": "Konan ti aliɛ'n.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0384",
+    "prompt_fr": "Konan est fort.",
+    "reference_bci": "Konan ti ammbe.",
+    "generated_bci": "Konan ti aman.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0392",
+    "prompt_fr": "Kouakou est riche.",
+    "reference_bci": "Kouakou ti sikafuɛ.",
+    "generated_bci": "Krist ti a ti.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0021",
+    "prompt_fr": "Dis en baoulé : Ils sont en train de passer.",
+    "reference_bci": "Be su sin.",
+    "generated_bci": "aka di juman.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0022",
+    "prompt_fr": "Dis en baoulé : Ajoua se réchauffe près du feu.",
+    "reference_bci": "Adjoua su tɔn sin.",
+    "generated_bci": "Aya wun n usa anyi.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0023",
+    "prompt_fr": "Dis en baoulé : Prends-moi en photo.",
+    "reference_bci": "Ci min foto.",
+    "generated_bci": "Aka fa la.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0027",
+    "prompt_fr": "Dis en baoulé : Awa prend la chaise",
+    "reference_bci": "Awa fa bia",
+    "generated_bci": "Aka to manda",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0041",
+    "prompt_fr": "Dis en baoulé : Koffi a un terrain.",
+    "reference_bci": "Koffi le asa kun.",
+    "generated_bci": "Koffi le ali.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0043",
+    "prompt_fr": "Dis en baoulé : koffi a une femme.",
+    "reference_bci": "Koffi le bla.",
+    "generated_bci": "Koffi ko la laliɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0044",
+    "prompt_fr": "Dis en baoulé : Akissi a une fille.",
+    "reference_bci": "Akissi le wa bla.",
+    "generated_bci": "Aka le aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0045",
+    "prompt_fr": "Dis en baoulé : La femelle du chien.",
+    "reference_bci": "alua bla.",
+    "generated_bci": "Koffi kun aliman.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0046",
+    "prompt_fr": "Dis en baoulé : Aya vient dormir.",
+    "reference_bci": "Aya bla la",
+    "generated_bci": "Aya fa n'gba.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0056",
+    "prompt_fr": "Dis en baoulé : Cet homme est obèse.",
+    "reference_bci": "Bian nga ti minnan.",
+    "generated_bci": "Koffi ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0057",
+    "prompt_fr": "Dis en baoulé : L’éponge d’Aya.",
+    "reference_bci": "Aya minnan.",
+    "generated_bci": "Aya ti nya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0062",
+    "prompt_fr": "Dis en baoulé : Le chemin du chat.",
+    "reference_bci": "Jeliwa atin'n.",
+    "generated_bci": "I si'n ti kpa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0072",
+    "prompt_fr": "Dis en baoulé : Aya mange le canard.",
+    "reference_bci": "Aya di labu.",
+    "generated_bci": "Aya le nya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0093",
+    "prompt_fr": "Dis en baoulé : Aya ramasse le riz.",
+    "reference_bci": "Aya flafla awie.",
+    "generated_bci": "Aya sim",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0095",
+    "prompt_fr": "Dis en baoulé : il suffit de peu de chose pour que je me fache .",
+    "reference_bci": "Min ngasi ti kaan sa.",
+    "generated_bci": "Ɔ ti su kɛ: «Sɛ a ti wa'n, a ti a ti kpa tra a nian me su",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0107",
+    "prompt_fr": "Dis en baoulé : konan chasse le rat.",
+    "reference_bci": "Konan su fuan gadi.",
+    "generated_bci": "aka kun alilɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0116",
+    "prompt_fr": "Dis en baoulé : L'année où il est allé à l'école.",
+    "reference_bci": "Afuɛ ɔ ɔli suklu`n",
+    "generated_bci": "Aka wun n usa anyi.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0122",
+    "prompt_fr": "Dis en baoulé : Kouadio coud un vêtement",
+    "reference_bci": "kouadio sou kpa tralɛ",
+    "generated_bci": "Koffi wun be wunwa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0134",
+    "prompt_fr": "Dis en baoulé : il a un champ de riz",
+    "reference_bci": "Ɔ le awie fie",
+    "generated_bci": "ɔ le i bo bolɛ",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0141",
+    "prompt_fr": "Dis en baoulé : Aka a taillé une louche en bois",
+    "reference_bci": "Aka sɛli sɔkɔ kun",
+    "generated_bci": "Aka le aya",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0142",
+    "prompt_fr": "Dis en baoulé : il a natté un séchoir",
+    "reference_bci": "ɔ wuli gbada kun",
+    "generated_bci": "Aka le nzuu",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0149",
+    "prompt_fr": "Dis en baoulé : Aka a taillé une louche en bois",
+    "reference_bci": "Aka sɛli sᴐkᴐ kun",
+    "generated_bci": "Aka le aya",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0160",
+    "prompt_fr": "Dis en baoulé : le village de Yao",
+    "reference_bci": "Yao kpɛn",
+    "generated_bci": "Yao di jue",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0161",
+    "prompt_fr": "Dis en baoulé : Ils battent des tams-tams",
+    "reference_bci": "Be su bo klɛn",
+    "generated_bci": "aka ti yɛ",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0167",
+    "prompt_fr": "Dis en baoulé : koffi va au marché.",
+    "reference_bci": "Koffi kɔ gua bo.",
+    "generated_bci": "Koffi ko laliɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0169",
+    "prompt_fr": "Dis en baoulé : Insan a un champ de piment.",
+    "reference_bci": "Insan le Mankun fie konan.",
+    "generated_bci": "Yao le awa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0176",
+    "prompt_fr": "Dis en baoulé : Mawa a un crocodile.",
+    "reference_bci": "Mawa le bɔbɔ.",
+    "generated_bci": "Yao le awa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0178",
+    "prompt_fr": "Dis en baoulé : La sauce pistache.",
+    "reference_bci": "nviɛlɛ tro.",
+    "generated_bci": "aka kun",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0199",
+    "prompt_fr": "Dis en baoulé : papa dort sur la longue chaise en bambou.",
+    "reference_bci": "baba lafi pkɔpkɔ.",
+    "generated_bci": "Koffi fa kpaman.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0204",
+    "prompt_fr": "Dis en baoulé : Pourquoi le chien poursuit-il le chat ?",
+    "reference_bci": "Ngoe ti yɛ alua'n fuan jeliwa. nin-cn?",
+    "generated_bci": "Nya si",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0215",
+    "prompt_fr": "Dis en baoulé : Le chemin du chat.",
+    "reference_bci": "jeliwa atini.",
+    "generated_bci": "I si'n ti kpa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0219",
+    "prompt_fr": "Dis en baoulé : Konan est un prisonnier",
+    "reference_bci": "konan ti bisuafɛ",
+    "generated_bci": "konan ti kpa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0220",
+    "prompt_fr": "Dis en baoulé : Aya est paresseuse.",
+    "reference_bci": "Aya ti fuɛntuɛ.",
+    "generated_bci": "Aya ti nya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0232",
+    "prompt_fr": "Dis en baoulé : aya se gratte vivement la tete.",
+    "reference_bci": "aya fuɛnfuɛnn i ti'su sa kpuakpua.",
+    "generated_bci": "Aya wun aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0233",
+    "prompt_fr": "Dis en baoulé : aya secoue son pagne.",
+    "reference_bci": "aya kpuju i tannin'n.",
+    "generated_bci": "Aya wun n wun ase.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0258",
+    "prompt_fr": "Dis en baoulé : Kouadio tue le varan.",
+    "reference_bci": "Kouadjo kun akualasuɛ.",
+    "generated_bci": "Koffi kun alili",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0267",
+    "prompt_fr": "Dis en baoulé : Le mamba vert est ici.",
+    "reference_bci": "Aklɛn ti wa.",
+    "generated_bci": "Aka ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0282",
+    "prompt_fr": "Dis en baoulé : Aya voit la rivière.",
+    "reference_bci": "Aya wun aboliɛ.",
+    "generated_bci": "Aya fa n'gba.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0287",
+    "prompt_fr": "Dis en baoulé : Koffi mange des légumes.",
+    "reference_bci": "Koffi di janun.",
+    "generated_bci": "Koffi ti a nian.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0291",
+    "prompt_fr": "Dis en baoulé : Aka voit le lièvre.",
+    "reference_bci": "Aka wun bladiman.",
+    "generated_bci": "Aka wun aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0293",
+    "prompt_fr": "Dis en baoulé : Awa a un bracelet.",
+    "reference_bci": "Awa le blenga.",
+    "generated_bci": "Awa le awa.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0297",
+    "prompt_fr": "Dis en baoulé : la route interdite.",
+    "reference_bci": "atintin ciliɛ.",
+    "generated_bci": "Aka wun ni.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0304",
+    "prompt_fr": "Dis en baoulé : ronfler en dormant.",
+    "reference_bci": "bo nglunman.",
+    "generated_bci": "aka ti wa",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0306",
+    "prompt_fr": "Dis en baoulé : la hauteur de la maison est de trois mètres.",
+    "reference_bci": "sua’n i nglonglo ti mɛtri.",
+    "generated_bci": "Sran ti kpa tra sika ɔkwlɛ.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0317",
+    "prompt_fr": "Dis en baoulé : fait lui un nœud.",
+    "reference_bci": "bo i ngandro.",
+    "generated_bci": "Sran ti ɔ si be sa nun.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0348",
+    "prompt_fr": "Dis en baoulé : Ake n'est pas propre.",
+    "reference_bci": "Ake ti fiɛn.",
+    "generated_bci": "Aka ti n'gba.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0352",
+    "prompt_fr": "Dis en baoulé : le savant arrive.",
+    "reference_bci": "sifuɛ su ba.",
+    "generated_bci": "I si i wun.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0353",
+    "prompt_fr": "Dis en baoulé : être en bons termes.",
+    "reference_bci": "di anuannzɛ",
+    "generated_bci": "konan ti nniεn.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0371",
+    "prompt_fr": "Dis en baoulé : Yao a le torticolis.",
+    "reference_bci": "Yao le akɔmin-ya.",
+    "generated_bci": "Yao le ali.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0376",
+    "prompt_fr": "Dis en baoulé : Konan est un guerrier.",
+    "reference_bci": "Konan ti alɛkunfuɛ.",
+    "generated_bci": "ɔ ti asiɛ'n.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0384",
+    "prompt_fr": "Dis en baoulé : Konan est fort.",
+    "reference_bci": "Konan ti ammbe.",
+    "generated_bci": "Yao ti aya.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  },
+  {
+    "id": "wiki-0392",
+    "prompt_fr": "Dis en baoulé : Kouakou est riche.",
+    "reference_bci": "Kouakou ti sikafuɛ.",
+    "generated_bci": "Yao ti aliɛto.",
+    "eos": true,
+    "domain": "everyday",
+    "native_validated": false
+  }
+]

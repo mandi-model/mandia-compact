@@ -1,0 +1,6 @@
+Code MandiaCompact S2S : Mandia, Apache-2.0.
+Kouassi, Konan Jean-Claude (2024), Baoulé Related Parallel Corpora for Machine Translation tasks: mtBCI-1.0, IJCSIT 16(5), doi:10.5121/ijcsit.2024.16501. Dataset CC Attribution (version unspecified by author), original categories retained.
+Google SMOL / GATITOS, CC-BY-4.0, https://huggingface.co/datasets/google/smol ; French via English pivot.
+WAXAL : Diack et al. (2026), arXiv:2602.02734. University of Ghana Baoule TTS, CC-BY-4.0, https://huggingface.co/datasets/google/WaxalNLP ; official training split text only.
+References: Vaswani et al. 2017 Attention Is All You Need; Ainslie et al. 2023 GQA; Signoroni et al. 2025 Efficient Architectures For Low-Resource Machine Translation.
+The Bible version references do not constitute clearance for full text/audio training or redistribution.

@@ -1,0 +1,503 @@
+{
+  "experiment": {
+    "parent_model_sha256": "3e899e922b86f4d8000f35ec7c1bfa1f9d4156faf4ebc2b54c05e0ede40ba6d4",
+    "parent_best_step": 1250,
+    "initialization": "own best stage4 weights; fresh AdamW, not stage4 last optimizer",
+    "new_data_sha256": "370d3bb631a4ad4765fbe3b15e0f6019c0470ce03c687f87ac71f6fda6b3048c",
+    "code_sha256": "023dded2cfec26496f667d70bb73064a8e87c8f934e16f87b67ff9454e81d2d7",
+    "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+    "steps": 600,
+    "lr": 2e-05,
+    "seed": 42,
+    "new_counts": {
+      "train": {
+        "translate": 277,
+        "guided": 277
+      },
+      "validation": {
+        "translate": 64,
+        "guided": 64
+      },
+      "test": {
+        "translate": 52,
+        "guided": 52
+      }
+    },
+    "excluded_length": [],
+    "training_mix": ".6 new paired sentences alternating translation/guided reply, .3 old four-domain replay, .1 old 14 reply prompts",
+    "selection": ".65 new validation CE + .35 old balanced CE; retain all 14 old replies and old CE <= baseline + .08; no test-based selection",
+    "native_validation": false
+  },
+  "training": {
+    "steps": 600,
+    "best_step": 400,
+    "best_score": 4.197980855285554,
+    "history": [
+      {
+        "step": 0,
+        "validation": {
+          "new_validation": {
+            "loss": 5.99249074020547,
+            "tasks": {
+              "translate": {
+                "loss": 5.734598494483351,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 6.2503829859275895,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.959075913216189,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 5.280795550759222
+        }
+      },
+      {
+        "step": 50,
+        "training_objective": 3.557934455229857,
+        "validation": {
+          "new_validation": {
+            "loss": 4.860935590231898,
+            "tasks": {
+              "translate": {
+                "loss": 4.879195166944702,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.842676013519093,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.924527965670152,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.533192921635287
+        }
+      },
+      {
+        "step": 100,
+        "training_objective": 3.6491710448616264,
+        "validation": {
+          "new_validation": {
+            "loss": 4.556744662198153,
+            "tasks": {
+              "translate": {
+                "loss": 4.587682937718849,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.525806386677457,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9153666843484114,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.332262369950744
+        }
+      },
+      {
+        "step": 150,
+        "training_objective": 3.277726953528359,
+        "validation": {
+          "new_validation": {
+            "loss": 4.449909040842197,
+            "tasks": {
+              "translate": {
+                "loss": 4.481851009183404,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.417967072500991,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9056785107882925,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.2594283553233305
+        }
+      },
+      {
+        "step": 200,
+        "training_objective": 3.157099653509667,
+        "validation": {
+          "new_validation": {
+            "loss": 4.3965224735832615,
+            "tasks": {
+              "translate": {
+                "loss": 4.420334926871366,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.372710020295157,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9148607166849176,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.227940858668841
+        }
+      },
+      {
+        "step": 250,
+        "training_objective": 2.751412823695832,
+        "validation": {
+          "new_validation": {
+            "loss": 4.380816372958097,
+            "tasks": {
+              "translate": {
+                "loss": 4.4066726652310715,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.354960080685122,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9255521799159045,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.22147390539333
+        }
+      },
+      {
+        "step": 300,
+        "training_objective": 2.8646468307464925,
+        "validation": {
+          "new_validation": {
+            "loss": 4.350738493131029,
+            "tasks": {
+              "translate": {
+                "loss": 4.383081738590942,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.318395247671115,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9243383784008383,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.201498452975462
+        }
+      },
+      {
+        "step": 350,
+        "training_objective": 2.6073951662140367,
+        "validation": {
+          "new_validation": {
+            "loss": 4.357663241299716,
+            "tasks": {
+              "translate": {
+                "loss": 4.386651327443677,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.3286751551557545,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9336804198207282,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.20926925378207
+        }
+      },
+      {
+        "step": 400,
+        "training_objective": 2.810751308785045,
+        "validation": {
+          "new_validation": {
+            "loss": 4.340502619995375,
+            "tasks": {
+              "translate": {
+                "loss": 4.366333523966041,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.3146717160247094,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9332975779673145,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.197980855285554
+        }
+      },
+      {
+        "step": 450,
+        "training_objective": 2.056519598341676,
+        "validation": {
+          "new_validation": {
+            "loss": 4.348641587110201,
+            "tasks": {
+              "translate": {
+                "loss": 4.371705585503931,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.32557758871647,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9386146456155986,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.20513215758709
+        }
+      },
+      {
+        "step": 500,
+        "training_objective": 2.2783674353449577,
+        "validation": {
+          "new_validation": {
+            "loss": 4.348986506714125,
+            "tasks": {
+              "translate": {
+                "loss": 4.368396976785478,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.329576036642772,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.941615728825288,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.206406734453032
+        }
+      },
+      {
+        "step": 550,
+        "training_objective": 2.198733611087129,
+        "validation": {
+          "new_validation": {
+            "loss": 4.342774179470716,
+            "tasks": {
+              "translate": {
+                "loss": 4.366799933209732,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.318748425731699,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.943829252878935,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.203143455163593
+        }
+      },
+      {
+        "step": 600,
+        "training_objective": 2.430084206753458,
+        "validation": {
+          "new_validation": {
+            "loss": 4.342113599716734,
+            "tasks": {
+              "translate": {
+                "loss": 4.360328787224994,
+                "rows": 64,
+                "tokens": 473
+              },
+              "guided": {
+                "loss": 4.323898412208476,
+                "rows": 64,
+                "tokens": 473
+              }
+            }
+          },
+          "old_validation": 3.9427552416748597,
+          "old_reply_exact": 1.0,
+          "eligible": true,
+          "selection_score": 4.202338174402078
+        }
+      }
+    ],
+    "real_tokens": 467986,
+    "supervised_tokens": 204153,
+    "wall_seconds": 116.89160143400113
+  },
+  "before": {
+    "new_test": {
+      "loss": 5.720025374062696,
+      "tasks": {
+        "translate": {
+          "loss": 5.406474357873351,
+          "rows": 52,
+          "tokens": 398
+        },
+        "guided": {
+          "loss": 6.033576390252041,
+          "rows": 52,
+          "tokens": 398
+        }
+      }
+    },
+    "old_test": {
+      "selection_score": 3.649616070872602,
+      "domains": {
+        "everyday": {
+          "loss": 3.5843693436890476,
+          "supervised_tokens": 737,
+          "rows": 68
+        },
+        "software": {
+          "loss": 3.660582435155451,
+          "supervised_tokens": 978,
+          "rows": 109
+        },
+        "gospel": {
+          "loss": 3.503175299192497,
+          "supervised_tokens": 8630,
+          "rows": 169
+        },
+        "lexical": {
+          "loss": 3.8503372054534126,
+          "supervised_tokens": 1439,
+          "rows": 308
+        }
+      }
+    },
+    "generation": {
+      "translate": {
+        "rows": 52,
+        "chrF_pp": 9.861968502384991,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "guided": {
+        "rows": 52,
+        "chrF_pp": 9.618629519159475,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      }
+    },
+    "old_reply": {
+      "rows": 14,
+      "chrF_pp": 100.0,
+      "exact_match": 1.0,
+      "no_eos": 0,
+      "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+    }
+  },
+  "after": {
+    "new_test": {
+      "loss": 4.145516841255839,
+      "tasks": {
+        "translate": {
+          "loss": 4.1181198196794515,
+          "rows": 52,
+          "tokens": 398
+        },
+        "guided": {
+          "loss": 4.172913862832227,
+          "rows": 52,
+          "tokens": 398
+        }
+      }
+    },
+    "old_test": {
+      "selection_score": 3.6209911997152613,
+      "domains": {
+        "everyday": {
+          "loss": 3.5221222161923205,
+          "supervised_tokens": 737,
+          "rows": 68
+        },
+        "software": {
+          "loss": 3.6190987179371965,
+          "supervised_tokens": 978,
+          "rows": 109
+        },
+        "gospel": {
+          "loss": 3.484758793023066,
+          "supervised_tokens": 8630,
+          "rows": 169
+        },
+        "lexical": {
+          "loss": 3.8579850717084616,
+          "supervised_tokens": 1439,
+          "rows": 308
+        }
+      }
+    },
+    "generation": {
+      "translate": {
+        "rows": 52,
+        "chrF_pp": 14.930081337373613,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "guided": {
+        "rows": 52,
+        "chrF_pp": 15.162191481916748,
+        "exact_match": 0.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      }
+    },
+    "old_reply": {
+      "rows": 14,
+      "chrF_pp": 100.0,
+      "exact_match": 1.0,
+      "no_eos": 0,
+      "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+    }
+  },
+  "new_weights_selected": true,
+  "limits": [
+    "one seed",
+    "community example translations, no Mandia native validation",
+    "guided reply means translation request, not free conversation",
+    "new corpus has 393 unique source pairs before tokenization, not two independent copies",
+    "Bible replay uses admitted stage4 Gospel only; full Bible importer remains disabled until edition/reuse provenance is established"
+  ]
+}

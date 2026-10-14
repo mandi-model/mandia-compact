@@ -1,0 +1,7 @@
+{
+  "same_sampler_dropout_rng_token_counters_verified": true,
+  "contrastive_changes_weights": true,
+  "same_document_negatives_excluded": true,
+  "tiny_random_model_only": true,
+  "local_heavy_weights_downloaded": false
+}

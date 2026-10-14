@@ -1,0 +1,20 @@
+{
+  "code": {
+    "waxal_text.py": "3ba0a2332a5d22987f58c63df0d8d637ecc69f08251adb68ceb9cdb2a35eb0e2",
+    "mandia_stage4.py": "14efa69d555ae9a9bae10302281d2cb0e261498d317ee482d587ee07fa433086",
+    "verify_resume_s2s.py": "c28b21cfe0bb277e6db43199495b747296b83ffbd603e02d7df58ae7ef80495c",
+    "mandia_seq2seq.py": "6d1b84f0fba29e716741c11cff71bca8b622c9d850feb392f9d77c7b9ed2f1af",
+    "verify_seq2seq.py": "21d77594a3dd31739ed8b4ec0882a0464f259966efb67041d8bf8af6aec0044c",
+    "mandia_model.py": "629583e3a5a5e1c3ea418f30b3d2fab7d9e05e07dba5adc4e7563436ff957d96"
+  },
+  "data": {
+    "parallel-prepare.jsonl": "dc2bfd9ba783c5edec159ec35bfbb66206598520bef31f960da3ad92cc240cbd",
+    "replies-prepare.jsonl": "29334943cd507b8ffa9385b530b9625aec82c0741aeade3575a30c7df7e2caf1",
+    "tokenizer.json": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+    "waxal-baoule-text.jsonl": "4f7730d32d3324d2cc819f33d7633b2d59e01f81c8e2f38651d0377050ec69d4"
+  },
+  "seed": 42,
+  "steps": 6000,
+  "selection": "unweighted mean of the four domain validation CE losses; no test-based selection",
+  "initialization": "random new S2S weights; v0 checkpoint preserved; incompatible architecture, no weights transferred"
+}

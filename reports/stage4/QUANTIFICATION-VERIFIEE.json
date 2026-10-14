@@ -1,0 +1,187 @@
+{
+  "candidate": "hybrid",
+  "accepted": true,
+  "selection": "validation CE delta <=0.05 and all 14 trained reply outputs unchanged/correct; no test-based selection",
+  "validation_fp32": {
+    "selection_score": 3.959115806376507,
+    "domains": {
+      "everyday": {
+        "loss": 4.010036147121108,
+        "supervised_tokens": 546,
+        "rows": 44
+      },
+      "software": {
+        "loss": 3.610160372591499,
+        "supervised_tokens": 1291,
+        "rows": 112
+      },
+      "gospel": {
+        "loss": 3.9743769015740913,
+        "supervised_tokens": 3488,
+        "rows": 97
+      },
+      "lexical": {
+        "loss": 4.241889804219331,
+        "supervised_tokens": 1481,
+        "rows": 359
+      }
+    }
+  },
+  "validation_int8": {
+    "selection_score": 3.9548918255782115,
+    "domains": {
+      "everyday": {
+        "loss": 3.997119889591203,
+        "supervised_tokens": 546,
+        "rows": 44
+      },
+      "software": {
+        "loss": 3.602069195807211,
+        "supervised_tokens": 1291,
+        "rows": 112
+      },
+      "gospel": {
+        "loss": 3.9749065845384512,
+        "supervised_tokens": 3488,
+        "rows": 97
+      },
+      "lexical": {
+        "loss": 4.245471632375981,
+        "supervised_tokens": 1481,
+        "rows": 359
+      }
+    }
+  },
+  "validation_delta": -0.004223980798295557,
+  "trained_replies_unchanged": true,
+  "trained_replies_correct": true,
+  "reply_count": 14,
+  "reply_outputs": [
+    {
+      "id": "reply-hello-0",
+      "prompt_fr": "Bonjour !",
+      "reference_bci": "Anouho",
+      "generated_bci": "Anouho",
+      "eos": true
+    },
+    {
+      "id": "reply-hello-1",
+      "prompt_fr": "Bonjour",
+      "reference_bci": "Anouho",
+      "generated_bci": "Anouho",
+      "eos": true
+    },
+    {
+      "id": "reply-hello-2",
+      "prompt_fr": "Salut !",
+      "reference_bci": "Anouho",
+      "generated_bci": "Anouho",
+      "eos": true
+    },
+    {
+      "id": "reply-hello-3",
+      "prompt_fr": "Salut",
+      "reference_bci": "Anouho",
+      "generated_bci": "Anouho",
+      "eos": true
+    },
+    {
+      "id": "reply-hello-4",
+      "prompt_fr": "Coucou !",
+      "reference_bci": "Anouho",
+      "generated_bci": "Anouho",
+      "eos": true
+    },
+    {
+      "id": "reply-wellbeing-0",
+      "prompt_fr": "Comment vas-tu ?",
+      "reference_bci": "mi wun ti kpa",
+      "generated_bci": "mi wun ti kpa",
+      "eos": true
+    },
+    {
+      "id": "reply-wellbeing-1",
+      "prompt_fr": "Tu vas bien ?",
+      "reference_bci": "mi wun ti kpa",
+      "generated_bci": "mi wun ti kpa",
+      "eos": true
+    },
+    {
+      "id": "reply-wellbeing-2",
+      "prompt_fr": "Comment allez-vous ?",
+      "reference_bci": "mi wun ti kpa",
+      "generated_bci": "mi wun ti kpa",
+      "eos": true
+    },
+    {
+      "id": "reply-wellbeing-3",
+      "prompt_fr": "Ça va ?",
+      "reference_bci": "mi wun ti kpa",
+      "generated_bci": "mi wun ti kpa",
+      "eos": true
+    },
+    {
+      "id": "reply-wellbeing-4",
+      "prompt_fr": "Comment ça va ?",
+      "reference_bci": "mi wun ti kpa",
+      "generated_bci": "mi wun ti kpa",
+      "eos": true
+    },
+    {
+      "id": "reply-bye-0",
+      "prompt_fr": "Au revoir",
+      "reference_bci": "ye tɛ wo nu",
+      "generated_bci": "ye tɛ wo nu",
+      "eos": true
+    },
+    {
+      "id": "reply-bye-1",
+      "prompt_fr": "Au revoir !",
+      "reference_bci": "ye tɛ wo nu",
+      "generated_bci": "ye tɛ wo nu",
+      "eos": true
+    },
+    {
+      "id": "reply-bye-2",
+      "prompt_fr": "À bientôt",
+      "reference_bci": "ye tɛ wo nu",
+      "generated_bci": "ye tɛ wo nu",
+      "eos": true
+    },
+    {
+      "id": "reply-bye-3",
+      "prompt_fr": "Je te laisse, au revoir",
+      "reference_bci": "ye tɛ wo nu",
+      "generated_bci": "ye tɛ wo nu",
+      "eos": true
+    }
+  ],
+  "cpu_fp32": {
+    "forced_decode_tokens": 64,
+    "threads": 4,
+    "warmup": 1,
+    "repeats": 3,
+    "median_decode_seconds": 0.43453260400019644,
+    "tokens_per_second": 147.28469028752343,
+    "device": "Colab CPU, not the user Mac",
+    "precision": "FP32 activations, dynamic int8 Linear weights if quantized"
+  },
+  "cpu_dynamic_int8": {
+    "forced_decode_tokens": 64,
+    "threads": 4,
+    "warmup": 1,
+    "repeats": 3,
+    "median_decode_seconds": 0.5566151740003988,
+    "tokens_per_second": 114.9806958010709,
+    "device": "Colab CPU, not the user Mac",
+    "precision": "FP32 activations, dynamic int8 Linear weights if quantized"
+  },
+  "source_fp32_file_bytes": 55171544,
+  "int8_file_bytes": 18658043,
+  "int8_file_sha256": "e03e7d650e97e7b6a54c1ffbaa1d0bae2334a1fb709b6eb8a672f12703ac843b",
+  "size_fraction": 0.3381823608199183,
+  "engine": "x86",
+  "torch": "2.11.0+cu130",
+  "safe_state_dict_reload_checked": true,
+  "scope": "Experimental Colab CPU export; no guarantee of speed or backend support on other hardware; API deprecated, migration needed for future torch versions. Parameter count unchanged; serialization size reduced."
+}

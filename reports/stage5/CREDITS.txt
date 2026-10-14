@@ -1,0 +1,2 @@
+New text data: contributors to the French Wiktionary, via Kaikki / wiktextract; CC BY-SA 4.0. Each pair retains its lemma URL, sense ID, raw example and review status. Page URLs give access to contributors/history. Source snapshot: frwiktionary dump 2026-10-01, Kaikki extraction 2026-10-02. Cite Tatu Ylonen, Wiktextract: Wiktionary as Machine-Readable Structured Data, LREC 2022.
+Code: original Mandia code, Apache-2.0. Parent stage4 data keep their original licences. No model fluency or native verification claimed.

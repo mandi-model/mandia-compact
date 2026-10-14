@@ -1,0 +1,26 @@
+{
+  "architecture": [
+    {
+      "variant": "hybrid",
+      "causality": true,
+      "padding_invariance": true,
+      "token_and_chunk_cache": true,
+      "source_effect": true,
+      "encoder_gradients": true
+    },
+    {
+      "variant": "attention",
+      "causality": true,
+      "padding_invariance": true,
+      "token_and_chunk_cache": true,
+      "source_effect": true,
+      "encoder_gradients": true
+    }
+  ],
+  "resume": {
+    "cpu_actual_training_resume": "104 uninterrupted == 100+4 resumed, bitwise equal weights and AdamW",
+    "sampler_and_dropout_rng": "equal",
+    "token_counters": "equal",
+    "gpu_scope": "CUDA RNG saved; GPU bitwise equivalence not asserted"
+  }
+}

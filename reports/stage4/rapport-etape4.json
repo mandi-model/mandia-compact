@@ -1,0 +1,1591 @@
+{
+  "gpu": "NVIDIA L4",
+  "torch": "2.11.0+cu130",
+  "seed": 42,
+  "models": {
+    "hybrid": {
+      "description": {
+        "config": {
+          "vocab_size": 4096,
+          "dim": 384,
+          "heads": 6,
+          "kv_heads": 2,
+          "encoder_layers": 2,
+          "decoder_layers": 6,
+          "ffn_dim": 768,
+          "variant": "hybrid",
+          "conv_kernel": 5,
+          "context": 256,
+          "dropout": 0.1
+        },
+        "parameters": 13782528,
+        "decoder_mix": [
+          "conv",
+          "conv",
+          "gqa",
+          "conv",
+          "conv",
+          "gqa"
+        ],
+        "initialization": "random, no pretrained model"
+      },
+      "training": {
+        "steps": 6000,
+        "real_tokens": 8557013,
+        "supervised_tokens": 4174897,
+        "wall_seconds_including_drive_io": 1231.5169815319987,
+        "peak_gpu_bytes": 1067257344,
+        "best_validation_score": 3.959075913216189,
+        "history": [
+          {
+            "step": 750,
+            "train_objective": 3.796948607032099,
+            "validation": {
+              "selection_score": 4.232213088545121,
+              "domains": {
+                "everyday": {
+                  "loss": 4.319893106872782,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.149249300672323,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.093005329097083,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.366704617538297,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.600734233856201
+          },
+          {
+            "step": 1000,
+            "train_objective": 3.046059528425756,
+            "validation": {
+              "selection_score": 3.991975518041277,
+              "domains": {
+                "everyday": {
+                  "loss": 3.94990475273831,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.747937947811774,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.028627846219124,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.2414315253959005,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.4479238986968994
+          },
+          {
+            "step": 1250,
+            "train_objective": 3.122098752258509,
+            "validation": {
+              "selection_score": 3.959075913216189,
+              "domains": {
+                "everyday": {
+                  "loss": 4.0090305761539895,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.6105616161012537,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 3.974446646664121,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.242264813945392,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.7243731021881104
+          },
+          {
+            "step": 1500,
+            "train_objective": 1.854804510642516,
+            "validation": {
+              "selection_score": 4.042681048199829,
+              "domains": {
+                "everyday": {
+                  "loss": 4.246519542875744,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.583435153148601,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.012141245220779,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.328628251554192,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.3006060123443604
+          },
+          {
+            "step": 1750,
+            "train_objective": 1.987116663494238,
+            "validation": {
+              "selection_score": 4.08908291032009,
+              "domains": {
+                "everyday": {
+                  "loss": 4.296322777157738,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.5021341266233175,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.1179561833722875,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.439918554127015,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.9588663578033447
+          },
+          {
+            "step": 2000,
+            "train_objective": 2.0462668161378863,
+            "validation": {
+              "selection_score": 4.207209179414295,
+              "domains": {
+                "everyday": {
+                  "loss": 4.487703148698632,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.630117308530209,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.181925703626161,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.529090556802177,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.3813936710357666
+          },
+          {
+            "step": 2250,
+            "train_objective": 1.370360324242943,
+            "validation": {
+              "selection_score": 4.330766843417202,
+              "domains": {
+                "everyday": {
+                  "loss": 4.6798224815955525,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.628436052365233,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.340984361981033,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.67382447772699,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.8959152698516846
+          },
+          {
+            "step": 2500,
+            "train_objective": 1.472359059805189,
+            "validation": {
+              "selection_score": 4.404806809299057,
+              "domains": {
+                "everyday": {
+                  "loss": 4.730062882978838,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.628728581435176,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.507407866486716,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.7530279062954985,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.519502878189087
+          },
+          {
+            "step": 2750,
+            "train_objective": 1.5085571627783898,
+            "validation": {
+              "selection_score": 4.460753707511183,
+              "domains": {
+                "everyday": {
+                  "loss": 4.796900040064102,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.7375327538003487,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.51043787790001,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.798144158280274,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.6677701473236084
+          },
+          {
+            "step": 3000,
+            "train_objective": 1.1073007086558662,
+            "validation": {
+              "selection_score": 4.588984351450872,
+              "domains": {
+                "everyday": {
+                  "loss": 4.989544711270175,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.806948353762224,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.682640259419013,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.876804081352074,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.4014105796813965
+          },
+          {
+            "step": 3250,
+            "train_objective": 1.160941901607858,
+            "validation": {
+              "selection_score": 4.619417514036687,
+              "domains": {
+                "everyday": {
+                  "loss": 5.067514496408539,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.7392409817365415,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.723412889953053,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.947501688048616,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.230433940887451
+          },
+          {
+            "step": 3500,
+            "train_objective": 1.2222206485762603,
+            "validation": {
+              "selection_score": 4.703428336998426,
+              "domains": {
+                "everyday": {
+                  "loss": 5.136108118972499,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.7824229292865876,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.827242536282321,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.067939763452297,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.988233804702759
+          },
+          {
+            "step": 3750,
+            "train_objective": 0.945079620535898,
+            "validation": {
+              "selection_score": 4.758438584148559,
+              "domains": {
+                "everyday": {
+                  "loss": 5.137039575821314,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.8412686679642114,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.915831758341658,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.139614334467051,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.4796688556671143
+          },
+          {
+            "step": 4000,
+            "train_objective": 1.0202405437723077,
+            "validation": {
+              "selection_score": 4.825522150500149,
+              "domains": {
+                "everyday": {
+                  "loss": 5.204889318445226,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.852100895320972,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.007434403130768,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.23766398510363,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.7958762645721436
+          },
+          {
+            "step": 4250,
+            "train_objective": 1.0135625245021234,
+            "validation": {
+              "selection_score": 4.870507595034558,
+              "domains": {
+                "everyday": {
+                  "loss": 5.220332358782981,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.890165936198925,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.083353410073377,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.288178675082952,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.422212600708008
+          },
+          {
+            "step": 4500,
+            "train_objective": 0.915590864289797,
+            "validation": {
+              "selection_score": 4.921852789301271,
+              "domains": {
+                "everyday": {
+                  "loss": 5.287788474952782,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.928759538693358,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.115324435977761,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.355538707581185,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 1.9036716222763062
+          },
+          {
+            "step": 4750,
+            "train_objective": 1.0350341953671576,
+            "validation": {
+              "selection_score": 4.974284850654186,
+              "domains": {
+                "everyday": {
+                  "loss": 5.355882190522694,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.9875244802508956,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.164940064106513,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.388792667736643,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.544729471206665
+          },
+          {
+            "step": 5000,
+            "train_objective": 0.9803971535363711,
+            "validation": {
+              "selection_score": 5.018637660954052,
+              "domains": {
+                "everyday": {
+                  "loss": 5.413001483176654,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.9982575668464975,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.198484079553447,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.464807514239613,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.755434989929199
+          },
+          {
+            "step": 5250,
+            "train_objective": 0.8718700148200829,
+            "validation": {
+              "selection_score": 5.029284598361387,
+              "domains": {
+                "everyday": {
+                  "loss": 5.405721531682835,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.017768511192268,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.225311533026739,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.468336817543705,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 1.6121459007263184
+          },
+          {
+            "step": 5500,
+            "train_objective": 0.8114771104134637,
+            "validation": {
+              "selection_score": 5.07063302488541,
+              "domains": {
+                "everyday": {
+                  "loss": 5.435364552033254,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.044670973703162,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.267528560183464,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.534968013621761,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 1.5768295526504517
+          },
+          {
+            "step": 5750,
+            "train_objective": 0.7933376352514748,
+            "validation": {
+              "selection_score": 5.082128083196807,
+              "domains": {
+                "everyday": {
+                  "loss": 5.444305308135874,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.034012136304222,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.289594571524804,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.5606003168223275,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.114234447479248
+          },
+          {
+            "step": 6000,
+            "train_objective": 0.8474425188129052,
+            "validation": {
+              "selection_score": 5.11608803683838,
+              "domains": {
+                "everyday": {
+                  "loss": 5.482067736950549,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.070132160260639,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.29806725038301,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.614084999759322,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.1484482288360596
+          }
+        ],
+        "best_step": 1250
+      },
+      "test_all": {
+        "selection_score": 3.649616070872602,
+        "domains": {
+          "everyday": {
+            "loss": 3.5843693436890476,
+            "supervised_tokens": 737,
+            "rows": 68
+          },
+          "software": {
+            "loss": 3.660582435155451,
+            "supervised_tokens": 978,
+            "rows": 109
+          },
+          "gospel": {
+            "loss": 3.503175299192497,
+            "supervised_tokens": 8630,
+            "rows": 169
+          },
+          "lexical": {
+            "loss": 3.8503372054534126,
+            "supervised_tokens": 1439,
+            "rows": 308
+          }
+        }
+      },
+      "generation_test": {
+        "everyday": {
+          "rows": 32,
+          "chrF_pp": 26.829346426594142,
+          "exact_match": 0.03125,
+          "no_eos": 1,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "software": {
+          "rows": 32,
+          "chrF_pp": 18.668594867535123,
+          "exact_match": 0.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "gospel": {
+          "rows": 32,
+          "chrF_pp": 20.493022326387788,
+          "exact_match": 0.0,
+          "no_eos": 2,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "lexical": {
+          "rows": 32,
+          "chrF_pp": 4.956850056032076,
+          "exact_match": 0.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        }
+      },
+      "training_reply_demos": {
+        "rows": 14,
+        "chrF_pp": 100.0,
+        "exact_match": 1.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "reply_paraphrase_probes": {
+        "rows": 6,
+        "chrF_pp": 100.0,
+        "exact_match": 1.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "performance": {
+        "forced_tokens": 64,
+        "median_decode_seconds": 0.5810639939991233,
+        "tokens_per_second": 110.14277370643028,
+        "median_encoder_seconds": 0.003355060000103549,
+        "cache_bytes_after_64": 271360,
+        "source_tokens": 63,
+        "warmup": 1,
+        "repeats": 5,
+        "precision": "bf16",
+        "cache_scope": "decoder self+cross K/V, excludes encoder hidden memory"
+      },
+      "source_dependence": {
+        "examples": 32,
+        "matched_loss": 3.1911124763907965,
+        "permuted_source_loss": 4.042980487530048,
+        "loss_gap": 0.8518680111392514,
+        "scope": "Diagnostic only, not native semantic correctness."
+      }
+    },
+    "attention_reference": {
+      "description": {
+        "config": {
+          "vocab_size": 4096,
+          "dim": 384,
+          "heads": 6,
+          "kv_heads": 2,
+          "encoder_layers": 2,
+          "decoder_layers": 6,
+          "ffn_dim": 728,
+          "variant": "attention",
+          "conv_kernel": 5,
+          "context": 256,
+          "dropout": 0.1
+        },
+        "parameters": 13796352,
+        "decoder_mix": [
+          "gqa",
+          "gqa",
+          "gqa",
+          "gqa",
+          "gqa",
+          "gqa"
+        ],
+        "initialization": "random, no pretrained model"
+      },
+      "training": {
+        "steps": 6000,
+        "real_tokens": 8557013,
+        "supervised_tokens": 4174897,
+        "wall_seconds_including_drive_io": 1370.0958469989982,
+        "peak_gpu_bytes": 981017600,
+        "best_validation_score": 4.072528108329575,
+        "history": [
+          {
+            "step": 750,
+            "train_objective": 3.92904951074268,
+            "validation": {
+              "selection_score": 4.293120529960109,
+              "domains": {
+                "everyday": {
+                  "loss": 4.279875814696371,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.259180566860113,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.215470104042543,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.417955634241407,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 4.0108489990234375
+          },
+          {
+            "step": 1000,
+            "train_objective": 3.12432520044859,
+            "validation": {
+              "selection_score": 4.075714566060339,
+              "domains": {
+                "everyday": {
+                  "loss": 4.000537634769202,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.8001307126258714,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.136468764838822,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.365721152007459,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.7456305027008057
+          },
+          {
+            "step": 1250,
+            "train_objective": 3.19455373581636,
+            "validation": {
+              "selection_score": 4.072528108329575,
+              "domains": {
+                "everyday": {
+                  "loss": 4.1767274626008755,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.7362647496111903,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.041405266578044,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.33571495452819,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.0724170207977295
+          },
+          {
+            "step": 1500,
+            "train_objective": 1.8358926478701334,
+            "validation": {
+              "selection_score": 4.139416946626909,
+              "domains": {
+                "everyday": {
+                  "loss": 4.389943636380709,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.6501258005013675,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.140310252478363,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.377288097147198,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.702641248703003
+          },
+          {
+            "step": 1750,
+            "train_objective": 1.9590406121340926,
+            "validation": {
+              "selection_score": 4.226025066540698,
+              "domains": {
+                "everyday": {
+                  "loss": 4.494688655867245,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.7151473183487846,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.201239804609107,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.4930244873376575,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 4.11679744720459
+          },
+          {
+            "step": 2000,
+            "train_objective": 2.062929752945096,
+            "validation": {
+              "selection_score": 4.315135744182663,
+              "domains": {
+                "everyday": {
+                  "loss": 4.804305527236435,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.509230964595638,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.346029351610656,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.600977133287923,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.6751275062561035
+          },
+          {
+            "step": 2250,
+            "train_objective": 1.372488204148449,
+            "validation": {
+              "selection_score": 4.471850901235171,
+              "domains": {
+                "everyday": {
+                  "loss": 4.811976031069354,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.6996607939279142,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.543556720838634,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.8322100591047805,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.2164623737335205
+          },
+          {
+            "step": 2500,
+            "train_objective": 1.3456389076093136,
+            "validation": {
+              "selection_score": 4.538368121635358,
+              "domains": {
+                "everyday": {
+                  "loss": 5.0195985451722755,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.759625991123947,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.530425303572908,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.843822646672303,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 4.285478115081787
+          },
+          {
+            "step": 2750,
+            "train_objective": 1.4753757745406766,
+            "validation": {
+              "selection_score": 4.538704785620607,
+              "domains": {
+                "everyday": {
+                  "loss": 5.074819515912961,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.630266657917191,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.658461395753633,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 4.791271572898643,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.008543014526367
+          },
+          {
+            "step": 3000,
+            "train_objective": 1.0500437027868819,
+            "validation": {
+              "selection_score": 4.678045112949674,
+              "domains": {
+                "everyday": {
+                  "loss": 5.182336660531851,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.755558879683869,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.771786663510384,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.002498248072591,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.4343101978302
+          },
+          {
+            "step": 3250,
+            "train_objective": 1.1614482153678833,
+            "validation": {
+              "selection_score": 4.722938574861578,
+              "domains": {
+                "everyday": {
+                  "loss": 5.27520765926375,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.7782507674071697,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.828586368385805,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.009709504389586,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 4.069878101348877
+          },
+          {
+            "step": 3500,
+            "train_objective": 1.1663855488125712,
+            "validation": {
+              "selection_score": 4.846464561916527,
+              "domains": {
+                "everyday": {
+                  "loss": 5.4962355225950805,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.819207886593181,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 4.9835488293149055,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.0868660091629385,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 3.5742411613464355
+          },
+          {
+            "step": 3750,
+            "train_objective": 0.9102819495997791,
+            "validation": {
+              "selection_score": 4.916300321992328,
+              "domains": {
+                "everyday": {
+                  "loss": 5.493155063726963,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.8639860854972525,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.0409946616636505,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.267065477081443,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.0228917598724365
+          },
+          {
+            "step": 4000,
+            "train_objective": 1.0258957139416849,
+            "validation": {
+              "selection_score": 4.969623577337332,
+              "domains": {
+                "everyday": {
+                  "loss": 5.5578243269588485,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.912274136827677,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.083118933056473,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.325276912506331,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.985445976257324
+          },
+          {
+            "step": 4250,
+            "train_objective": 0.9686836743008231,
+            "validation": {
+              "selection_score": 5.018169889536078,
+              "domains": {
+                "everyday": {
+                  "loss": 5.541011656596984,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.9910122068421403,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.164821169791965,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.375834524913223,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.1433746814727783
+          },
+          {
+            "step": 4500,
+            "train_objective": 0.9177363170788402,
+            "validation": {
+              "selection_score": 5.064802888299686,
+              "domains": {
+                "everyday": {
+                  "loss": 5.648661742716919,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 3.983492566854062,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.176410885032164,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.450646358595597,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 1.8540217876434326
+          },
+          {
+            "step": 4750,
+            "train_objective": 0.994399247482918,
+            "validation": {
+              "selection_score": 5.101747290712011,
+              "domains": {
+                "everyday": {
+                  "loss": 5.642959538833562,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.0343281149771855,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.244658872621868,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.485042636415429,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.4588782787323
+          },
+          {
+            "step": 5000,
+            "train_objective": 0.9791128261013726,
+            "validation": {
+              "selection_score": 5.135292291586515,
+              "domains": {
+                "everyday": {
+                  "loss": 5.678250407124613,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.047076921884077,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.270586556250896,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.545255281086471,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.7656848430633545
+          },
+          {
+            "step": 5250,
+            "train_objective": 0.8713179556398649,
+            "validation": {
+              "selection_score": 5.17499160206697,
+              "domains": {
+                "everyday": {
+                  "loss": 5.726169963459392,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.074931929962844,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.32981512524666,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.569049389598983,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 1.638320803642273
+          },
+          {
+            "step": 5500,
+            "train_objective": 0.7938327173433635,
+            "validation": {
+              "selection_score": 5.184953198276121,
+              "domains": {
+                "everyday": {
+                  "loss": 5.724507733579084,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.105568079870861,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.326750164731927,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.582986814922614,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 1.3273719549179077
+          },
+          {
+            "step": 5750,
+            "train_objective": 0.7748829065572388,
+            "validation": {
+              "selection_score": 5.193043232167598,
+              "domains": {
+                "everyday": {
+                  "loss": 5.727645482772436,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.0906000942522756,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.35242924559007,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.601498106055611,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 1.2902344465255737
+          },
+          {
+            "step": 6000,
+            "train_objective": 0.842938840411696,
+            "validation": {
+              "selection_score": 5.223585003540701,
+              "domains": {
+                "everyday": {
+                  "loss": 5.727316077375587,
+                  "supervised_tokens": 546,
+                  "rows": 44
+                },
+                "software": {
+                  "loss": 4.14153948724039,
+                  "supervised_tokens": 1291,
+                  "rows": 112
+                },
+                "gospel": {
+                  "loss": 5.366882875425007,
+                  "supervised_tokens": 3488,
+                  "rows": 97
+                },
+                "lexical": {
+                  "loss": 5.658601574121819,
+                  "supervised_tokens": 1481,
+                  "rows": 359
+                }
+              }
+            },
+            "gradient_norm": 2.083818197250366
+          }
+        ],
+        "best_step": 1250
+      },
+      "test_all": {
+        "selection_score": 3.7408481396886426,
+        "domains": {
+          "everyday": {
+            "loss": 3.7170792764692164,
+            "supervised_tokens": 737,
+            "rows": 68
+          },
+          "software": {
+            "loss": 3.6861116686237856,
+            "supervised_tokens": 978,
+            "rows": 109
+          },
+          "gospel": {
+            "loss": 3.655266096307394,
+            "supervised_tokens": 8630,
+            "rows": 169
+          },
+          "lexical": {
+            "loss": 3.9049355173541738,
+            "supervised_tokens": 1439,
+            "rows": 308
+          }
+        }
+      },
+      "generation_test": {
+        "everyday": {
+          "rows": 32,
+          "chrF_pp": 23.978243265827754,
+          "exact_match": 0.03125,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "software": {
+          "rows": 32,
+          "chrF_pp": 22.299884668067754,
+          "exact_match": 0.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "gospel": {
+          "rows": 32,
+          "chrF_pp": 20.183861472774744,
+          "exact_match": 0.03125,
+          "no_eos": 3,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        },
+        "lexical": {
+          "rows": 32,
+          "chrF_pp": 5.666647496305539,
+          "exact_match": 0.0,
+          "no_eos": 0,
+          "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+        }
+      },
+      "training_reply_demos": {
+        "rows": 14,
+        "chrF_pp": 100.0,
+        "exact_match": 1.0,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "reply_paraphrase_probes": {
+        "rows": 6,
+        "chrF_pp": 86.97073744189385,
+        "exact_match": 0.8333333333333334,
+        "no_eos": 0,
+        "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1"
+      },
+      "performance": {
+        "forced_tokens": 64,
+        "median_decode_seconds": 0.7158402290006052,
+        "tokens_per_second": 89.4054251314589,
+        "median_encoder_seconds": 0.0033877590012707515,
+        "cache_bytes_after_64": 390144,
+        "source_tokens": 63,
+        "warmup": 1,
+        "repeats": 5,
+        "precision": "bf16",
+        "cache_scope": "decoder self+cross K/V, excludes encoder hidden memory"
+      },
+      "source_dependence": {
+        "examples": 32,
+        "matched_loss": 3.4228780557821086,
+        "permuted_source_loss": 4.256472409426511,
+        "loss_gap": 0.8335943536444025,
+        "scope": "Diagnostic only, not native semantic correctness."
+      }
+    }
+  },
+  "scope": "Research training. Direct/pivot translations plus three trained reply intents, not general dialogue; no native validation.",
+  "same_token_budget_verified": true,
+  "candidate_by_validation": "hybrid",
+  "limitations": [
+    "one seed",
+    "same tokens, not same GPU time",
+    "no native speaker evaluation",
+    "GATITOS French uses an English pivot",
+    "limited trained reply intents",
+    "Bible audio/text versions identified but not full imported; misleading HF bci-bible excluded",
+    "published primitives, no novelty demonstrated"
+  ]
+}

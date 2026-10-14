@@ -1,0 +1,15 @@
+{
+  "architecture": "MandiaCompact S2S hybrid",
+  "parameters": 13782528,
+  "stage": 6,
+  "selected_arm": "ce_control",
+  "selected_step": 100,
+  "weights": {
+    "filename": "mandia-compact-stage6-ce.pt",
+    "bytes": 55171544,
+    "sha256": "a2afe5128d6ba5f807e0dc28baffdf606708bde96610469837d9d18cea8cb2ad"
+  },
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "full_optimizer_checkpoints": "saved in working Google Drive, not part of this inference asset",
+  "native_validated": false
+}

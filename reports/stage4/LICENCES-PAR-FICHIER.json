@@ -1,0 +1,35 @@
+{
+  "dataset": "MandiaCompact S2S experiment",
+  "own_code_license": "Apache-2.0",
+  "prepared_parallel_data_license": "Original source licenses only: mtBCI CC Attribution (version unspecified), Google SMOL CC-BY-4.0",
+  "native_validation": false,
+  "contains_pretrained_weights": false,
+  "contains_full_bible_archive": false,
+  "contains_audio": false,
+  "drive_checkpoints_private": true,
+  "huggingface_revisions": {
+    "google/WaxalNLP": "5f4d8ca24f2b9d168b2ee545f1febaaff4b40580"
+  },
+  "warm_start": "none; randomly initialized new architecture",
+  "scope": "Translation and three basic trained reply intents",
+  "sources": [
+    {
+      "name": "mtBCI-1.0",
+      "url": "https://github.com/Kjeanclaude/mtBCI-1.0-Corpus",
+      "kind": "French/BCI aligned text including Gospel chapters",
+      "status": "prepared for attributed research trial",
+      "script": "Latin; preserve ɛ/ɔ",
+      "license": "CC Attribution declared; version not specified; underlying provenance retained"
+    },
+    {
+      "name": "WAXAL Baoule TTS",
+      "url": "https://huggingface.co/datasets/google/WaxalNLP",
+      "revision": "5f4d8ca24f2b9d168b2ee545f1febaaff4b40580",
+      "config": "bau_tts",
+      "kind": "audio + native-language text; not bilingual",
+      "provider": "University of Ghana",
+      "license": "CC-BY-4.0",
+      "status": "official train transcripts extracted remotely; audio references retained, audio not downloaded"
+    }
+  ]
+}

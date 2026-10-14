@@ -1,0 +1,21 @@
+{
+  "status": "experimental_candidate_not_general_conversation_ready",
+  "selected_by": "validation_only_before_test_scoring",
+  "arm": "ce_control",
+  "best_step": 100,
+  "parameters": 13782528,
+  "model": {
+    "path": "ce_control/model.pt",
+    "bytes": 55171544,
+    "sha256": "a2afe5128d6ba5f807e0dc28baffdf606708bde96610469837d9d18cea8cb2ad",
+    "drive_file_id": "1h0m-rDBkqS-JNXQcFl587XthMjSfLbKW"
+  },
+  "full_resume": {
+    "step": 800,
+    "path": "ce_control/checkpoint-last.pt",
+    "drive_file_id": "1SS3jyjGgbpZ-6V25zQJ90npjdSSQkjvF"
+  },
+  "report": "rapport-etape6.json",
+  "reread": "RELECTURE-SORTIES.json",
+  "parent_stage5_preserved": true
+}

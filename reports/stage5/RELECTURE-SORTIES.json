@@ -1,0 +1,191 @@
+{
+  "scope": "AI technical/French-reference review of all 52 reserved translations; not native speaker semantic validation",
+  "exact_reference_matches": 0,
+  "test_rows": 52,
+  "proper_name_diagnostics": [
+    {
+      "id": "wiki-0027",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Awa"
+      ],
+      "missing": [
+        "Awa"
+      ],
+      "prompt_fr": "Awa prend la chaise",
+      "reference": "Awa fa bia",
+      "generated": "Aka wunwa"
+    },
+    {
+      "id": "wiki-0043",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Koffi"
+      ],
+      "missing": [
+        "Koffi"
+      ],
+      "prompt_fr": "koffi a une femme.",
+      "reference": "Koffi le bla.",
+      "generated": "Be le aya."
+    },
+    {
+      "id": "wiki-0044",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Akissi"
+      ],
+      "missing": [
+        "Akissi"
+      ],
+      "prompt_fr": "Akissi a une fille.",
+      "reference": "Akissi le wa bla.",
+      "generated": "Aya le aya."
+    },
+    {
+      "id": "wiki-0045",
+      "type": "irrelevant_software_domain_word",
+      "generated": "MediaWiki i ndɛ."
+    },
+    {
+      "id": "wiki-0107",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Konan"
+      ],
+      "missing": [
+        "Konan"
+      ],
+      "prompt_fr": "konan chasse le rat.",
+      "reference": "Konan su fuan gadi.",
+      "generated": "n'ga be wun iɔ."
+    },
+    {
+      "id": "wiki-0122",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Kouadio"
+      ],
+      "missing": [
+        "Kouadio"
+      ],
+      "prompt_fr": "Kouadio coud un vêtement",
+      "reference": "kouadio sou kpa tralɛ",
+      "generated": "Kiko ti kpa"
+    },
+    {
+      "id": "wiki-0160",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Yao"
+      ],
+      "missing": [
+        "Yao"
+      ],
+      "prompt_fr": "le village de Yao",
+      "reference": "Yao kpɛn",
+      "generated": "Ɔ fi Bouake"
+    },
+    {
+      "id": "wiki-0167",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Koffi"
+      ],
+      "missing": [
+        "Koffi"
+      ],
+      "prompt_fr": "koffi va au marché.",
+      "reference": "Koffi kɔ gua bo.",
+      "generated": "aka ti wa"
+    },
+    {
+      "id": "wiki-0169",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Konan"
+      ],
+      "missing": [
+        "Konan"
+      ],
+      "prompt_fr": "Insan a un champ de piment.",
+      "reference": "Insan le Mankun fie konan.",
+      "generated": "Be le atin mɔ ɔ nyen i ndɛ."
+    },
+    {
+      "id": "wiki-0176",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Awa"
+      ],
+      "missing": [
+        "Awa"
+      ],
+      "prompt_fr": "Mawa a un crocodile.",
+      "reference": "Mawa le bɔbɔ.",
+      "generated": "Be le man."
+    },
+    {
+      "id": "wiki-0219",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Konan"
+      ],
+      "missing": [
+        "Konan"
+      ],
+      "prompt_fr": "Konan est un prisonnier",
+      "reference": "konan ti bisuafɛ",
+      "generated": "Fluwa bue nga ɔ tia su"
+    },
+    {
+      "id": "wiki-0232",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Aya"
+      ],
+      "missing": [
+        "Aya"
+      ],
+      "prompt_fr": "aya se gratte vivement la tete.",
+      "reference": "aya fuɛnfuɛnn i ti'su sa kpuakpua.",
+      "generated": "aka wun, akoko."
+    },
+    {
+      "id": "wiki-0233",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Aya"
+      ],
+      "missing": [
+        "Aya"
+      ],
+      "prompt_fr": "aya secoue son pagne.",
+      "reference": "aya kpuju i tannin'n.",
+      "generated": "I wun nyanndra'n i wun nyanndra."
+    },
+    {
+      "id": "wiki-0392",
+      "type": "proper_name_missing_or_changed",
+      "reference_names": [
+        "Kouakou"
+      ],
+      "missing": [
+        "Kouakou"
+      ],
+      "prompt_fr": "Kouakou est riche.",
+      "reference": "Kouakou ti sikafuɛ.",
+      "generated": "Krist ti a ti."
+    }
+  ],
+  "dataset_review_needed": [
+    {
+      "id": "wiki-0306",
+      "prompt_fr": "la hauteur de la maison est de trois mètres.",
+      "reference": "sua’n i nglonglo ti mɛtri.",
+      "reason": "French says three metres; displayed Baoule reference has no obvious matching number; do not automatically repair the Baoule."
+    }
+  ],
+  "decision": "Keep stage5 as an experimental candidate selected on validation; not ready for unrestricted dialogue use. Do not overwrite/relabel frozen training data after examining test outputs.",
+  "proper_name_diagnostic_scope": "Textual comparison only, not a native semantic judgement; Kouadjo/Kouadio are treated as equivalent spellings."
+}

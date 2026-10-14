@@ -1,0 +1,35 @@
+{
+  "rows": {
+    "train": {
+      "everyday": 457,
+      "software": 809,
+      "gospel": 710,
+      "lexical": 2840,
+      "reply": 14,
+      "monolingual": 3118
+    },
+    "validation": {
+      "everyday": 44,
+      "software": 112,
+      "gospel": 97,
+      "lexical": 359
+    },
+    "test": {
+      "everyday": 68,
+      "software": 109,
+      "gospel": 169,
+      "lexical": 308
+    }
+  },
+  "excluded": {
+    "everyday/length": 3,
+    "gospel/length": 25,
+    "monolingual/length": 1
+  },
+  "tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "monolingual_source": "Google WAXAL official training split, text columns only",
+  "no_holdout_tokenizer_training": true,
+  "source_max": 160,
+  "target_max": 192,
+  "identity_denoising_is_not_translation": true
+}

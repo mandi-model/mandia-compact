@@ -1,0 +1,43 @@
+{
+  "encoded_counts": {
+    "train": {
+      "translate": 72,
+      "reply": 26
+    },
+    "validation": {
+      "translate": 13,
+      "reply": 6
+    },
+    "test": {
+      "translate": 25,
+      "reply": 15
+    }
+  },
+  "length_exclusions": [
+    {
+      "id": "smoldoc-topic_525__ggigsbfwostttfsgigi-reply-1",
+      "source": 68,
+      "target": 195
+    },
+    {
+      "id": "smoldoc-topic_525__ggigsbfwostttfsgigi-reply-2",
+      "source": 282,
+      "target": 23
+    },
+    {
+      "id": "smoldoc-topic_525__ggigsbfwostttfsgigi-reply-3",
+      "source": 264,
+      "target": 21
+    }
+  ],
+  "max_source": 150,
+  "max_target": 94,
+  "source_mode_ids": {
+    "translate": 3,
+    "reply": 4
+  },
+  "source_tokenizer_sha256": "cb8429dcf726da005d99846a052592c771c5210a46b99e4b02044687f9727cda",
+  "no_truncation": true,
+  "unique_baoule_targets_before_encoding": 132,
+  "prepared_rows": 160
+}
